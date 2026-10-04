@@ -1,0 +1,13 @@
+{
+  "updated": "2026-10-04",
+  "studies": [
+    {"id":"one-year-word","title":"365 One Year in the Word","tag":"Daily Bible study","audience":"Start anywhere","description":"A daily 30-minute ESV devotional with Scripture, historical context, cross-references, notes, and progress tracking.","url":"https://one-year-in-the-word.heath-tolley.chatgpt.site","kind":"study","badge":"Build a daily rhythm"},
+    {"id":"bible-journey","title":"Bible Journey: Match & Discover","tag":"Bible story game","audience":"All ages","description":"Match story pairs across twelve Bible story boards, reveal Scripture and context, and play offline after installation.","url":"https://awemissions.github.io/bible_journey/","kind":"game","badge":"Play offline"}
+  ],
+  "games": [
+    {"id":"hidden-heart","title":"Hidden in My Heart","tag":"Scripture memory","audience":"All ages","description":"Practice a verse with Build the Verse, Missing Words, and Match the Reference. Choose KJV or ESV.","url":"https://hidden-in-my-heart.heath-tolley.chatgpt.site","kind":"game","badge":"3 ways to practice"},
+    {"id":"verse-sprint","title":"Bible Verse Sprint","tag":"Quick Bible quiz","audience":"New and growing readers","description":"A fast Scripture quiz that starts with the Roman Road and helps you review key Bible verses.","url":"https://bible-verse-sprint.heath-tolley.chatgpt.site","kind":"game","badge":"Quick rounds"}
+  ],
+  "products": [],
+  "resources": []
+}
