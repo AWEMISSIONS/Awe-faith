@@ -26,3 +26,12 @@ wallPosts.addEventListener('submit',event=>{const form=event.target.closest('.wa
 document.getElementById('wallRequestForm').addEventListener('submit',event=>{event.preventDefault();const form=event.currentTarget;if(!document.getElementById('wallRequestConsent').checked)return;const name=document.getElementById('wallRequestName').value.trim();const request=document.getElementById('wallRequestText').value.trim();const body='Please review this prayer request for the AWE Prayer Wall.\n\nName: '+(name||'Anonymous')+'\nRequest: '+request+'\n\nI give permission for AWE Missions to publish this request on the Prayer Wall if approved.';document.getElementById('wallRequestStatus').textContent='Your email app should open. Please send the message to submit it for review.';window.location.href='mailto:contact@awemissions.org?subject='+encodeURIComponent('Prayer Wall request for review')+'&body='+encodeURIComponent(body)});
 loadPrayerWall();
 if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));loadCatalog();updateSearch();
+
+const mainNav=document.getElementById('mainNav');
+const tabsShell=document.querySelector('.tabs-shell');
+const tabsScrollCue=document.getElementById('tabsScrollCue');
+function updateTabsScrollCue(){const overflowing=mainNav.scrollWidth>mainNav.clientWidth+2;const atEnd=mainNav.scrollLeft+mainNav.clientWidth>=mainNav.scrollWidth-2;tabsShell.classList.toggle('is-scrollable',overflowing);tabsShell.classList.toggle('at-end',atEnd);tabsScrollCue.hidden=!overflowing||atEnd}
+tabsScrollCue.addEventListener('click',()=>mainNav.scrollBy({left:Math.max(160,mainNav.clientWidth*.7),behavior:'smooth'}));
+mainNav.addEventListener('scroll',updateTabsScrollCue,{passive:true});
+window.addEventListener('resize',updateTabsScrollCue);
+requestAnimationFrame(updateTabsScrollCue);
