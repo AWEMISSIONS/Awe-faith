@@ -27,3 +27,6 @@
 .support-app:hover,.support-app:focus{background:#ffdc89}
 @media(max-width:760px){.tabs-shell{top:64px}.support-app{min-height:36px;padding:7px 9px;font-size:11px}.topbar-actions{gap:5px}}
 @media(max-width:380px){.support-app{padding:6px 7px;font-size:10px}.share-app{padding:7px 8px;font-size:10px}.install{padding:7px 8px;font-size:10px}}
+
+.analytics-privacy{flex:0 0 100%;width:100%;margin-top:12px;padding:16px;border:1px solid #cbd9d4;border-radius:14px;background:#f5f8f6;color:#20342d;font-size:13px;line-height:1.5}
+.analytics-privacy p{margin:8px 0}.analytics-actions{display:flex;gap:8px;flex-wrap:wrap}.analytics-actions button{border:1px solid #47675b;border-radius:9px;padding:8px 12px;background:#fff;color:#20342d;font:inherit;font-weight:700;cursor:pointer}.analytics-status{font-size:12px;color:#52645c}
