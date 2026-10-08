@@ -3,7 +3,7 @@ const apps=[
  {name:'Watchmen Archive',category:'Faith & Ministry',icon:'🕊',description:'Daily Scripture-focused news and watch reports from AWE Missions.',url:'https://awemissions.github.io/Awe-faith/watchmen/'},
  {name:'Hidden in My Heart',category:'Faith & Ministry',icon:'💛',description:'Practice Scripture memory with verse-building, missing-word, and reference-match rounds.',url:'https://awemissions.github.io/Awe-faith/hidden-in-my-heart/'},
  {name:'Bible Verse Sprint',category:'Faith & Ministry',icon:'⚡',description:'A quick Bible-memory quiz with verses in KJV and ESV.',url:'https://awemissions.github.io/Awe-faith/bible-verse-sprint/'},
- {name:'One Year in the Word',category:'Faith & Ministry',icon:'📖',description:'A daily devotional journey through Scripture.',url:'https://one-year-in-the-word.heath-tolley.chatgpt.site'},
+ {name:'One Year in the Word',category:'Faith & Ministry',icon:'📖',description:'A daily devotional journey through Scripture.',url:'https://awemissions.github.io/Awe-faith/one-year-in-the-word/'},
  {name:'Bible Journey',category:'Faith & Ministry',icon:'🧩',description:'An Android-installable Bible tile-matching journey with story boards and offline play.',url:'https://awemissions.github.io/bible_journey/'},
  {name:'SAT Vocabulary Sprint',category:'Learning',icon:'Aa',description:'Practice SAT vocabulary in quick rounds with instant feedback.',url:'https://sat-vocabulary-sprint.heath-tolley.chatgpt.site'},
  {name:'Daber Hebrew Coach',category:'Learning',icon:'א',description:'Practice Hebrew reading, pronunciation, and vocabulary.',url:'https://daber-hebrew-coach.heath-tolley.chatgpt.site'},
