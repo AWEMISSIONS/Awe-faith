@@ -15,7 +15,7 @@ const apps=[
  {name:'SellSnap',category:'Work & Business',icon:'📷',description:'Draft clear marketplace listings from photos and item details, locally.',url:'https://awemissions.github.io/Awe-faith/sellsnap/'},
  {name:'Pulse Path',category:'Games & Social',icon:'〽',description:'A four-lane rhythm game with streaks, levels, charge beats, and bonus lives.',url:'https://awemissions.github.io/Awe-faith/pulse-path/'},
  {name:'KnowMe',category:'Games & Social',icon:'❔',description:'Create a personal quiz, share it with friends, and see how well they know you.',url:'https://awemissions.github.io/Knowme/'},
- {name:'MegaStats Predictor',category:'Games & Social',icon:'#',description:'Explore Mega Millions history, save predictions, and track hypothetical play.',url:'https://megastats-predictor.heath-tolley.chatgpt.site'},
+ {name:'MegaStats Predictor',category:'Games & Social',icon:'#',description:'Generate random Mega Millions sets, record results, and track a self-set play budget.',url:'https://awemissions.github.io/Awe-faith/megastats-predictor/'},
  {name:'Family Budget',category:'Home & Finance',icon:'$',description:'Plan income, expenses, recurring bills, savings goals, and transactions.',url:'https://heath-family-budget.heath-tolley.chatgpt.site'}
 ];
 const categories=['All apps',...new Set(apps.map(a=>a.category))];let active='All apps';
