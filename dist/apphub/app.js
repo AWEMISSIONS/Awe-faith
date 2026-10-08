@@ -16,7 +16,7 @@ const apps=[
  {name:'Pulse Path',category:'Games & Social',icon:'〽',description:'A four-lane rhythm game with streaks, levels, charge beats, and bonus lives.',url:'https://awemissions.github.io/Awe-faith/pulse-path/'},
  {name:'KnowMe',category:'Games & Social',icon:'❔',description:'Create a personal quiz, share it with friends, and see how well they know you.',url:'https://awemissions.github.io/Knowme/'},
  {name:'MegaStats Predictor',category:'Games & Social',icon:'#',description:'Generate random Mega Millions sets, record results, and track a self-set play budget.',url:'https://awemissions.github.io/Awe-faith/megastats-predictor/'},
- {name:'Family Budget',category:'Home & Finance',icon:'$',description:'Plan income, expenses, recurring bills, savings goals, and transactions.',url:'https://heath-family-budget.heath-tolley.chatgpt.site'}
+ {name:'Family Budget',category:'Home & Finance',icon:'$',description:'Plan income, expenses, recurring bills, savings goals, and transactions with a local encrypted PIN vault.',url:'https://awemissions.github.io/Awe-faith/family-budget/'}
 ];
 const categories=['All apps',...new Set(apps.map(a=>a.category))];let active='All apps';
 function esc(v){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
