@@ -1,6 +1,6 @@
 const BASE=new URL('./',self.registration.scope).pathname;
-const CACHE='awe-faith-shell-v8';
-const APP_FILES=['apphub/index.html','apphub/styles.css','apphub/app.js','watchmen/index.html','watchmen/styles.css','watchmen/app.js','hidden-in-my-heart/index.html','hidden-in-my-heart/styles.css','hidden-in-my-heart/app.js','bible-verse-sprint/index.html','bible-verse-sprint/styles.css','bible-verse-sprint/app.js','one-year-in-the-word/index.html','one-year-in-the-word/styles.css','one-year-in-the-word/app.js'];
+const CACHE='awe-faith-shell-v9';
+const APP_FILES=['apphub/index.html','apphub/styles.css','apphub/app.js','watchmen/index.html','watchmen/styles.css','watchmen/app.js','hidden-in-my-heart/index.html','hidden-in-my-heart/styles.css','hidden-in-my-heart/app.js','bible-verse-sprint/index.html','bible-verse-sprint/styles.css','bible-verse-sprint/app.js','one-year-in-the-word/index.html','one-year-in-the-word/styles.css','one-year-in-the-word/app.js','sat-vocabulary-sprint/index.html','sat-vocabulary-sprint/styles.css','sat-vocabulary-sprint/app.js'];
 const SHELL=['','index.html','styles.css','app.js','analytics.js','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png',...APP_FILES].map(p=>BASE+p);
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL))));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))));
