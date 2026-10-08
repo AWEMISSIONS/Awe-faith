@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04",
+  "updated": "2026-10-08",
   "studies": [
     {
       "id": "one-year-word",
@@ -7,7 +7,7 @@
       "tag": "Daily Bible study",
       "audience": "Start anywhere",
       "description": "A daily 30-minute ESV devotional with Scripture, historical context, cross-references, notes, and progress tracking.",
-      "url": "https://one-year-in-the-word.heath-tolley.chatgpt.site",
+      "url": "https://awemissions.github.io/Awe-faith/one-year-in-the-word/",
       "kind": "study",
       "badge": "Build a daily rhythm"
     }
@@ -48,8 +48,8 @@
       "title": "Hidden in My Heart",
       "tag": "Scripture memory",
       "audience": "All ages",
-      "description": "Practice a verse with Build the Verse, Missing Words, and Match the Reference. Choose KJV or ESV.",
-      "url": "https://hidden-in-my-heart.heath-tolley.chatgpt.site",
+      "description": "Practice Scripture memory with verse-building, missing-word, and reference-match rounds in KJV.",
+      "url": "https://awemissions.github.io/Awe-faith/hidden-in-my-heart/",
       "kind": "game",
       "badge": "3 ways to practice"
     },
@@ -59,7 +59,7 @@
       "tag": "Quick Bible quiz",
       "audience": "New and growing readers",
       "description": "A fast Scripture quiz that starts with the Roman Road and helps you review key Bible verses.",
-      "url": "https://bible-verse-sprint.heath-tolley.chatgpt.site",
+      "url": "https://awemissions.github.io/Awe-faith/bible-verse-sprint/",
       "kind": "game",
       "badge": "Quick rounds"
     }
