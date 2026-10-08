@@ -13,7 +13,7 @@ const apps=[
  {name:'JobPilot AI',category:'Work & Business',icon:'🧭',description:'Track job searches, prepare truthful application drafts, and manage follow-ups locally.',url:'https://awemissions.github.io/Awe-faith/jobpilot-ai/'},
  {name:'PO AI Daily',category:'Work & Business',icon:'📋',description:'Practice product discovery, backlog writing, prioritization, and delivery through short local exercises.',url:'https://awemissions.github.io/Awe-faith/po-ai-daily/'},
  {name:'SellSnap',category:'Work & Business',icon:'📷',description:'Draft clear marketplace listings from photos and item details, locally.',url:'https://awemissions.github.io/Awe-faith/sellsnap/'},
- {name:'Pulse Path',category:'Games & Social',icon:'〽',description:'A four-lane rhythm game with streaks, levels, and bonus lives.',url:'https://pulse-path-rhythm-game.heath-tolley.chatgpt.site'},
+ {name:'Pulse Path',category:'Games & Social',icon:'〽',description:'A four-lane rhythm game with streaks, levels, charge beats, and bonus lives.',url:'https://awemissions.github.io/Awe-faith/pulse-path/'},
  {name:'KnowMe',category:'Games & Social',icon:'❔',description:'Create a personal quiz, share it with friends, and see how well they know you.',url:'https://awemissions.github.io/Knowme/'},
  {name:'MegaStats Predictor',category:'Games & Social',icon:'#',description:'Explore Mega Millions history, save predictions, and track hypothetical play.',url:'https://megastats-predictor.heath-tolley.chatgpt.site'},
  {name:'Family Budget',category:'Home & Finance',icon:'$',description:'Plan income, expenses, recurring bills, savings goals, and transactions.',url:'https://heath-family-budget.heath-tolley.chatgpt.site'}
