@@ -30,3 +30,22 @@
 
 .analytics-privacy{flex:0 0 100%;width:100%;margin-top:12px;padding:16px;border:1px solid #cbd9d4;border-radius:14px;background:#f5f8f6;color:#20342d;font-size:13px;line-height:1.5}
 .analytics-privacy p{margin:8px 0}.analytics-actions{display:flex;gap:8px;flex-wrap:wrap}.analytics-actions button{border:1px solid #47675b;border-radius:9px;padding:8px 12px;background:#fff;color:#20342d;font:inherit;font-weight:700;cursor:pointer}.analytics-status{font-size:12px;color:#52645c}
+
+
+
+/* Prayer request is the first home-screen action. */
+.prayer-home-feature{max-width:1100px;margin:18px auto 0;padding:18px 20px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;background:#fff;border:1px solid #e7d7b4;border-left:5px solid var(--gold);border-radius:10px;box-shadow:0 8px 24px #15354a0c}
+.prayer-home-icon{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#f8f1e2;font-size:24px}
+.prayer-home-copy .eyebrow{margin:0 0 2px;color:#805913}.prayer-home-copy h2{font:800 21px/1.2 var(--display);color:var(--navy);margin:0 0 3px}.prayer-home-copy p:last-child{font-size:14px;color:var(--muted);margin:0}
+.prayer-home-actions{display:flex;flex-direction:column;align-items:center;gap:4px}.prayer-home-actions .button{min-height:42px;padding:8px 13px}.prayer-home-secondary{font-size:12px;font-weight:700;color:#135376;text-decoration:none}.prayer-home-secondary:hover{text-decoration:underline}
+.resource-quick-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 20px}
+.resource-choice{display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center;padding:15px 17px;background:#fff;border:1px solid var(--line);border-radius:9px;color:var(--ink);text-decoration:none;transition:transform .15s,border-color .15s,box-shadow .15s}
+.resource-choice:hover,.resource-choice:focus-visible{border-color:#c89b4b;box-shadow:0 6px 18px #15354a12;transform:translateY(-1px)}
+.resource-choice-icon{width:40px;height:40px;border-radius:9px;display:grid;place-items:center;background:#edf3f5;color:#174660;font-size:21px}
+.games-choice .resource-choice-icon{background:#f8f1e2;color:#805913}
+.resource-choice strong,.resource-choice small{display:block}.resource-choice strong{font:700 15px var(--display);color:var(--navy)}.resource-choice small{font-size:12px;color:var(--muted);margin-top:2px}.resource-choice-arrow{font-size:22px;color:#805913}
+.tabs-shell.at-end .tabs-scroll-cue{right:auto;left:0;background:linear-gradient(90deg,#0c2a40 34%,#0c2a4000 100%);text-align:left;padding-left:11px;padding-right:17px}
+.tabs-shell.at-end .tabs-scroll-cue:hover,.tabs-shell.at-end .tabs-scroll-cue:focus-visible{background:linear-gradient(90deg,#174660 34%,#17466000 100%)}
+@media(max-width:1150px){.prayer-home-feature{margin-left:22px;margin-right:22px}}
+@media(max-width:760px){.prayer-home-feature{grid-template-columns:auto 1fr;margin:12px 12px 0;padding:14px;gap:11px}.prayer-home-icon{width:42px;height:42px;font-size:21px}.prayer-home-copy h2{font-size:18px}.prayer-home-copy p:last-child{font-size:13px}.prayer-home-actions{grid-column:1/-1;display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding-left:53px}.prayer-home-actions .button{min-height:40px;font-size:14px}.resource-quick-nav{grid-template-columns:1fr;gap:9px;margin-bottom:17px}.resource-choice{padding:12px 14px}.resource-choice-icon{width:36px;height:36px}.tabs-shell.is-scrollable .tabs{padding-right:58px}.tabs-shell.at-end .tabs{padding-left:58px}}
+@media(prefers-reduced-motion:reduce){.resource-choice{transition:none}}
