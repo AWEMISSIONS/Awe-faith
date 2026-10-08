@@ -6,7 +6,7 @@ const apps=[
  {name:'One Year in the Word',category:'Faith & Ministry',icon:'📖',description:'A daily devotional journey through Scripture.',url:'https://awemissions.github.io/Awe-faith/one-year-in-the-word/'},
  {name:'Bible Journey',category:'Faith & Ministry',icon:'🧩',description:'An Android-installable Bible tile-matching journey with story boards and offline play.',url:'https://awemissions.github.io/bible_journey/'},
  {name:'SAT Vocabulary Sprint',category:'Learning',icon:'Aa',description:'Practice SAT vocabulary in quick rounds with instant feedback.',url:'https://awemissions.github.io/Awe-faith/sat-vocabulary-sprint/'},
- {name:'Daber Hebrew Coach',category:'Learning',icon:'א',description:'Practice Hebrew reading, pronunciation, and vocabulary.',url:'https://daber-hebrew-coach.heath-tolley.chatgpt.site'},
+ {name:'Daber Hebrew Coach',category:'Learning',icon:'א',description:'Practice Hebrew through beginner lessons, reading, pronunciation, and vocabulary.',url:'https://awemissions.github.io/Awe-faith/daber-hebrew-coach/'},
  {name:'ASL Sign Coach',category:'Learning',icon:'🤟',description:'Practice American Sign Language with guided learning activities.',url:'https://asl-sign-coach.heath-tolley.chatgpt.site'},
  {name:'Off-Market Deal Finder',category:'Work & Business',icon:'⌂',description:'Review property leads, market estimates, and investor next steps.',url:'https://off-market-deal-finder-heath.heath-tolley.chatgpt.site'},
  {name:'KDP Launch Assistant',category:'Work & Business',icon:'📚',description:'Prepare and organize Kindle Direct Publishing project files.',url:'https://kdp-launch-assistant.heath-tolley.chatgpt.site'},
