@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "studies": [
     {
       "id": "one-year-word",
@@ -13,6 +13,17 @@
     }
   ],
   "games": [
+    {
+      "id": "revealed",
+      "title": "REVEALED — Bible & History Challenge",
+      "tag": "Old Testament · New Testament · History",
+      "audience": "Teens, adults & Bible study groups",
+      "description": "Explore 605 Bible and history question rounds across three learning tracks, with Scripture references, answers and explanations. Track your discoveries and challenge friends.",
+      "url": "https://awemissions.github.io/Revealed/",
+      "kind": "game",
+      "badge": "605 rounds",
+      "action": "Play REVEALED"
+    },
     {
       "id": "bible-journey",
       "title": "Bible Journey: Match & Discover",
