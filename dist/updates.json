@@ -1,7 +1,15 @@
 {
-  "version": "1.2.8",
+  "version": "1.2.9",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "unified-navy-home-mission",
+      "date": "2026-10-10",
+      "category": "Homepage",
+      "title": "AWE Missions links now share the mission’s navy background",
+      "description": "The Get to Know section and four homepage cards sit on a continuous navy background with Spreading Christ and the contact section.",
+      "url": "#home"
+    },
     {
       "id": "focused-faith-pages",
       "date": "2026-10-10",
