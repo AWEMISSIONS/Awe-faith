@@ -1,7 +1,15 @@
 {
-  "version": "1.2.3",
+  "version": "1.2.4",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "banner-image-clarity",
+      "date": "2026-10-10",
+      "category": "Homepage",
+      "title": "A clearer mission banner",
+      "description": "The AWE Missions logo and dove remain uncovered while a dark overlay keeps the welcome text legible.",
+      "url": "#home"
+    },
     {
       "id": "branded-home-layout",
       "date": "2026-10-10",
