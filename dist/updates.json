@@ -1,7 +1,15 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "storytime-under-learn-and-play",
+      "date": "2026-10-10",
+      "category": "Learn & Play",
+      "title": "Story Time is now part of Learn & Play",
+      "description": "Find animated Bible stories alongside daily Bible study and Scripture-centered games, all in one learning section.",
+      "url": "#study"
+    },
     {
       "id": "release-120",
       "date": "2026-10-10",

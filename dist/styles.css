@@ -119,3 +119,12 @@ html{scroll-padding-top:132px}
   html{scroll-padding-top:120px}
 }
 @media(prefers-reduced-motion:reduce){.discover-tile{transition:none}.discover-tile:hover{transform:none}}
+
+/* Story Time now belongs to Learn & Play. */
+.resource-quick-nav{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.resource-choice{grid-template-columns:34px minmax(0,1fr) auto;gap:9px;padding:13px 12px}
+.resource-choice-icon{width:34px;height:34px}
+.story-choice .resource-choice-icon{background:#e8f2f8;color:#164d70}
+.learn-story{margin-top:35px;padding-top:27px;border-top:1px solid #dbe3e7}
+.learn-story .section-heading{margin-bottom:20px}
+@media(max-width:850px){.resource-quick-nav{grid-template-columns:1fr}}
