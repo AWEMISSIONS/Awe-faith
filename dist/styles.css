@@ -193,3 +193,16 @@ html{scroll-padding-top:132px}
 @media(max-width:760px){.page-home .home-mission-band{margin-top:20px;padding:22px 12px 0}.page-home .home-mission-band .mission-invite{margin:0;padding:18px}}
 
 /* v1.2.10: replace the homepage link-card grid with mission section buttons. */
+
+
+/* v1.2.11: make category shortcuts clear and compact on phones. */
+.learn-subheading{margin:24px 0 14px}
+.learn-subheading .eyebrow{margin:0;color:#805913}
+@media(max-width:850px){
+ .resource-quick-nav{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+ .resource-choice{grid-template-columns:1fr;justify-items:center;gap:4px;text-align:center;padding:10px 5px;min-height:78px}
+ .resource-choice-icon{width:30px;height:30px;font-size:17px}
+ .resource-choice strong{font-size:13px}
+ .resource-choice small{font-size:10px;margin-top:1px}
+ .resource-choice-arrow{display:none}
+}

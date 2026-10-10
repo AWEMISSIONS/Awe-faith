@@ -1,7 +1,15 @@
 {
-  "version": "1.2.10",
+  "version": "1.2.11",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "learn-play-clearer-navigation",
+      "date": "2026-10-10",
+      "category": "Learn & Play",
+      "title": "A simpler way to choose a study, story, or game",
+      "description": "The Learn & Play shortcuts now use clear, compact labels, with the study resources identified before the first study card.",
+      "url": "#study"
+    },
     {
       "id": "home-mission-links-as-buttons",
       "date": "2026-10-10",
