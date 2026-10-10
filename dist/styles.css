@@ -221,7 +221,7 @@ html{scroll-padding-top:132px}
 .games .story-time-card .resource-meta{color:var(--gold2)}
 
 /* AWE introduction pages share the Bible games palette and card treatment. */
-.awe-about-page{min-height:calc(100vh - 180px)}
+.awe-about-page{scroll-margin-top:140px}
 .awe-about-page .about-family-card{max-width:850px}
 .awe-about-page .resource-card h3{color:#fff}
 .awe-about-page .resource-card p:not(.resource-meta){color:#c5d2da}

@@ -1,7 +1,15 @@
 {
-  "version": "1.2.18",
+  "version": "1.2.19",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "awe-introduction-page-spacing",
+      "date": "2026-10-10",
+      "category": "AWE Missions",
+      "title": "AWE introduction pages now open cleanly below navigation",
+      "description": "The new family and A.W.E. meaning pages align below the sticky menu and flow naturally into the shared mission and contact sections.",
+      "url": "#whoBehindAwe"
+    },
     {
       "id": "awe-about-people-and-meaning-pages",
       "date": "2026-10-10",
