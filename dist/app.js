@@ -9,7 +9,7 @@ const fallbackCatalog={updated:'2026-10-10',studies:[
 {id:'verse-sprint',title:'Bible Verse Sprint',tag:'Quick Bible quiz',audience:'New and growing readers',description:'A fast Bible quiz to review key verses.',url:'https://awemissions.github.io/Awe-faith/bible-verse-sprint/',kind:'game'}
 ],products:[],resources:[]};
 const safeUrl=(value)=>{try{const u=new URL(value,location.href);return ['https:','http:'].includes(u.protocol)?u.href:'#'}catch{return '#'}};
-function card(item,index){const isGame=item.kind==='game';return `<article class="resource-card"><div class="resource-icon" aria-hidden="true">${isGame?'✦':'▤'}</div><div><h3>${escapeText(item.title)}</h3><div class="resource-meta">${escapeText(item.tag||'Bible resource')} · ${escapeText(item.audience||'All ages')}</div><p>${escapeText(item.description||'Open this resource to explore.')}</p><a class="card-link" data-analytics-resource="${escapeText(item.id)}" target="_blank" rel="noopener" href="${safeUrl(item.url)}">${escapeText(item.action|| (isGame?'Play now':'Open study'))}</a></div></article>`}
+function card(item,index){const isGame=item.kind==='game';return `<article class="resource-card"><div class="resource-icon" aria-hidden="true">${isGame?'✦':'▤'}</div><div><h3>${escapeText(item.title)}</h3><div class="resource-meta">${escapeText(item.tag||'Bible resource')} · ${escapeText(item.audience||'All ages')}</div><p>${escapeText(item.description||'Open this resource to explore.')}</p><a class="button gold resource-action" data-analytics-resource="${escapeText(item.id)}" target="_blank" rel="noopener" href="${safeUrl(item.url)}">${escapeText(item.action|| (isGame?'Play now':'Open study'))}</a></div></article>`}
 function productCard(item){return `<article class="product-card"><div><strong>${escapeText(item.title)}</strong>${item.price?`<span>${escapeText(item.price)}</span>`:''}<p>${escapeText(item.description||'AWE Missions merchandise')}</p></div><a href="${safeUrl(item.url)}" target="_blank" rel="noopener">View item</a></article>`}
 function serviceCard(item){return `<article class="service-card"><strong>${escapeText(item.title)}</strong>${item.category?`<span>${escapeText(item.category)}</span>`:''}<p>${escapeText([item.address,item.description].filter(Boolean).join(' · '))}</p>${item.phone?`<a href="tel:${escapeText(item.phone.replace(/[^+0-9]/g,''))}">${escapeText(item.phone)}</a>`:''}${item.url?`<a href="${safeUrl(item.url)}" target="_blank" rel="noopener">More information</a>`:''}</article>`}
 function escapeText(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
@@ -143,34 +143,6 @@ requestAnimationFrame(updateTabsScrollCue);
   const guide=document.getElementById('firstVisitGuide');
   if(guide&&read('awe.faith.guide.dismissed')!=='yes')guide.hidden=false;
   document.getElementById('guideDismiss')?.addEventListener('click',()=>{if(guide)guide.hidden=true;write('awe.faith.guide.dismissed','yes')});
-  const recentBox=document.getElementById('resumeSection');
-  const recentLink=document.getElementById('resumeLink');
-  const recentHelp=document.getElementById('resumeHelp');
-  function showRecent(){
-    try {
-      const item=JSON.parse(read('awe.faith.recent','null'));
-      if(!item||!item.url||!/^https?:\/\//.test(item.url))return;
-      const parsed=new URL(item.url,location.href);
-      if(!['https:','http:'].includes(parsed.protocol))return;
-      recentBox.hidden=false;recentLink.href=parsed.href;
-      recentLink.target=parsed.origin===location.origin&&parsed.pathname===location.pathname?'_self':'_blank';
-      if(recentLink.target==='_blank')recentLink.rel='noopener';
-      recentLink.textContent='Open '+item.title+' →';
-      recentHelp.textContent='Last opened: '+item.title+'. Your progress inside games and studies is managed by each resource.';
-    } catch {}
-  }
-  document.addEventListener('click',event=>{
-    const a=event.target.closest('a[data-analytics-resource],a[data-track-return]');
-    if(!a)return;
-    const title=a.dataset.resourceTitle||a.closest('.resource-card')?.querySelector('h3')?.textContent||a.textContent.trim();
-    const id=a.dataset.analyticsResource||a.dataset.trackReturn;
-    const href=a.href;
-    if(!/^https?:\/\//.test(href))return;
-    write('awe.faith.recent',JSON.stringify({id,title,url:href,at:new Date().toISOString()}));
-    showRecent();
-  });
-  showRecent();
-
   const list=document.getElementById('updatesList');
   const bellDot=document.getElementById('updateDot');
   const updatesStatus=document.getElementById('updatesStatus');

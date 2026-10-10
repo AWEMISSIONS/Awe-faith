@@ -1,7 +1,15 @@
 {
-  "version": "1.2.19",
+  "version": "1.2.20",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "learn-play-links-as-buttons",
+      "date": "2026-10-10",
+      "category": "Learn & Play",
+      "title": "Study and game links are easier to spot",
+      "description": "Study and game actions now use the same clear button style as Watch the story, and the Continue exploring panel has been removed.",
+      "url": "#study"
+    },
     {
       "id": "awe-introduction-page-spacing",
       "date": "2026-10-10",
