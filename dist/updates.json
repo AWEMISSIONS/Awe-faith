@@ -1,7 +1,15 @@
 {
-  "version": "1.2.16",
+  "version": "1.2.17",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "learn-play-sections-match-games",
+      "date": "2026-10-10",
+      "category": "Learn & Play",
+      "title": "Study resources and Story Time use the Bible games layout",
+      "description": "Study resources and Story Time now have the same navy section styling, clear heading, and distinct content cards as Bible games.",
+      "url": "#study"
+    },
     {
       "id": "direct-merchandise-link",
       "date": "2026-10-10",

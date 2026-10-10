@@ -211,3 +211,11 @@ html{scroll-padding-top:132px}
 
 .brand-logo{width:68px;height:38px;object-fit:contain;display:block;flex:none}
 @media(max-width:760px){.brand-logo{width:64px;height:35px}}
+
+/* Keep Learn & Play resource groups visually consistent with Bible games. */
+.library{padding-bottom:34px}
+.learn-story{margin-top:0;padding-top:59px;padding-bottom:67px;border-top:0}
+.games .story-time-card{background:#12344b;border:1px solid #335269;box-shadow:none;border-radius:9px}
+.games .story-time-card h3{color:#fff}
+.games .story-time-card p:not(.eyebrow){color:#c5d2da}
+.games .story-time-card .resource-meta{color:var(--gold2)}
