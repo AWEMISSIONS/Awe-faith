@@ -128,3 +128,15 @@ html{scroll-padding-top:132px}
 .learn-story{margin-top:35px;padding-top:27px;border-top:1px solid #dbe3e7}
 .learn-story .section-heading{margin-bottom:20px}
 @media(max-width:850px){.resource-quick-nav{grid-template-columns:1fr}}
+
+/* Explore: introduce AWE Missions with a mission-first and donation-optional call to action. */
+.mission-invite{display:flex;align-items:center;justify-content:space-between;gap:20px;background:linear-gradient(115deg,#ecf4f5,#fff9ed);border:1px solid #d4dfe2;border-left:4px solid #caa05a;border-radius:12px;padding:20px 24px;margin:0 0 22px}
+.mission-invite-copy{flex:1;min-width:0}
+.mission-invite .eyebrow{font-size:11px;margin:0 0 5px}
+.mission-invite h3{font:800 22px/1.2 var(--display);color:var(--navy);margin:0 0 8px}
+.mission-invite p:not(.eyebrow){font-size:14px;color:#4e6370;margin:0;max-width:670px}
+.mission-invite-actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+.mission-invite-actions .button{min-height:43px;padding:10px 13px;white-space:normal;text-align:center}
+.mission-invite-learn{border-color:#6f8792;color:#16445b;background:transparent}
+@media(max-width:1000px){.mission-invite{align-items:stretch;flex-direction:column}.mission-invite-actions{justify-content:flex-start}}
+@media(max-width:600px){.mission-invite{padding:18px 15px;margin-bottom:16px;gap:14px}.mission-invite h3{font-size:20px}.mission-invite-actions{display:grid;grid-template-columns:1fr}.mission-invite-actions .button{width:100%;font-size:14px}}

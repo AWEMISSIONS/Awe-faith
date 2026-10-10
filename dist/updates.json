@@ -1,7 +1,15 @@
 {
-  "version": "1.2.1",
+  "version": "1.2.2",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "explore-mission-links",
+      "date": "2026-10-10",
+      "category": "Our Mission",
+      "title": "Meet AWE Missions from Explore",
+      "description": "Learn how AWE Missions serves communities and find an optional way to support its outreach right from Explore.",
+      "url": "#everything"
+    },
     {
       "id": "storytime-under-learn-and-play",
       "date": "2026-10-10",
