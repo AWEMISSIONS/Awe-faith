@@ -46,7 +46,7 @@ assert.match(page,/id="updateReady"/);
 assert.match(page,/id="prayerIntake"/);
 assert.match(page,/id="updateDot"/);
 assert.equal(release.version,'1.2.16');
-assert.match(page,/Version 1\\.2\\.16/);
+assert.match(page,/Version 1\.2\.16/);
 const topNav=page.match(/<nav id="mainNav"[^>]*>([\s\S]*?)<\/nav>/)?.[1]||'';
 assert.doesNotMatch(topNav,/href="#prayer"/,'Prayer should not repeat in the top navigation');
 assert.ok(release.items.length>=3);
