@@ -1,7 +1,15 @@
 {
-  "version": "1.2.14",
+  "version": "1.2.15",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "remove-home-get-to-know-card",
+      "date": "2026-10-10",
+      "category": "Homepage",
+      "title": "Removed the Get to Know card from the home page",
+      "description": "The extra mission intro card is gone from the home flow. The Spreading Christ section, its mission links, and the contact section remain below.",
+      "url": "#home"
+    },
     {
       "id": "banner-wordmark-header",
       "date": "2026-10-10",
