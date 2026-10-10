@@ -208,3 +208,6 @@ html{scroll-padding-top:132px}
 }
 
 .brand-mark.brand-logo{object-fit:cover;border:0}
+
+.brand-logo{width:68px;height:38px;object-fit:contain;display:block;flex:none}
+@media(max-width:760px){.brand-logo{width:64px;height:35px}}

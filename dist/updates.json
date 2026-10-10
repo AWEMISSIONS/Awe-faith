@@ -1,7 +1,15 @@
 {
-  "version": "1.2.13",
+  "version": "1.2.14",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "banner-wordmark-header",
+      "date": "2026-10-10",
+      "category": "AWE Missions",
+      "title": "The AWE mountain wordmark now appears in the header",
+      "description": "The header uses a wider AWE mark cropped from the fundraising banner, so it reads clearly beside the site name. The matching square mark remains the installable app icon.",
+      "url": "#home"
+    },
     {
       "id": "banner-derived-awe-logo-mark",
       "date": "2026-10-10",
