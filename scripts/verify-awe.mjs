@@ -55,13 +55,13 @@ assert.match(page,/id="newContentNotice"/);
 assert.match(page,/id="updateReady"/);
 assert.match(page,/id="prayerIntake"/);
 assert.match(page,/id="updateDot"/);
-assert.equal(release.version,'1.2.21');
-assert.match(page,/Version 1\.2\.21/);
+assert.equal(release.version,'1.2.22');
+assert.match(page,/Version 1\.2\.22/);
 const topNav=page.match(/<nav id="mainNav"[^>]*>([\s\S]*?)<\/nav>/)?.[1]||'';
 assert.doesNotMatch(topNav,/href="#prayer"/,'Prayer should not repeat in the top navigation');
 assert.ok(release.items.length>=3);
-assert.match(release.version,/^1\.2\.21$/);
-assert.match(page,/Version 1\.2\.21/);
+assert.match(release.version,/^1\.2\.22$/);
+assert.match(page,/Version 1\.2\.22/);
 assert.match(app,/class="button gold resource-action" data-analytics-resource=/,"Render study and game actions as gold buttons");
 assert.doesNotMatch(app,/resumeSection|resumeLink|Continue exploring/,"Remove the Continue exploring panel logic");
 assert.ok(catalog.games.length>0);
@@ -99,3 +99,10 @@ console.log('AWE Faith QA passed: scripts, links, features, catalog and release 
 
 assert.match(read('dist/styles.css'),/\.mission\{margin-top:24px\}/,'Separate the homepage welcome banner from the mission panel with light page space');
 assert.match(read('dist/styles.css'),/@media\(max-width:760px\)\{\.mission\{padding:28px 18px 32px\}\}/,'Trim blank navy padding around the mission section on phones');
+
+assert.match(page,/<h2>Where would you like to go\?<\/h2>/,'Keep the Learn & Play prompt simple');
+assert.doesNotMatch(page,/Choose a Bible study, animated story, or game to get started\./,'Remove the extra Learn & Play intro sentence');
+assert.match(page,/href="#studyResources" aria-label="Go to study resources"/);
+assert.match(page,/href="#storyTime" aria-label="Go to Story Time"/);
+assert.match(page,/href="#games" aria-label="Go to Bible games"/);
+assert.match(read('dist/styles.css'),/\#study\.library\{padding-top:30px;padding-bottom:30px\}/,'Tighten the Learn & Play intro spacing');

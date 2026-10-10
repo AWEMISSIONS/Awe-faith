@@ -1,7 +1,15 @@
 {
-  "version": "1.2.21",
+  "version": "1.2.22",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "learn-play-simple-destination-prompt",
+      "date": "2026-10-10",
+      "category": "Learn & Play",
+      "title": "A simpler Learn & Play landing prompt",
+      "description": "Replaced the extra intro copy with “Where would you like to go?” and brought the Study, Stories, and Games choices closer together.",
+      "url": "#study"
+    },
     {
       "id": "homepage-welcome-mission-spacing",
       "date": "2026-10-10",

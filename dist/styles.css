@@ -233,3 +233,9 @@ html{scroll-padding-top:132px}
 /* v1.2.21: separate the welcome and mission panels while trimming empty navy padding. */
 .mission{margin-top:24px}
 @media(max-width:760px){.mission{padding:28px 18px 32px}}
+
+
+/* v1.2.22: simplify the Learn & Play landing prompt and tighten its spacing. */
+#study.library{padding-top:30px;padding-bottom:30px}
+#study.library .section-heading{margin-bottom:18px}
+@media(max-width:760px){#study.library{padding-top:26px;padding-bottom:26px}}
