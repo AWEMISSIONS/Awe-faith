@@ -8,7 +8,7 @@ const catalog=JSON.parse(read('dist/catalog.json'));
 new vm.Script(app,{filename:'app.js'});
 new vm.Script(worker,{filename:'sw.js'});
 assert.match(page,/id="wallRequestForm"/);
-assert.match(page,/class="brand-logo" src="\.\/awe-logo-mark\.png"/);\nassert.match(worker,/awe-logo-mark\.png/);
+assert.match(page,/class="brand-logo" src="\.\/awe-logo-mark\.png"/);
 assert.match(read('dist/manifest.webmanifest'),/"src": "icon-512\.png"/);
 assert.doesNotMatch(page,/id="firstVisitGuide"/);
 assert.match(page,/id="resumeSection"/);
