@@ -1,7 +1,15 @@
 {
-  "version": "1.2.4",
+  "version": "1.2.5",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "full-resolution-fundraising-banner",
+      "date": "2026-10-10",
+      "category": "Homepage",
+      "title": "A sharper AWE Missions welcome image",
+      "description": "The full-resolution fundraising artwork is optimized for the web, with the AWE Missions logo and dove kept clear above the welcome text.",
+      "url": "#home"
+    },
     {
       "id": "banner-image-clarity",
       "date": "2026-10-10",

@@ -156,3 +156,9 @@ html{scroll-padding-top:132px}
 .awe-brand-copy p{color:#fff;font-size:clamp(14px,1.45vw,17px);line-height:1.55;text-shadow:0 1px 3px #071b2d;margin:0}
 @media(max-width:1150px){.awe-brand-welcome{margin:14px 16px 0}}
 @media(max-width:760px){.awe-brand-welcome{min-height:310px;border-radius:11px;margin:12px 12px 0}.awe-brand-copy{padding:18px 18px 22px}.awe-brand-photo{background-position: center top}.awe-brand-copy h1{font-size:23px}.awe-brand-copy p{font-size:14px}}
+
+/* Full-resolution AWE Missions banner: show the complete, uncropped artwork. */
+.awe-brand-welcome{aspect-ratio:1672/941;min-height:0}
+.awe-brand-photo{background-position:center!important;background-size:100% 100%!important}
+.awe-brand-welcome:after{background:linear-gradient(180deg,transparent 0%,transparent 40%,rgba(3,17,30,.16) 54%,rgba(3,17,30,.68) 76%,rgba(3,17,30,.94) 100%)}
+@media(max-width:760px){.awe-brand-welcome{min-height:0}.awe-brand-photo{background-position:center!important;background-size:100% 100%!important}.awe-brand-copy{padding:16px 16px 18px}}
