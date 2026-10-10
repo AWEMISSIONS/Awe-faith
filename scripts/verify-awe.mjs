@@ -1,0 +1,31 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+const read=p=>fs.readFileSync(p,'utf8');
+const page=read('dist/index.html'),app=read('dist/app.js'),worker=read('dist/sw.js');
+const release=JSON.parse(read('dist/updates.json'));
+const catalog=JSON.parse(read('dist/catalog.json'));
+new vm.Script(app,{filename:'app.js'});
+new vm.Script(worker,{filename:'sw.js'});
+assert.match(page,/id="wallRequestForm"/);
+assert.match(page,/id="firstVisitGuide"/);
+assert.match(page,/id="resumeSection"/);
+assert.match(page,/id="everything"/);
+assert.match(page,/id="whatsNew"/);
+assert.match(page,/id="newContentNotice"/);
+assert.match(page,/id="updateReady"/);
+assert.match(page,/id="prayerIntake"/);
+assert.match(page,/id="updateDot"/);
+assert.match(page,/Version 1\.2\.0/);
+assert.equal(release.version,'1.2.0');
+assert.ok(release.items.length>=3);
+assert.ok(catalog.games.length>0);
+assert.match(app,/functions\/v1\/awe-prayer/);
+assert.doesNotMatch(app,/window\.location\.href='mailto:contact@awemissions\.org/);
+assert.doesNotMatch(page,/href="https:\/\/awemissions\.org\/missionary"/);
+const allIds=new Map();
+for(const match of page.matchAll(/\bid="([^"]+)"/g)){allIds.set(match[1],(allIds.get(match[1])||0)+1)}
+for(const [id,count] of allIds)assert.equal(count,1,'Duplicate HTML id '+id);
+for(const match of page.matchAll(/href="#([^"]+)"/g)){const id=match[1];if(id)assert.ok(allIds.has(id),'Broken anchor #'+id)}
+for(const item of release.items)assert.ok(item.url && item.title && item.description,'Incomplete release entry');
+console.log('AWE Faith QA passed: scripts, links, features, catalog and release feed.');

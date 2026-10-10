@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Verify AWE Faith build and navigation
+        run: node scripts/verify-awe.mjs
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:

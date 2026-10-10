@@ -141,7 +141,7 @@ requestAnimationFrame(updateTabsScrollCue);
   const noticeText=document.getElementById('newContentText');
   const preference=document.getElementById('updatesOnOpen');
   preference.checked=read('awe.faith.notice.enabled','yes')!=='no';
-  preference.addEventListener('change',()=>{write('awe.faith.notice.enabled',preference.checked?'yes':'no');notice.hidden=!preference.checked;updatesStatus.textContent=preference.checked?'In-app update notices are on.':'In-app update notices are off.'});
+  preference.addEventListener('change',()=>{write('awe.faith.notice.enabled',preference.checked?'yes':'no');renderUpdates();updatesStatus.textContent=preference.checked?'In-app update notices are on.':'In-app update notices are off.'});
   let current=null;
   function renderUpdates(){
     if(!current)return;
@@ -184,6 +184,7 @@ requestAnimationFrame(updateTabsScrollCue);
   document.getElementById('reloadApp').addEventListener('click',()=>location.reload());
   document.getElementById('remindLater').addEventListener('click',()=>{readyBanner.hidden=true});
   if('serviceWorker' in navigator){
+    const hadController=!!navigator.serviceWorker.controller;
     navigator.serviceWorker.ready.then(reg=>{
       reg.update().catch(()=>{});
       const showReady=()=>{readyBanner.hidden=false};
@@ -196,8 +197,8 @@ requestAnimationFrame(updateTabsScrollCue);
       });
     }).catch(()=>{});
     navigator.serviceWorker.addEventListener('controllerchange',()=>{
-      // The new worker is active. Invite refresh rather than interrupting a prayer request/game.
-      readyBanner.hidden=false;
+      // The new worker is active. Never show a fake update on first-ever install.
+      if(hadController)readyBanner.hidden=false;
     });
   }
 })();
