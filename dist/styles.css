@@ -239,3 +239,14 @@ html{scroll-padding-top:132px}
 #study.library{padding-top:30px;padding-bottom:30px}
 #study.library .section-heading{margin-bottom:18px}
 @media(max-width:760px){#study.library{padding-top:26px;padding-bottom:26px}}
+
+
+/* v1.2.23: add the family story and portraits to the local A.W.E. introduction page. */
+.family-story{max-width:850px;margin:24px auto 0}
+.family-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:22px auto 0;max-width:1050px}
+.family-profile{overflow:hidden;border:1px solid #335269;border-radius:10px;background:#12344b;color:white}
+.family-profile img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#254b63}
+.family-profile-copy{padding:13px 14px 15px}
+.family-profile h3{color:#fff;font:700 18px/1.25 var(--display);margin:0 0 5px}
+.family-profile p{color:#c5d2da;font-size:13px;line-height:1.45;margin:0}
+@media(max-width:760px){.family-story{margin-top:18px}.family-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}.family-profile img{aspect-ratio:1/1}.family-profile-copy{padding:11px}}

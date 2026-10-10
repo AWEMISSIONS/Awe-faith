@@ -1,7 +1,15 @@
 {
-  "version": "1.2.22",
+  "version": "1.2.23",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "who-is-behind-awe-family-details",
+      "date": "2026-10-10",
+      "category": "AWE Missions",
+      "title": "Meet the family behind A.W.E.",
+      "description": "The local AWE Faith page now includes the Tolley family’s calling story and portraits, with a simple Home link.",
+      "url": "#whoBehindAwe"
+    },
     {
       "id": "learn-play-simple-destination-prompt",
       "date": "2026-10-10",
