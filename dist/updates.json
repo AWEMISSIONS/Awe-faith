@@ -1,7 +1,15 @@
 {
-  "version": "1.2.15",
+  "version": "1.2.16",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "direct-merchandise-link",
+      "date": "2026-10-10",
+      "category": "AWE Missions",
+      "title": "Shop merchandise opens the AWE Missions store directly",
+      "description": "The home page’s Shop merchandise button now opens the same AWE Missions merchandise page directly. The separate Browse merchandise page has been removed.",
+      "url": "#mission"
+    },
     {
       "id": "remove-home-get-to-know-card",
       "date": "2026-10-10",

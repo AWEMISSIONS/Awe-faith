@@ -13,7 +13,7 @@ function card(item,index){const isGame=item.kind==='game';return `<article class
 function productCard(item){return `<article class="product-card"><div><strong>${escapeText(item.title)}</strong>${item.price?`<span>${escapeText(item.price)}</span>`:''}<p>${escapeText(item.description||'AWE Missions merchandise')}</p></div><a href="${safeUrl(item.url)}" target="_blank" rel="noopener">View item</a></article>`}
 function serviceCard(item){return `<article class="service-card"><strong>${escapeText(item.title)}</strong>${item.category?`<span>${escapeText(item.category)}</span>`:''}<p>${escapeText([item.address,item.description].filter(Boolean).join(' · '))}</p>${item.phone?`<a href="tel:${escapeText(item.phone.replace(/[^+0-9]/g,''))}">${escapeText(item.phone)}</a>`:''}${item.url?`<a href="${safeUrl(item.url)}" target="_blank" rel="noopener">More information</a>`:''}</article>`}
 function escapeText(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-async function loadCatalog(){const status=document.getElementById('catalogStatus');try{const res=await fetch('./catalog.json?fresh='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('Catalog unavailable');const c=await res.json();document.getElementById('studyCards').innerHTML=(c.studies||[]).map(card).join('')||'<p>New study resources are being prepared.</p>';document.getElementById('gameCards').innerHTML=(c.games||[]).map(card).join('')||'<p>New Bible games are being prepared.</p>';document.getElementById('gamesJumpCount').textContent=(c.games||[]).length+' '+((c.games||[]).length===1?'game':'games');document.getElementById('updatedDate').textContent=c.updated||'recently';document.getElementById('productCards').innerHTML=(c.products||[]).map(productCard).join('');document.getElementById('resourceCards').innerHTML=(c.resources||[]).map(serviceCard).join('');status.textContent='Current resources loaded';}catch{document.getElementById('studyCards').innerHTML=fallbackCatalog.studies.map(card).join('');document.getElementById('gameCards').innerHTML=fallbackCatalog.games.map(card).join('');document.getElementById('gamesJumpCount').textContent=fallbackCatalog.games.length+' games';document.getElementById('productCards').innerHTML='';document.getElementById('resourceCards').innerHTML='';status.textContent='Showing saved resource links; live catalog could not refresh';}}
+async function loadCatalog(){const status=document.getElementById('catalogStatus');try{const res=await fetch('./catalog.json?fresh='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('Catalog unavailable');const c=await res.json();document.getElementById('studyCards').innerHTML=(c.studies||[]).map(card).join('')||'<p>New study resources are being prepared.</p>';document.getElementById('gameCards').innerHTML=(c.games||[]).map(card).join('')||'<p>New Bible games are being prepared.</p>';document.getElementById('gamesJumpCount').textContent=(c.games||[]).length+' '+((c.games||[]).length===1?'game':'games');document.getElementById('updatedDate').textContent=c.updated||'recently';document.getElementById('resourceCards').innerHTML=(c.resources||[]).map(serviceCard).join('');status.textContent='Current resources loaded';}catch{document.getElementById('studyCards').innerHTML=fallbackCatalog.studies.map(card).join('');document.getElementById('gameCards').innerHTML=fallbackCatalog.games.map(card).join('');document.getElementById('gamesJumpCount').textContent=fallbackCatalog.games.length+' games';document.getElementById('resourceCards').innerHTML='';status.textContent='Showing saved resource links; live catalog could not refresh';}}
 const APP_SHARE_URL='https://awemissions.github.io/Awe-faith/';
 const shareMessage='Explore AWE Faith & Service for Bible study, games, and ways to serve: '+APP_SHARE_URL;
 const sharePanel=document.getElementById('sharePanel');
@@ -109,7 +109,7 @@ requestAnimationFrame(updateTabsScrollCue);
 /* Simple page routing keeps the public site URL while showing one focused page at a time. */
 (function(){
   const views=[...document.querySelectorAll('.page-view[data-page]')];
-  const aliases={home:'home',everything:'explore',explore:'explore',service:'explore',prayer:'prayer',prayerIntake:'prayer-request','prayer-wall':'prayer-request',study:'learn',studyCards:'learn',storyTime:'learn',games:'learn',shop:'shop',whatsNew:'whatsNew'};
+  const aliases={home:'home',everything:'explore',explore:'explore',service:'explore',prayer:'prayer',prayerIntake:'prayer-request','prayer-wall':'prayer-request',study:'learn',studyCards:'learn',storyTime:'learn',games:'learn',whatsNew:'whatsNew'};
   const navForPage={home:'home',explore:'explore',learn:'study',whatsNew:'whatsNew'};
   let activePage='home';
   function showPage(){
@@ -125,7 +125,7 @@ requestAnimationFrame(updateTabsScrollCue);
     const currentView=views.find(view=>view.dataset.page===page);
     if(!key||key==='home'){window.scrollTo({top:0,behavior:'auto'});return}
     if(target){
-      const pageEntry=['explore','prayer','study','shop','whatsNew'].includes(key);
+      const pageEntry=['explore','prayer','study','whatsNew'].includes(key);
       (pageEntry?currentView:target)?.scrollIntoView({block:'start',behavior:'auto'});
     }else if(currentView)currentView.scrollIntoView({block:'start',behavior:'auto'});
   }

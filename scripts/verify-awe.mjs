@@ -19,7 +19,8 @@ assert.doesNotMatch(page,/class="quicklinks home-quicklinks"/,'Remove the white 
 assert.doesNotMatch(page,/missionInviteHeading|home-mission-band/,'Remove Get to Know card from home');
 const missionSection=page.slice(page.indexOf('<section id="mission"'),page.indexOf('</section>',page.indexOf('<section id="mission"')));
 assert.match(missionSection,/href="https:\/\/awemissions\.org\/about-awe-missions-leadership"[^>]*>Our mission/,'Keep the Our mission button');
-assert.match(missionSection,/href="#shop">Shop merchandise/,'Keep the Shop merchandise button under the navy mission section');
+assert.match(missionSection,/href="https:\/\/awemissions\.org\/awe-missions-christian-merchandise"[^>]*>Shop merchandise/,'Open the merchandise store directly from the navy mission section');
+assert.doesNotMatch(page,/data-page="shop"|id="shop"|Browse merchandise/,'Remove the separate merchandise page');
 
 assert.doesNotMatch(page,/id="everythingTitle"|What would you like to do today\?/);
 assert.doesNotMatch(page,/<section class="welcome">/,'Duplicate hero should be removed');
@@ -44,8 +45,8 @@ assert.match(page,/id="newContentNotice"/);
 assert.match(page,/id="updateReady"/);
 assert.match(page,/id="prayerIntake"/);
 assert.match(page,/id="updateDot"/);
-assert.equal(release.version,'1.2.15');
-assert.match(page,/Version 1\.2\.15/);
+assert.equal(release.version,'1.2.16');
+assert.match(page,/Version 1\\.2\\.16/);
 const topNav=page.match(/<nav id="mainNav"[^>]*>([\s\S]*?)<\/nav>/)?.[1]||'';
 assert.doesNotMatch(topNav,/href="#prayer"/,'Prayer should not repeat in the top navigation');
 assert.ok(release.items.length>=3);
