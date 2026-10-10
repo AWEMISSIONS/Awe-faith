@@ -1,7 +1,15 @@
 {
-  "version": "1.2.6",
+  "version": "1.2.7",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "prayer-top-nav-removed",
+      "date": "2026-10-10",
+      "category": "Navigation",
+      "title": "Prayer is easier to find on the home page",
+      "description": "The Prayer link was removed from the top menu because the prayer section now leads the home page. Prayer links elsewhere remain available.",
+      "url": "#home"
+    },
     {
       "id": "mobile-banner-copy-below-artwork",
       "date": "2026-10-10",
