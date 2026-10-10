@@ -1,0 +1,46 @@
+{
+  "version": "1.2.0",
+  "date": "2026-10-10",
+  "items": [
+    {
+      "id": "release-120",
+      "date": "2026-10-10",
+      "category": "App improvements",
+      "title": "A clearer home and easier discovery",
+      "description": "Explore every AWE Faith activity from a simple directory, use the streamlined menu, and find your recently opened resource.",
+      "url": "#everything"
+    },
+    {
+      "id": "prayer-intake",
+      "date": "2026-10-10",
+      "category": "Prayer",
+      "title": "Prayer requests can be sent in the app",
+      "description": "Send privately without opening an email app, or choose to submit a request for review before it appears on the Prayer Wall.",
+      "url": "#prayerIntake"
+    },
+    {
+      "id": "updates",
+      "date": "2026-10-10",
+      "category": "Updates",
+      "title": "What's New now remembers what you've seen",
+      "description": "Check announcements here and choose whether to see a quiet notice when you revisit.",
+      "url": "#whatsNew"
+    },
+    {
+      "id": "storytime",
+      "date": "2026-10-09",
+      "category": "Story Time",
+      "title": "Living Word Stories joins AWE Faith",
+      "description": "Watch and listen to the animated retelling of Balaam and his donkey.",
+      "url": "#storyTime"
+    },
+    {
+      "id": "revealed",
+      "date": "2026-10-09",
+      "category": "Bible games",
+      "title": "REVEALED is in the games library",
+      "description": "Explore Bible and history challenges along with the other available Scripture-centered games.",
+      "url": "#games"
+    }
+  ]
+}
