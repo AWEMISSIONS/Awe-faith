@@ -34,7 +34,7 @@ assert.match(page,/value="private"/);
 assert.match(page,/value="public"/);
 assert.doesNotMatch(page,/class="shop-emblem"/);
 assert.match(app,/const aliases=/);
-assert.match(app,/page.hidden=view.dataset.page!==page/);
+assert.match(app,/view.hidden=view.dataset.page!==page/);
 assert.ok(page.indexOf('id="mission"')>page.indexOf('data-page="whatsNew"'),'Mission and contact must remain at the bottom of all pages');
 assert.match(page,/id="whatsNew"/);
 assert.match(page,/id="newContentNotice"/);
