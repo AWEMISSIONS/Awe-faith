@@ -1,7 +1,15 @@
 {
-  "version": "1.2.9",
+  "version": "1.2.10",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "home-mission-links-as-buttons",
+      "date": "2026-10-10",
+      "category": "Homepage",
+      "title": "Home links are now mission section buttons",
+      "description": "The white link-card grid was removed. Our mission and Shop merchandise are buttons in the shared navy mission section; Contact remains in the contact section.",
+      "url": "#home"
+    },
     {
       "id": "unified-navy-home-mission",
       "date": "2026-10-10",
