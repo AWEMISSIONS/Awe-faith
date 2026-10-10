@@ -1,7 +1,15 @@
 {
-  "version": "1.2.17",
+  "version": "1.2.18",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "awe-about-people-and-meaning-pages",
+      "date": "2026-10-10",
+      "category": "AWE Missions",
+      "title": "Meet the family behind A.W.E. and learn what it means",
+      "description": "The homepage now opens two AWE Faith pages: one introduces the Tolley family behind AWE Missions, and one explains Action, Worship, and Encourage as ways of following Christ’s mission.",
+      "url": "#whoBehindAwe"
+    },
     {
       "id": "learn-play-sections-match-games",
       "date": "2026-10-10",
