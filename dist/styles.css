@@ -228,3 +228,8 @@ html{scroll-padding-top:132px}
 .awe-about-page .resource-card .resource-meta{color:var(--gold2)}
 .about-page-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
 .about-page-actions .button{min-height:46px}
+
+
+/* v1.2.21: separate the welcome and mission panels while trimming empty navy padding. */
+.mission{margin-top:24px}
+@media(max-width:760px){.mission{padding:28px 18px 32px}}

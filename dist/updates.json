@@ -1,7 +1,15 @@
 {
-  "version": "1.2.20",
+  "version": "1.2.21",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "homepage-welcome-mission-spacing",
+      "date": "2026-10-10",
+      "category": "Home",
+      "title": "Homepage sections have clearer spacing",
+      "description": "Added a light gap between the welcome banner and mission section, and reduced empty navy padding on phones.",
+      "url": "#home"
+    },
     {
       "id": "learn-play-links-as-buttons",
       "date": "2026-10-10",

@@ -55,7 +55,7 @@ assert.match(page,/id="newContentNotice"/);
 assert.match(page,/id="updateReady"/);
 assert.match(page,/id="prayerIntake"/);
 assert.match(page,/id="updateDot"/);
-assert.equal(release.version,'1.2.20');
+assert.equal(release.version,'1.2.21');
 assert.match(page,/Version 1\.2\.20/);
 const topNav=page.match(/<nav id="mainNav"[^>]*>([\s\S]*?)<\/nav>/)?.[1]||'';
 assert.doesNotMatch(topNav,/href="#prayer"/,'Prayer should not repeat in the top navigation');
@@ -96,3 +96,6 @@ for(const [id,count] of allIds)assert.equal(count,1,'Duplicate HTML id '+id);
 for(const match of page.matchAll(/href="#([^"]+)"/g)){const id=match[1];if(id)assert.ok(allIds.has(id),'Broken anchor #'+id)}
 for(const item of release.items)assert.ok(item.url && item.title && item.description,'Incomplete release entry');
 console.log('AWE Faith QA passed: scripts, links, features, catalog and release feed.');
+
+assert.match(read('dist/styles.css'),/\.mission\{margin-top:24px\}/,'Separate the homepage welcome banner from the mission panel with light page space');
+assert.match(read('dist/styles.css'),/@media\(max-width:760px\)\{\.mission\{padding:28px 18px 32px\}\}/,'Trim blank navy padding around the mission section on phones');
