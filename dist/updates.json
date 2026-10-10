@@ -1,7 +1,15 @@
 {
-  "version": "1.2.11",
+  "version": "1.2.12",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "study-catalog-reclassification",
+      "date": "2026-10-10",
+      "category": "Study resources",
+      "title": "REVEALED and Hidden in My Heart are now in Study",
+      "description": "Both Scripture-centered resources are listed with Bible studies. Their links remain available, and the games section keeps the other games.",
+      "url": "#study"
+    },
     {
       "id": "learn-play-clearer-navigation",
       "date": "2026-10-10",

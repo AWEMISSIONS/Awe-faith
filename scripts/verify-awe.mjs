@@ -45,12 +45,19 @@ assert.match(page,/id="newContentNotice"/);
 assert.match(page,/id="updateReady"/);
 assert.match(page,/id="prayerIntake"/);
 assert.match(page,/id="updateDot"/);
-assert.equal(release.version,'1.2.11');
-assert.match(page,/Version 1\.2\.11/);
+assert.equal(release.version,'1.2.12');
+assert.match(page,/Version 1\.2\.12/);
 const topNav=page.match(/<nav id="mainNav"[^>]*>([\s\S]*?)<\/nav>/)?.[1]||'';
 assert.doesNotMatch(topNav,/href="#prayer"/,'Prayer should not repeat in the top navigation');
 assert.ok(release.items.length>=3);
 assert.ok(catalog.games.length>0);
+for(const id of ['hidden-heart','revealed']){
+  assert.ok(catalog.studies.some(item=>item.id===id&&item.kind==='study'),id+' should appear in Study');
+  assert.ok(!catalog.games.some(item=>item.id===id),id+' should no longer appear in Games');
+}
+const fallback=app.slice(app.indexOf('const fallbackCatalog='),app.indexOf('const safeUrl'));
+assert.match(fallback,/studies:\[[\s\S]*id:'hidden-heart'[\s\S]*id:'revealed'/,'Keep both resources in the offline study catalog');
+assert.doesNotMatch(fallback,/games:\[[\s\S]*id:'(hidden-heart|revealed)'/,'Keep moved resources out of offline Games catalog');
 const mainNav=page.match(/<nav id="mainNav"[^>]*>([\s\S]*?)<\/nav>/)?.[1]||'';
 assert.doesNotMatch(mainNav,/>Story Time<\/a>/,'Story Time should not be in the top navigation');
 const studyStart=page.indexOf('<section id="study"');
