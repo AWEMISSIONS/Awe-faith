@@ -140,3 +140,19 @@ html{scroll-padding-top:132px}
 .mission-invite-learn{border-color:#6f8792;color:#16445b;background:transparent}
 @media(max-width:1000px){.mission-invite{align-items:stretch;flex-direction:column}.mission-invite-actions{justify-content:flex-start}}
 @media(max-width:600px){.mission-invite{padding:18px 15px;margin-bottom:16px;gap:14px}.mission-invite h3{font-size:20px}.mission-invite-actions{display:grid;grid-template-columns:1fr}.mission-invite-actions .button{width:100%;font-size:14px}}
+
+/* v1.2.3 compact, mission-branded homepage */
+.prayer-home-feature{background:#071b2d!important;border-color:#245068!important;color:#fff!important;box-shadow:0 10px 30px #071b2d1a}
+.prayer-home-copy h2{color:#fff!important}
+.prayer-home-copy p:last-child{color:#d6e1e8!important}
+.prayer-home-copy .eyebrow{color:#f3d284!important}
+.prayer-home-icon{background:#18405b!important}
+.prayer-home-secondary{color:#f4cf79!important}
+.awe-brand-welcome{position:relative;max-width:1100px;overflow:hidden;border-radius:14px;margin:18px auto 0;background:#071b2d;color:white;min-height:360px;display:flex;align-items:end}
+.awe-brand-photo{position:absolute;inset:0;background:url('./awe-fundraising-banner.webp') center 37%/cover no-repeat}
+.awe-brand-welcome:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,17,30,0) 10%,rgba(3,17,30,.25) 44%,rgba(3,17,30,.96) 100%);pointer-events:none}
+.awe-brand-copy{position:relative;z-index:1;padding:30px 34px;max-width:900px}
+.awe-brand-copy h1{font:800 clamp(23px,3vw,34px)/1.14 var(--display);color:#fff;margin:0 0 10px;text-shadow:0 2px 5px #071b2d}
+.awe-brand-copy p{color:#fff;font-size:clamp(14px,1.45vw,17px);line-height:1.55;text-shadow:0 1px 3px #071b2d;margin:0}
+@media(max-width:1150px){.awe-brand-welcome{margin:14px 16px 0}}
+@media(max-width:760px){.awe-brand-welcome{min-height:310px;border-radius:11px;margin:12px 12px 0}.awe-brand-copy{padding:18px 18px 22px}.awe-brand-photo{background-position: center top}.awe-brand-copy h1{font-size:23px}.awe-brand-copy p{font-size:14px}}

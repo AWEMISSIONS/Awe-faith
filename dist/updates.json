@@ -1,7 +1,15 @@
 {
-  "version": "1.2.2",
+  "version": "1.2.3",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "branded-home-layout",
+      "date": "2026-10-10",
+      "category": "Homepage",
+      "title": "A cleaner homepage with AWE Missions branding",
+      "description": "Prayer comes first, followed by the AWE Missions welcome image, then the activity chooser.",
+      "url": "#home"
+    },
     {
       "id": "explore-mission-links",
       "date": "2026-10-10",
