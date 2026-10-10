@@ -1,7 +1,15 @@
 {
-  "version": "1.2.7",
+  "version": "1.2.8",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "focused-faith-pages",
+      "date": "2026-10-10",
+      "category": "Navigation",
+      "title": "A clearer home page with dedicated pages",
+      "description": "Prayer, Scripture, community outreach, Learn & Play, the Prayer Wall, and updates each have a clear place. The home page keeps its four AWE Missions links.",
+      "url": "#home"
+    },
     {
       "id": "prayer-top-nav-removed",
       "date": "2026-10-10",

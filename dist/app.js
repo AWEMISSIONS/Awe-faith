@@ -97,6 +97,34 @@ mainNav.addEventListener('scroll',updateTabsScrollCue,{passive:true});
 window.addEventListener('resize',updateTabsScrollCue);
 requestAnimationFrame(updateTabsScrollCue);
 
+/* Simple page routing keeps the public site URL while showing one focused page at a time. */
+(function(){
+  const views=[...document.querySelectorAll('.page-view[data-page]')];
+  const aliases={home:'home',everything:'explore',explore:'explore',service:'explore',prayer:'prayer',prayerIntake:'prayer-request','prayer-wall':'prayer-request',study:'learn',studyCards:'learn',storyTime:'learn',games:'learn',shop:'shop',whatsNew:'whatsNew'};
+  const navForPage={home:'home',explore:'explore',learn:'study',whatsNew:'whatsNew'};
+  let activePage='home';
+  function showPage(){
+    const key=decodeURIComponent(location.hash.slice(1));
+    const target=key?document.getElementById(key):null;
+    const page=target?.closest('.page-view[data-page]')?.dataset.page||aliases[key]||activePage;
+    activePage=page;
+    views.forEach(view=>{view.hidden=view.dataset.page!==page});
+    document.querySelectorAll('#mainNav a').forEach(link=>{
+      const active=link.getAttribute('href')==='#'+(navForPage[page]||'');
+      if(active)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');
+    });
+    const currentView=views.find(view=>view.dataset.page===page);
+    if(!key||key==='home'){window.scrollTo({top:0,behavior:'auto'});return}
+    if(target){
+      const pageEntry=['explore','prayer','study','shop','whatsNew'].includes(key);
+      (pageEntry?currentView:target)?.scrollIntoView({block:'start',behavior:'auto'});
+    }else if(currentView)currentView.scrollIntoView({block:'start',behavior:'auto'});
+  }
+  window.addEventListener('hashchange',showPage);
+  showPage();
+})();
+
+
 
 
 /* AWE Faith discovery, return visits, and release history. No accounts or background notifications. */

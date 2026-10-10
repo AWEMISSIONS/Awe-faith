@@ -170,3 +170,17 @@ html{scroll-padding-top:132px}
  .awe-brand-welcome:after{display:none}
  .awe-brand-copy{max-width:none;padding:18px 18px 20px;background:linear-gradient(180deg,rgba(7,27,45,.94),#071b2d)}
 }
+
+
+/* Focused AWE Faith pages and the four home links. */
+.page-view[hidden]{display:none!important}
+.page-home .mission-invite{max-width:1100px;margin:22px auto 0}
+.page-home .home-quicklinks{max-width:1100px;margin:18px auto 58px;position:relative;z-index:auto}
+.prayer-home-actions .button{min-height:46px;padding:11px 18px;font-size:15px}
+.page-prayer-request .prayer-request-page{padding-top:48px}
+.page-prayer-request #wallRequestForm{margin:0 auto 48px}
+.page-prayer-request .prayer-wall{margin-top:0}
+.page-shop .shop-emblem{display:none!important}
+#mainNav a[aria-current=page]{color:#fff;background:#ffffff12}
+@media(max-width:1150px){.page-home .mission-invite,.page-home .home-quicklinks{margin-left:22px;margin-right:22px}}
+@media(max-width:760px){.page-home .mission-invite{display:block;margin:14px 12px 0;padding:18px}.page-home .mission-invite-actions{margin-top:15px}.page-home .home-quicklinks{grid-template-columns:repeat(2,1fr);margin:16px 12px 42px}.page-prayer-request .prayer-request-page{padding-top:32px}}
