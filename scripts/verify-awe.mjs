@@ -18,7 +18,7 @@ assert.match(page,/class="button gold" href="#prayer">Prayer &amp; Scripture/);
 assert.doesNotMatch(page,/class="quicklinks home-quicklinks"/,'Remove the white homepage link-card grid');
 assert.doesNotMatch(page,/missionInviteHeading|home-mission-band/,'Remove Get to Know card from home');
 const missionSection=page.slice(page.indexOf('<section id="mission"'),page.indexOf('</section>',page.indexOf('<section id="mission"')));
-assert.match(missionSection,/href="#whoBehindAwe">Who Is Behind A\.W\.E\?/,'Link to the page introducing the family behind A.W.E.');
+assert.ok(missionSection.includes('href="#whoBehindAwe">Who Is Behind A.W.E.?'),'Link to the page introducing the family behind A.W.E.');
 assert.match(missionSection,/href="#whatAweMeans">What A\.W\.E\. Means to Us/,'Link to the page explaining what A.W.E. means');
 assert.match(missionSection,/href="https:\/\/awemissions\.org\/awe-missions-christian-merchandise"[^>]*>Shop merchandise/,'Open the merchandise store directly from the navy mission section');
 assert.doesNotMatch(page,/data-page="shop"|id="shop"|Browse merchandise/,'Remove the separate merchandise page');
