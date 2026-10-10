@@ -1,7 +1,15 @@
 {
-  "version": "1.2.12",
+  "version": "1.2.13",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "banner-derived-awe-logo-mark",
+      "date": "2026-10-10",
+      "category": "AWE Missions",
+      "title": "The AWE Missions banner logo now identifies the app",
+      "description": "The AWE wordmark and mountain-cross mark from the fundraising banner now appear in the home header and app icons.",
+      "url": "#home"
+    },
     {
       "id": "study-catalog-reclassification",
       "date": "2026-10-10",

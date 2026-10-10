@@ -206,3 +206,5 @@ html{scroll-padding-top:132px}
  .resource-choice small{font-size:10px;margin-top:1px}
  .resource-choice-arrow{display:none}
 }
+
+.brand-mark.brand-logo{object-fit:cover;border:0}
