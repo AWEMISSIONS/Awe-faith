@@ -162,3 +162,11 @@ html{scroll-padding-top:132px}
 .awe-brand-photo{background-position:center!important;background-size:100% 100%!important}
 .awe-brand-welcome:after{background:linear-gradient(180deg,transparent 0%,transparent 40%,rgba(3,17,30,.16) 54%,rgba(3,17,30,.68) 76%,rgba(3,17,30,.94) 100%)}
 @media(max-width:760px){.awe-brand-welcome{min-height:0}.awe-brand-photo{background-position:center!important;background-size:100% 100%!important}.awe-brand-copy{padding:16px 16px 18px}}
+
+/* On phones, keep all welcome copy below the full AWE Missions artwork. */
+@media(max-width:760px){
+ .awe-brand-welcome{display:flex;flex-direction:column;align-items:stretch;aspect-ratio:auto;min-height:0}
+ .awe-brand-photo{position:relative;inset:auto;width:100%;aspect-ratio:1672/941;flex:none;background-position:center!important;background-size:100% 100%!important}
+ .awe-brand-welcome:after{display:none}
+ .awe-brand-copy{max-width:none;padding:18px 18px 20px;background:linear-gradient(180deg,rgba(7,27,45,.94),#071b2d)}
+}

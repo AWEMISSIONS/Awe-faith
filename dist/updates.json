@@ -1,7 +1,15 @@
 {
-  "version": "1.2.5",
+  "version": "1.2.6",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "mobile-banner-copy-below-artwork",
+      "date": "2026-10-10",
+      "category": "Homepage",
+      "title": "Welcome text now sits below the mission artwork on phones",
+      "description": "The complete AWE Missions image stays clear on mobile; the welcome text appears beneath it on a dark gradient panel.",
+      "url": "#home"
+    },
     {
       "id": "full-resolution-fundraising-banner",
       "date": "2026-10-10",
