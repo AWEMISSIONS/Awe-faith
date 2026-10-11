@@ -1,7 +1,15 @@
 {
-  "version": "1.2.26",
+  "version": "1.2.27",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "consistent-explore-card-borders",
+      "date": "2026-10-10",
+      "category": "AWE Faith",
+      "title": "Explore cards now share one border color",
+      "description": "The cards for curious visitors, new believers, and people ready to serve now use the same gold top border.",
+      "url": "#explore"
+    },
     {
       "id": "whats-new-bell-in-navigation",
       "date": "2026-10-10",
