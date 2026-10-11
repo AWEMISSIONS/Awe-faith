@@ -1,7 +1,15 @@
 {
-  "version": "1.2.28",
+  "version": "1.2.29",
   "date": "2026-10-11",
   "items": [
+    {
+      "id": "mobile-explore-border-alignment",
+      "date": "2026-10-11",
+      "category": "Explore",
+      "title": "Explore card accents align on mobile",
+      "description": "On phones, the good-news card now uses the same gold top border as the pathway cards, with the side accent removed.",
+      "url": "#explore"
+    },
     {
       "id": "explore-christianity-stories-link",
       "date": "2026-10-11",
