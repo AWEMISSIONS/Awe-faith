@@ -55,7 +55,7 @@ assert.match(page,/id="newContentNotice"/);
 assert.match(page,/id="updateReady"/);
 assert.match(page,/id="prayerIntake"/);
 assert.match(page,/id="updateDot"/);
-assert.equal(release.version,'1.2.24');
+assert.equal(release.version,'1.2.25');
 assert.match(page,/Version 1\.2\.24/);
 const topNav=page.match(/<nav id="mainNav"[^>]*>([\s\S]*?)<\/nav>/)?.[1]||'';
 assert.doesNotMatch(topNav,/href="#prayer"/,'Prayer should not repeat in the top navigation');
@@ -115,3 +115,5 @@ assert.match(who,/href="#home">Home<\/a>/,'Use a short Home return link');
 assert.match(read('dist/styles.css'),/\.family-grid\{display:grid;grid-template-columns:repeat\(4,minmax\(0,1fr\)\)/,'Lay out family portraits responsively');
 
 assert.match(read('dist/styles.css'),/\.button,button:not\(\.tabs-scroll-cue\)\{background:var\(--gold2\)!important;color:#17232d!important;border-color:var\(--gold2\)!important\}/,'Keep action buttons consistently gold across the site');
+assert.match(read('dist/styles.css'),/\.topbar-actions \.share-app\{display:inline-flex\}/,'Keep the app sharing control visible on mobile');
+assert.match(read('dist/index.html'),/aria-label="Share AWE Faith & Service">Share<\/button>/,'Show a compact, clearly labeled share action in the header');

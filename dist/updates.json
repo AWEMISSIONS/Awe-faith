@@ -1,7 +1,15 @@
 {
-  "version": "1.2.24",
+  "version": "1.2.25",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "mobile-share-button-restored",
+      "date": "2026-10-10",
+      "category": "AWE Faith",
+      "title": "Share AWE Faith from your phone",
+      "description": "The Share button is visible in the mobile header and opens the system share menu, with a copy-link option when native sharing is unavailable.",
+      "url": "#home"
+    },
     {
       "id": "consistent-gold-action-buttons",
       "date": "2026-10-11",
