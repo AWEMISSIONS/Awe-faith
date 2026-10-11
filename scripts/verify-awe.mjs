@@ -64,12 +64,12 @@ assert.match(page,/What's New<\/span><span class="whats-new-bell"/,"Keep the Wha
 assert.doesNotMatch(page,/class="notice-bell"/,"Remove the update bell from the crowded top header");
 assert.match(read('dist/styles.css'),/\.whats-new-link\{display:inline-flex;align-items:center;gap:7px\}/,"Align the update bell with the What's New navigation label");
 assert.equal(release.version,'1.2.28');
-assert.match(page,/Version 1\.2\.27/);
+assert.match(page,/Version 1\.2\.28/);
 const topNav=page.match(/<nav id="mainNav"[^>]*>([\s\S]*?)<\/nav>/)?.[1]||'';
 assert.doesNotMatch(topNav,/href="#prayer"/,'Prayer should not repeat in the top navigation');
 assert.ok(release.items.length>=3);
-assert.match(release.version,/^1\.2\.27$/);
-assert.match(page,/Version 1\.2\.27/);
+assert.match(release.version,/^1\.2\.28$/);
+assert.match(page,/Version 1\.2\.28/);
 assert.match(app,/class="button gold resource-action" data-analytics-resource=/,"Render study and game actions as gold buttons");
 assert.doesNotMatch(app,/resumeSection|resumeLink|Continue exploring/,"Remove the Continue exploring panel logic");
 assert.ok(catalog.games.length>0);
