@@ -57,7 +57,7 @@ assert.match(page,/id="prayerIntake"/);
 assert.match(page,/id="updateDot"/);
 assert.match(page,/id="whatsNewBell" class="whats-new-link" aria-label="See what's new in AWE Faith"/,"Place the update bell beside What's New in the navigation");
 assert.match(page,/What's New<\/span><span class="whats-new-bell"/,"Keep the What's New label next to its bell");
-assert.doesNotMatch(page,/<div class="topbar-actions">[\s\S]*?<\/header>/,"Keep the update bell out of the crowded top header");
+assert.doesNotMatch(page,/class="notice-bell"/,"Remove the update bell from the crowded top header");
 assert.match(read('dist/styles.css'),/\.whats-new-link\{display:inline-flex;align-items:center;gap:7px\}/,"Align the update bell with the What's New navigation label");
 assert.equal(release.version,'1.2.26');
 assert.match(page,/Version 1\.2\.26/);
