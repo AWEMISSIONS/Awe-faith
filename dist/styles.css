@@ -52,8 +52,8 @@
 
 /* AWE Faith v1.2: clear pathways, releases, and comfortable mobile navigation */
 [hidden]{display:none!important}
-.notice-bell{position:relative;color:#fff;font-size:20px;text-decoration:none;line-height:1;display:grid;place-items:center;min-width:36px;min-height:42px}
-.notice-bell:focus-visible,.discover-tile:focus-visible,.mobile-bottom-nav a:focus-visible{outline:3px solid #e1b963;outline-offset:3px}
+.whats-new-link{display:inline-flex;align-items:center;gap:7px}.whats-new-bell{position:relative;display:inline-flex;align-items:center;font-size:15px;line-height:1}
+.whats-new-link:focus-visible,.discover-tile:focus-visible,.mobile-bottom-nav a:focus-visible{outline:3px solid #e1b963;outline-offset:3px}
 .update-dot{position:absolute;right:3px;top:5px;width:9px;height:9px;border-radius:50%;background:#f2c65b;border:2px solid #0c2a40}
 .app-panel{max-width:1100px;margin:22px auto;padding:23px 26px;border:1px solid #d9c8a3;border-radius:12px;background:#fff9ed;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .app-panel h2{font:800 23px var(--display);color:var(--navy);margin:0 0 9px}
@@ -257,3 +257,6 @@ html{scroll-padding-top:132px}
 .button:hover,button:not(.tabs-scroll-cue):hover{background:#e9bd62!important;border-color:#e9bd62!important;color:#17232d!important}
 .button:focus-visible,button:not(.tabs-scroll-cue):focus-visible{outline:3px solid #fff;outline-offset:2px}
 .button[aria-pressed=true],button[aria-pressed=true]{background:var(--gold2)!important;color:#17232d!important;border-color:var(--gold2)!important}
+
+/* Keep the update indicator attached to the What's New navigation label. */
+.whats-new-bell .update-dot{right:-3px;top:-3px;width:8px;height:8px;border-width:1px}

@@ -1,7 +1,15 @@
 {
-  "version": "1.2.25",
+  "version": "1.2.26",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "whats-new-bell-in-navigation",
+      "date": "2026-10-10",
+      "category": "AWE Faith",
+      "title": "Updates now sit beside What’s New",
+      "description": "The update bell now appears next to What’s New in the navigation, freeing space in the header while keeping the update indicator and link available.",
+      "url": "#whatsNew"
+    },
     {
       "id": "mobile-share-button-restored",
       "date": "2026-10-10",
