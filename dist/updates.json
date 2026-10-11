@@ -1,7 +1,15 @@
 {
-  "version": "1.2.23",
+  "version": "1.2.24",
   "date": "2026-10-10",
   "items": [
+    {
+      "id": "consistent-gold-action-buttons",
+      "date": "2026-10-11",
+      "category": "AWE Faith",
+      "title": "Action buttons now share one color",
+      "description": "Buttons across AWE Faith use the same gold fill and dark text for a more consistent experience.",
+      "url": "#home"
+    },
     {
       "id": "who-is-behind-awe-family-details",
       "date": "2026-10-10",

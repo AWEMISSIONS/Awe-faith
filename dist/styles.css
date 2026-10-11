@@ -250,3 +250,10 @@ html{scroll-padding-top:132px}
 .family-profile h3{color:#fff;font:700 18px/1.25 var(--display);margin:0 0 5px}
 .family-profile p{color:#c5d2da;font-size:13px;line-height:1.45;margin:0}
 @media(max-width:760px){.family-story{margin-top:18px}.family-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}.family-profile img{aspect-ratio:1/1}.family-profile-copy{padding:11px}}
+
+
+/* v1.2.24: use one gold treatment for all site action buttons. */
+.button,button:not(.tabs-scroll-cue){background:var(--gold2)!important;color:#17232d!important;border-color:var(--gold2)!important}
+.button:hover,button:not(.tabs-scroll-cue):hover{background:#e9bd62!important;border-color:#e9bd62!important;color:#17232d!important}
+.button:focus-visible,button:not(.tabs-scroll-cue):focus-visible{outline:3px solid #fff;outline-offset:2px}
+.button[aria-pressed=true],button[aria-pressed=true]{background:var(--gold2)!important;color:#17232d!important;border-color:var(--gold2)!important}

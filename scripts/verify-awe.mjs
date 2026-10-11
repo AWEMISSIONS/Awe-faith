@@ -55,13 +55,13 @@ assert.match(page,/id="newContentNotice"/);
 assert.match(page,/id="updateReady"/);
 assert.match(page,/id="prayerIntake"/);
 assert.match(page,/id="updateDot"/);
-assert.equal(release.version,'1.2.23');
-assert.match(page,/Version 1\.2\.23/);
+assert.equal(release.version,'1.2.24');
+assert.match(page,/Version 1\.2\.24/);
 const topNav=page.match(/<nav id="mainNav"[^>]*>([\s\S]*?)<\/nav>/)?.[1]||'';
 assert.doesNotMatch(topNav,/href="#prayer"/,'Prayer should not repeat in the top navigation');
 assert.ok(release.items.length>=3);
-assert.match(release.version,/^1\.2\.23$/);
-assert.match(page,/Version 1\.2\.23/);
+assert.match(release.version,/^1\.2\.24$/);
+assert.match(page,/Version 1\.2\.24/);
 assert.match(app,/class="button gold resource-action" data-analytics-resource=/,"Render study and game actions as gold buttons");
 assert.doesNotMatch(app,/resumeSection|resumeLink|Continue exploring/,"Remove the Continue exploring panel logic");
 assert.ok(catalog.games.length>0);
@@ -113,3 +113,5 @@ for(const name of ['Heath Tolley','Sommer Tolley','Bryce Tolley','Alexandria Tol
 assert.doesNotMatch(who,/href="https:\/\/awemissions\.org/,'Keep the family introduction on AWE Faith');
 assert.match(who,/href="#home">Home<\/a>/,'Use a short Home return link');
 assert.match(read('dist/styles.css'),/\.family-grid\{display:grid;grid-template-columns:repeat\(4,minmax\(0,1fr\)\)/,'Lay out family portraits responsively');
+
+assert.match(read('dist/styles.css'),/\.button,button:not\(\.tabs-scroll-cue\)\{background:var\(--gold2\)!important;color:#17232d!important;border-color:var\(--gold2\)!important\}/,'Keep action buttons consistently gold across the site');
