@@ -28,6 +28,9 @@ assert.doesNotMatch(page,/<section class="welcome">/,'Duplicate hero should be r
 assert.match(page,/Welcome! Here's how AWE Faith works/);
 assert.match(read('dist/styles.css'),/rgba\(3,17,30,0\) 51%/,'Keep upper logo and dove uncovered');
 assert.match(page,/data-page="explore"/);
+const curiousCard=page.slice(page.indexOf('<article class="path-card newcomer">'),page.indexOf('</article>',page.indexOf('<article class="path-card newcomer">')));
+assert.doesNotMatch(curiousCard,/Meet the people behind AWE/,'Keep the family introduction link out of Explore Christianity');
+assert.match(curiousCard,/href="#storyTime">Explore Stories<\/a><a href="#contact">Ask us a question/,'Link to Stories above Ask us a question');
 assert.match(page,/data-page="prayer"/);
 assert.match(page,/data-page="prayer-request"/);
 assert.match(page,/data-page="learn"/);
@@ -60,7 +63,7 @@ assert.match(page,/id="whatsNewBell" class="whats-new-link" aria-label="See what
 assert.match(page,/What's New<\/span><span class="whats-new-bell"/,"Keep the What's New label next to its bell");
 assert.doesNotMatch(page,/class="notice-bell"/,"Remove the update bell from the crowded top header");
 assert.match(read('dist/styles.css'),/\.whats-new-link\{display:inline-flex;align-items:center;gap:7px\}/,"Align the update bell with the What's New navigation label");
-assert.equal(release.version,'1.2.27');
+assert.equal(release.version,'1.2.28');
 assert.match(page,/Version 1\.2\.27/);
 const topNav=page.match(/<nav id="mainNav"[^>]*>([\s\S]*?)<\/nav>/)?.[1]||'';
 assert.doesNotMatch(topNav,/href="#prayer"/,'Prayer should not repeat in the top navigation');
