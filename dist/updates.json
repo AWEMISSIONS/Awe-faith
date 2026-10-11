@@ -1,7 +1,15 @@
 {
-  "version": "1.2.27",
-  "date": "2026-10-10",
+  "version": "1.2.28",
+  "date": "2026-10-11",
   "items": [
+    {
+      "id": "explore-christianity-stories-link",
+      "date": "2026-10-11",
+      "category": "Explore",
+      "title": "Explore Christianity now links to Stories",
+      "description": "The Explore Christianity card now links to Story Time instead of the AWE Missions introduction page.",
+      "url": "#storyTime"
+    },
     {
       "id": "consistent-explore-card-borders",
       "date": "2026-10-10",
