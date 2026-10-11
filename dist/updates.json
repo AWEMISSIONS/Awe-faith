@@ -1,7 +1,15 @@
 {
-  "version": "1.2.29",
+  "version": "1.2.30",
   "date": "2026-10-11",
   "items": [
+    {
+      "id": "social-preview-app-icon",
+      "date": "2026-10-11",
+      "category": "Sharing",
+      "title": "Shared links now show the AWE app icon",
+      "description": "Facebook and other social previews now use the AWE Faith app icon instead of selecting a personal photo.",
+      "url": "#home"
+    },
     {
       "id": "mobile-explore-border-alignment",
       "date": "2026-10-11",
