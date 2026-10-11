@@ -43,7 +43,7 @@ assert.match(page,/The Tolley family/);
 assert.match(page,/Who Is Behind A\.W\.E\.\?/);
 assert.match(page,/What A\.W\.E\. Means to Us/);
 assert.match(page,/A — Action[\s\S]*W — Worship[\s\S]*E — Encourage/);
-assert.match(page,/href="https:\/\/awemissions\.org\/about-awe-missions-leadership"/);
+assert.doesNotMatch(curiousCard,/about-awe-missions-leadership/,'Keep the external AWE introduction link out of Explore Christianity');
 assert.match(page,/id="service"/);
 assert.match(page,/id="prayer-wall"/);
 assert.match(page,/id="wallRequestForm"/);
