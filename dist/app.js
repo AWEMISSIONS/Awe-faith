@@ -18,7 +18,7 @@ const APP_SHARE_URL='https://awemissions.github.io/Awe-faith/';
 const shareMessage='Explore AWE Faith & Service for Bible study, games, and ways to serve: '+APP_SHARE_URL;
 const sharePanel=document.getElementById('sharePanel');
 function openSharePanel(){sharePanel.hidden=false;document.getElementById('closeShare').focus()}
-async function shareApp(){if(navigator.share){try{await navigator.share({title:'AWE Missions | Faith & Service',text:'Explore Bible study, games, and ways to serve with AWE Missions.',url:APP_SHARE_URL});return}catch(error){if(error&&error.name==='AbortError')return}}openSharePanel()}
+async function shareApp(){if(navigator.share){try{await navigator.share({title:'AWE Faith | A ministry of AWE Missions',text:'Explore Bible study, games, and ways to serve with AWE Missions.',url:APP_SHARE_URL});return}catch(error){if(error&&error.name==='AbortError')return}}openSharePanel()}
 document.querySelectorAll('[data-share-app]').forEach(button=>button.addEventListener('click',shareApp));
 document.getElementById('closeShare').addEventListener('click',()=>{sharePanel.hidden=true});
 document.getElementById('textShareLink').href='sms:?body='+encodeURIComponent(shareMessage);
@@ -26,7 +26,45 @@ document.getElementById('emailShareLink').href='mailto:?subject='+encodeURICompo
 document.getElementById('copyShareLink').addEventListener('click',async()=>{const input=document.getElementById('shareUrl');const status=document.getElementById('shareStatus');try{await navigator.clipboard.writeText(APP_SHARE_URL);status.textContent='App link copied. Paste it into a text or email.'}catch{input.focus();input.select();const copied=document.execCommand('copy');status.textContent=copied?'App link copied. Paste it into a text or email.':'Select and copy the app link above.'}});
 const place=document.getElementById('place');let query='food banks food pantry food drive near';function updateSearch(){const where=place.value.trim()||'me';const q=encodeURIComponent(`${query} ${where}`);document.getElementById('mapSearch').href=`https://www.google.com/maps/search/${q}`;document.getElementById('211Search').href=`https://www.211.org/search?search=${encodeURIComponent(`${query.replace(' near','')} ${where}`)}`;document.getElementById('findHelp').href=`https://www.findhelp.org/search_results/${encodeURIComponent(where)}?postal=${encodeURIComponent(where)}&term=${encodeURIComponent(query.replace(' near',''))}`}
 place.addEventListener('input',updateSearch);document.querySelectorAll('#serviceChips button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('#serviceChips button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');query=btn.dataset.query;updateSearch()}));document.getElementById('locationBtn').addEventListener('click',()=>{const hint=document.getElementById('placeHint');if(!navigator.geolocation){hint.textContent='Location is not available in this browser. Enter a city or ZIP instead.';return}hint.textContent='Finding your location…';navigator.geolocation.getCurrentPosition(pos=>{place.value=`${pos.coords.latitude.toFixed(4)},${pos.coords.longitude.toFixed(4)}`;hint.textContent='Your location is used only to build the search you choose. Nothing is saved.';updateSearch()},()=>{hint.textContent='Location permission was unavailable. Enter a city or ZIP instead.'},{timeout:9000,maximumAge:300000})});
-let installPrompt;document.getElementById('installBtn').addEventListener('click',()=>{if(!installPrompt)alert('On Android, open your browser menu and choose Install app or Add to Home screen.')});window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;const b=document.getElementById('installBtn');b.addEventListener('click',async()=>{if(!installPrompt){alert('On Android, open your browser menu and choose Install app or Add to Home screen.');return}installPrompt.prompt();await installPrompt.userChoice;installPrompt=null;b.classList.add('hidden')},{once:true})});
+let installPrompt=null;
+const installButton=document.getElementById('installBtn');
+function isInstalled(){return window.matchMedia('(display-mode: standalone)').matches||navigator.standalone===true}
+function installHelp(){
+  const ua=navigator.userAgent||'';
+  if(/Android/i.test(ua)){
+    if(/SamsungBrowser/i.test(ua))return 'In Samsung Internet, open the browser menu (☰) and choose Add page to → Home screen. You may also open this page in Chrome for an Install app prompt.';
+    if(/Chrome|CriOS/i.test(ua))return 'In Chrome, tap the three-dot menu (⋮) and choose Install app or Add to Home screen. If you opened this page inside another app, open it in Chrome first.';
+    return 'Open this page in Chrome, then choose Install app from the browser menu.';
+  }
+  if(/iPad|iPhone|iPod/i.test(ua))return 'In Safari, tap Share and choose Add to Home Screen.';
+  return 'Use your browser menu to install this app or add it to your home screen.';
+}
+function refreshInstallButton(){
+  if(!installButton)return;
+  if(isInstalled()){installButton.hidden=true;return}
+  installButton.hidden=false;
+  installButton.textContent=installPrompt?'Install app':'How to install';
+  installButton.setAttribute('aria-label',installPrompt?'Install AWE Faith':'How to install AWE Faith');
+}
+window.addEventListener('beforeinstallprompt',event=>{
+  event.preventDefault();
+  installPrompt=event;
+  refreshInstallButton();
+});
+window.addEventListener('appinstalled',()=>{installPrompt=null;refreshInstallButton()});
+installButton?.addEventListener('click',async()=>{
+  if(isInstalled()){refreshInstallButton();return}
+  if(!installPrompt){alert(installHelp());return}
+  const promptEvent=installPrompt;
+  installPrompt=null;
+  try{
+    await promptEvent.prompt();
+    const choice=await promptEvent.userChoice;
+    if(choice?.outcome!=='accepted')refreshInstallButton();
+  }catch{alert(installHelp())}
+  refreshInstallButton();
+});
+refreshInstallButton();
 
 const PRAYER_API='https://ueethdfucapmdwuananu.supabase.co/functions/v1/awe-prayer';
 async function prayerRequest(payload){
