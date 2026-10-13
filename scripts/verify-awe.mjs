@@ -127,4 +127,4 @@ assert.match(read('dist/styles.css'),/\.family-grid\{display:grid;grid-template-
 
 assert.match(read('dist/styles.css'),/\.button,button:not\(\.tabs-scroll-cue\)\{background:var\(--gold2\)!important;color:#17232d!important;border-color:var\(--gold2\)!important\}/,'Keep action buttons consistently gold across the site');
 assert.match(read('dist/styles.css'),/\.topbar-actions \.share-app\{display:inline-flex\}/,'Keep the app sharing control visible on mobile');
-assert.match(read('dist/index.html'),/aria-label="Share AWE Faith & Service">Share<\/button>/,'Show a compact, clearly labeled share action in the header');
+assert.match(read('dist/index.html'),/aria-label="Share AWE Faith">Share<\/button>/,'Show a compact, clearly labeled share action in the header');
