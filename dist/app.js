@@ -17,10 +17,11 @@ async function loadCatalog(){const status=document.getElementById('catalogStatus
 const APP_SHARE_URL='https://awemissions.github.io/Awe-faith/';
 const shareMessage='Explore AWE Faith & Service for Bible study, games, and ways to serve: '+APP_SHARE_URL;
 const sharePanel=document.getElementById('sharePanel');
-function openSharePanel(){sharePanel.hidden=false;document.getElementById('closeShare').focus()}
-async function shareApp(){if(navigator.share){try{await navigator.share({title:'AWE Faith | A ministry of AWE Missions',text:'Explore Bible study, games, and ways to serve with AWE Missions.',url:APP_SHARE_URL});return}catch(error){if(error&&error.name==='AbortError')return}}openSharePanel()}
+function openSharePanel(){sharePanel.hidden=false;document.getElementById('closeShare').focus();const qr=document.getElementById('shareQrCode');if(!qr.src){const endpoint='https://api.qrserver.com/v1/create-qr-code/?size=224x224&margin=8&data=';qr.src=endpoint+encodeURIComponent(APP_SHARE_URL);qr.addEventListener('error',()=>{document.getElementById('qrStatus').textContent='The QR code could not load. You can still copy or text the app link below.'},{once:true})}}
+function shareApp(){openSharePanel()}
 document.querySelectorAll('[data-share-app]').forEach(button=>button.addEventListener('click',shareApp));
 document.getElementById('closeShare').addEventListener('click',()=>{sharePanel.hidden=true});
+document.getElementById('nativeShareLink').addEventListener('click',async()=>{const status=document.getElementById('shareStatus');if(!navigator.share){status.textContent='This browser does not have a device share sheet. Use Copy app link, Text, or Email.';return}try{await navigator.share({title:'AWE Faith | A ministry of AWE Missions',text:'Explore Bible study, games, and ways to serve with AWE Missions.',url:APP_SHARE_URL})}catch(error){if(error&&error.name!=='AbortError')status.textContent='Could not open the device share sheet. Use one of the options below.'}});
 document.getElementById('textShareLink').href='sms:?body='+encodeURIComponent(shareMessage);
 document.getElementById('emailShareLink').href='mailto:?subject='+encodeURIComponent('AWE Faith & Service app')+'&body='+encodeURIComponent(shareMessage);
 document.getElementById('copyShareLink').addEventListener('click',async()=>{const input=document.getElementById('shareUrl');const status=document.getElementById('shareStatus');try{await navigator.clipboard.writeText(APP_SHARE_URL);status.textContent='App link copied. Paste it into a text or email.'}catch{input.focus();input.select();const copied=document.execCommand('copy');status.textContent=copied?'App link copied. Paste it into a text or email.':'Select and copy the app link above.'}});

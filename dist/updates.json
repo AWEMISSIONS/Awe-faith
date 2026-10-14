@@ -1,7 +1,15 @@
 {
-  "version": "1.2.30",
-  "date": "2026-10-11",
+  "version": "1.2.31",
+  "date": "2026-10-14",
   "items": [
+    {
+      "id": "share-app-qr-code",
+      "date": "2026-10-14",
+      "category": "Sharing",
+      "title": "Share AWE Faith with a QR code",
+      "description": "Open Share to show a QR code to someone nearby, or copy, text, email, or use the device share sheet to send the app link.",
+      "url": "#home"
+    },
     {
       "id": "social-preview-app-icon",
       "date": "2026-10-11",
