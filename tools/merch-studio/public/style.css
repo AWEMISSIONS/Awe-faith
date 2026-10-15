@@ -2,3 +2,4 @@
 :where([hidden]){display:none!important}.preview-panel{align-self:start;width:100%;position:sticky;top:15px}.canvas-wrap{flex:0 0 auto}canvas{height:auto;max-height:560px}@media(max-width:760px){.preview-panel{position:static}}
 
 .tabs{flex-wrap:wrap}.tabs button{width:calc(50% - 3px)}.exports{flex-wrap:wrap}
+.concept-review{margin:0 0 30px;padding:25px;background:#e9e8e2;border:1px solid var(--line)}.concept-review h2{font:32px Georgia;margin:8px 0}.concept-review p{max-width:900px;font-size:12px}.concept-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.concept-grid figure{margin:8px 0}.concept-grid img{display:block;width:100%;max-height:650px;object-fit:contain;background:#efefed}.concept-grid figcaption{padding:10px 0;font-size:12px;font-weight:bold;letter-spacing:2px}@media(max-width:760px){.concept-grid{grid-template-columns:1fr}}

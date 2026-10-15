@@ -153,10 +153,11 @@ const server=http.createServer(async(req,res)=>{
       json(200,await api(path,JSON.parse(raw||'{}')));return;
     }
     const preset=/^\/presets\/(forgiven|action-worship-encourage)\.json$/.test(path)?path.slice(1):null;
-    const file=preset||({'/':'index.html','/app.js':'app.js','/style.css':'style.css','/shared.mjs':'../shared.mjs'})[path];
+    const concept=/^\/concepts\/(forgiven|action-worship-encourage)\.png$/.test(path)?path.slice(1):null;
+    const file=concept||preset||({'/':'index.html','/app.js':'app.js','/style.css':'style.css','/shared.mjs':'../shared.mjs'})[path];
     if(!file){res.writeHead(404);res.end('Not found');return}
     const content=await readFile(resolve(root,'public',file));
-    res.writeHead(200,{'Content-Type':file.endsWith('.json')?'application/json':file.endsWith('.html')?'text/html; charset=utf-8':file.endsWith('.css')?'text/css':'text/javascript','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'"});res.end(content);
+    res.writeHead(200,{'Content-Type':file.endsWith('.png')?'image/png':file.endsWith('.json')?'application/json':file.endsWith('.html')?'text/html; charset=utf-8':file.endsWith('.css')?'text/css':'text/javascript','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'"});res.end(content);
   }catch(e){json(400,{error:e.message?.replace(/(shpat_|shpss_)[A-Za-z0-9]+/g,'[redacted]')||'Action failed.'})}
 });
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){

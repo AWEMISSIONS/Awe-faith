@@ -1,3 +1,7 @@
+## Corrected visual direction
+
+The studio now opens with photorealistic charcoal concepts using enormous black lettering across the back and sleeves. See corrected-concepts/README.md for the prompts and production limitations. The earlier cream presets remain available only as separate-area placement studies; they do not reproduce the corrected design.
+
 ## Prepared hoodie collection
 
 Use the prepared-design picker for FORGIVEN or ACTION / WORSHIP / ENCOURAGE. Both repeat their wording down both sleeves and include Ephesians 2:8–9 (KJV), the AWE Faith app QR code and a recreated A.W.E. Missions front logo. See [design notes](designs/README.md) for print limitations and remaining account steps. Planning prices are estimates.
