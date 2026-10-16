@@ -16,3 +16,14 @@ Saved as unpublished Printful product templates. FORGIVEN corrected October 16, 
 - Physical sample still needed for fabric contrast, QR scanning and fit/seam assessment. The exact continuous shoulder-to-sleeve reference composition is not guaranteed across independently sewn panels.
 
 Latest revision: larger PSALM and 32:1, front logo moved to upper-left pocket position. Saved to the existing FORGIVEN template; all 11 sizes retained and unpublished.
+
+## Published October 16, 2026
+
+Both products published to existing A.W.E. Missions Hostinger-connected store 17056855 (the store already containing the Missions merchandise; other store 18499643 was empty). Each has 11 variants, 2XS–6XL, and front/back mockups.
+
+- FORGIVEN: https://www.printful.com/dashboard/product-templates/published/17056855/482307371
+- ACTION / WORSHIP / ENCOURAGE: https://www.printful.com/dashboard/product-templates/published/17056855/482308114
+- Both now use the same six-unit-wide chest master manually positioned at the wearer’s upper-left pocket area.
+- Printful default 30% markup applied, rounded retail $73–$86 depending on size. Shipping/taxes additional. No physical order placed.
+- Published titles omit DRAFT. Earlier unpublished status notes are historical.
+- This confirms Printful’s Published records; independent Hostinger storefront visibility was not verified.
