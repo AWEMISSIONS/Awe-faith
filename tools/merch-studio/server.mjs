@@ -153,7 +153,7 @@ const server=http.createServer(async(req,res)=>{
       json(200,await api(path,JSON.parse(raw||'{}')));return;
     }
     const preset=/^\/presets\/(forgiven|action-worship-encourage)\.json$/.test(path)?path.slice(1):null;
-    const concept=/^\/concepts\/(forgiven|action-worship-encourage)\.png$/.test(path)?path.slice(1):null;
+    const concept=/^\/concepts\/(forgiven|action-worship-encourage|printful-worship-back|printful-forgiven-front)\.png$/.test(path)?path.slice(1):null;
     const file=concept||preset||({'/':'index.html','/app.js':'app.js','/style.css':'style.css','/shared.mjs':'../shared.mjs'})[path];
     if(!file){res.writeHead(404);res.end('Not found');return}
     const content=await readFile(resolve(root,'public',file));
