@@ -22,3 +22,5 @@ Targeted correction: The middle row must read WORSHIP with exactly seven letters
 
 Latest correction: ACTION - WORSHIP - ENCOURAGE now runs in ONE continuous line from the left sleeve across the back to the right sleeve. The three-row concept is superseded. Built-in image edit prompt: replace all stacked rows with a single sleeve-to-sleeve band, preserving the charcoal hoodie, black tall condensed lettering, verse reference and QR placeholder.
 
+Current approved direction: WORSHIP centered horizontally on the back, ACTION down the left outer sleeve, ENCOURAGE down the right outer sleeve. Built-in image edit prompt: move the sleeve words off the torso, retain oversized black lettering on charcoal, center WORSHIP below the hood, keep the Ephesians reference and QR placeholder below. This replaces the prior continuous shoulder band.
+
