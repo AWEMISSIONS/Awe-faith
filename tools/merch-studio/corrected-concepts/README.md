@@ -19,3 +19,6 @@ FORGIVEN: Photorealistic rear-view oversized washed-charcoal hoodie, dropped sho
 ACTION – WORSHIP – ENCOURAGE: Match the corrected charcoal silhouette and black ink. Replace FORGIVEN with three enormous broad rows: ACTION, WORSHIP, ENCOURAGE, extending across the back and upper sleeves. Keep the small verse reference, QR placeholder and AWE FAITH below. Preserve the photorealistic studio presentation.
 
 Targeted correction: The middle row must read WORSHIP with exactly seven letters W O R S H I P and one initial W; remove the duplicate W and re-space across the same width. Preserve the remaining composition.
+
+Latest correction: ACTION - WORSHIP - ENCOURAGE now runs in ONE continuous line from the left sleeve across the back to the right sleeve. The three-row concept is superseded. Built-in image edit prompt: replace all stacked rows with a single sleeve-to-sleeve band, preserving the charcoal hoodie, black tall condensed lettering, verse reference and QR placeholder.
+
