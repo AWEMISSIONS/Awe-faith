@@ -20,8 +20,13 @@ assert.doesNotMatch(page,/missionInviteHeading|home-mission-band/,'Remove Get to
 const missionSection=page.slice(page.indexOf('<section id="mission"'),page.indexOf('</section>',page.indexOf('<section id="mission"')));
 assert.ok(missionSection.includes('href="#whoBehindAwe">Who Is Behind A.W.E.?'),'Link to the page introducing the family behind A.W.E.');
 assert.match(missionSection,/href="#whatAweMeans">What A\.W\.E\. Means to Us/,'Link to the page explaining what A.W.E. means');
-assert.match(missionSection,/href="https:\/\/awemissions\.org\/awe-missions-christian-merchandise"[^>]*>Shop merchandise/,'Open the merchandise store directly from the navy mission section');
-assert.doesNotMatch(page,/data-page="shop"|id="shop"|Browse merchandise/,'Remove the separate merchandise page');
+assert.match(missionSection,/href="#shop">Shop merchandise/,'Open the in-app merchandise shop from the navy mission section');
+assert.match(page,/data-page="shop"/,'Add a dedicated merchandise page');
+assert.match(page,/id="shopProducts"/,'Render the merchandise product grid');
+assert.match(page,/href="#shop" aria-label="Shop AWE Missions merchandise"/,'Add Shop to the main navigation');
+assert.match(app,/shopProducts.*map\(productCard\)/,'Render products from the live catalog');
+assert.match(app,/shopifyStoreLink/,'Link the in-app shop to the Shopify storefront');
+assert.equal(catalog.store.platform,'Shopify');
 
 assert.doesNotMatch(page,/id="everythingTitle"|What would you like to do today\?/);
 assert.doesNotMatch(page,/<section class="welcome">/,'Duplicate hero should be removed');
