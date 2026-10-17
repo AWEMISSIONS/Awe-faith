@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10",
+  "updated": "2026-10-17",
   "studies": [
     {
       "id": "one-year-word",
@@ -77,5 +77,9 @@
     }
   ],
   "products": [],
-  "resources": []
+  "resources": [],
+  "store": {
+    "platform": "Shopify",
+    "url": ""
+  }
 }
