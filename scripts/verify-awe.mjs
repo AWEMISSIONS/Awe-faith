@@ -25,8 +25,8 @@ assert.match(page,/data-page="shop"/,'Add a dedicated merchandise page');
 assert.match(page,/id="shopProducts"/,'Render the merchandise product grid');
 assert.match(page,/href="#shop" aria-label="Shop AWE Missions merchandise"/,'Add Shop to the main navigation');
 assert.match(app,/shopProducts.*map\(productCard\)/,'Render products from the live catalog');
-assert.match(app,/shopifyStoreLink/,'Link the in-app shop to the Shopify storefront');
-assert.equal(catalog.store.platform,'Shopify');
+assert.match(app,/storefrontLink/,'Link the in-app shop to the Hostinger storefront');
+assert.equal(catalog.store.platform,'Hostinger');
 
 assert.doesNotMatch(page,/id="everythingTitle"|What would you like to do today\?/);
 assert.doesNotMatch(page,/<section class="welcome">/,'Duplicate hero should be removed');
