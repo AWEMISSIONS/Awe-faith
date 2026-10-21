@@ -1,7 +1,15 @@
 {
-  "version": "1.2.32",
-  "date": "2026-10-20",
+  "version": "1.2.33",
+  "date": "2026-10-21",
   "items": [
+    {
+      "id": "hostinger-shop-image-gallery",
+      "date": "2026-10-21",
+      "category": "Merchandise",
+      "title": "A smoother AWE Missions shop",
+      "description": "The in-app Shop keeps its Hostinger storefront link available and supports selectable galleries when a product has multiple images.",
+      "url": "#shop"
+    },
     {
       "id": "modern-awe-missions-shop-branding",
       "date": "2026-10-20",
