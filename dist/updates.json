@@ -1,7 +1,15 @@
 {
-  "version": "1.2.34",
+  "version": "1.2.35",
   "date": "2026-10-21",
   "items": [
+    {
+      "id": "show-front-and-back-merchandise",
+      "date": "2026-10-21",
+      "category": "Merchandise",
+      "title": "See both sides before buying",
+      "description": "Product cards now show front and back merchandise images together when both views are available.",
+      "url": "#shop"
+    },
     {
       "id": "hostinger-shop-full-catalog",
       "date": "2026-10-21",
