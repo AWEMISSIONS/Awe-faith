@@ -1,7 +1,15 @@
 {
-  "version": "1.2.31",
-  "date": "2026-10-14",
+  "version": "1.2.32",
+  "date": "2026-10-20",
   "items": [
+    {
+      "id": "modern-awe-missions-shop-branding",
+      "date": "2026-10-20",
+      "category": "AWE Missions",
+      "title": "A more welcoming AWE Missions shop",
+      "description": "The shop now carries AWE Missions branding more clearly, with a cleaner collection header and responsive product cards.",
+      "url": "#shop"
+    },
     {
       "id": "share-app-qr-code",
       "date": "2026-10-14",
