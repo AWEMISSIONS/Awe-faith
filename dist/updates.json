@@ -1,7 +1,15 @@
 {
-  "version": "1.2.35",
+  "version": "1.2.36",
   "date": "2026-10-21",
   "items": [
+    {
+      "id": "product-specific-hostinger-buy-buttons",
+      "date": "2026-10-21",
+      "category": "Merchandise",
+      "title": "Every buy button names its product",
+      "description": "The purchase button now sits inside its product card and includes that product’s name, so it is clear which Hostinger listing will open.",
+      "url": "#shop"
+    },
     {
       "id": "show-front-and-back-merchandise",
       "date": "2026-10-21",
