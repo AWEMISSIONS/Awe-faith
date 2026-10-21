@@ -1,7 +1,15 @@
 {
-  "version": "1.2.33",
+  "version": "1.2.34",
   "date": "2026-10-21",
   "items": [
+    {
+      "id": "hostinger-shop-full-catalog",
+      "date": "2026-10-21",
+      "category": "Merchandise",
+      "title": "Browse the full AWE Missions collection",
+      "description": "All 39 products currently listed in the Hostinger shop are shown in AWE Faith. Product cards include selectable photos when multiple images are available, and each Buy button opens the Hostinger product page for options and checkout.",
+      "url": "#shop"
+    },
     {
       "id": "hostinger-shop-image-gallery",
       "date": "2026-10-21",
