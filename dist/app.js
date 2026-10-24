@@ -37,7 +37,8 @@ function renderShop(c){
     const details=[item.color?'Color: '+item.color:'',Array.isArray(item.sizes)&&item.sizes.length?'Sizes: '+item.sizes.join(', '):'',item.material||''].filter(Boolean).map(escapeText).join(' · ');
     return '<article class="quick-store-feature"><div><p class="eyebrow">Free Printful Quick Store</p><h2>'+escapeText(item.title)+'</h2><p class="product-price">'+escapeText(item.price||'')+'</p><p>'+details+'</p><p class="quick-store-photo-note">'+escapeText(item.photoNote||'View product photos and available options on the product page.')+'</p></div><div class="quick-store-actions">'+(productUrl!=='#'?'<a class="button gold" href="'+escapeText(productUrl)+'" target="_blank" rel="noopener" aria-label="View front and back photos, choose options, and buy '+escapeText(item.title)+' on Printful">View photos, choose options &amp; buy this item ↗</a>':'')+(quickUrl!=='#'?'<a class="button outline" href="'+escapeText(quickUrl)+'" target="_blank" rel="noopener">Browse the Printful Quick Store ↗</a>':'')+(storeUrl!=='#'?'<a class="legacy-store-link" href="'+escapeText(storeUrl)+'" target="_blank" rel="noopener">Keep shopping the existing Hostinger collection ↗</a>':'')+'</div></article>';
   }).join('');
-  const legacyProducts=products.length?products.map(productCard).join():(quickProducts.length?'':'<p class="shop-empty">Merchandise listings are being updated. Please check back soon.</p>');
+  const shopProducts=products.map(productCard).join('');
+  const legacyProducts=products.length?shopProducts:(quickProducts.length?'':'<p class="shop-empty">Merchandise listings are being updated. Please check back soon.</p>');
   shop.innerHTML=quickCards+legacyProducts;
 }
 
