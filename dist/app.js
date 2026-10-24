@@ -12,7 +12,34 @@ const safeUrl=(value)=>{if(!String(value||'').trim())return '#';try{const u=new 
 function card(item,index){const isGame=item.kind==='game';return `<article class="resource-card"><div class="resource-icon" aria-hidden="true">${isGame?'✦':'▤'}</div><div><h3>${escapeText(item.title)}</h3><div class="resource-meta">${escapeText(item.tag||'Bible resource')} · ${escapeText(item.audience||'All ages')}</div><p>${escapeText(item.description||'Open this resource to explore.')}</p><a class="button gold resource-action" data-analytics-resource="${escapeText(item.id)}" target="_blank" rel="noopener" href="${safeUrl(item.url)}">${escapeText(item.action|| (isGame?'Play now':'Open study'))}</a></div></article>`}
 function productImages(item){const images=Array.isArray(item.images)?item.images.map((image,index)=>typeof image==='string'?{url:image,alt:(item.title||'Product')+' image '+(index+1)}:{url:image.url,alt:image.alt||((item.title||'Product')+' image '+(index+1)),side:image.side}).filter(image=>safeUrl(image.url)!=='#'):[];if(item.image&&safeUrl(item.image)!=='#'&&!images.some(image=>safeUrl(image.url)===safeUrl(item.image)))images.unshift({url:item.image,alt:item.imageAlt||item.title||'AWE Missions merchandise'});return images}
 function productCard(item){const images=productImages(item);const url=safeUrl(item.url);const gallery=images.length?'<div class="product-gallery product-gallery--sides">'+images.map((image,index)=>{const side=image.side||(images.length===2?(index===0?'Front':'Back'):(index===0?'Product view':'Additional view '+(index+1)));return '<figure class="product-view"><img src="'+escapeText(safeUrl(image.url))+'" alt="'+escapeText(image.alt||((item.title||'Product')+' '+side.toLowerCase()+' view'))+'" loading="lazy"><figcaption>'+escapeText(side)+'</figcaption></figure>'}).join('')+'</div>':'<div class="product-image-placeholder" aria-hidden="true">AWE</div>';return '<article class="product-card">'+gallery+'<div class="product-copy"><p class="product-item-label">This item</p><h2>'+escapeText(item.title)+'</h2>'+(item.price?'<p class="product-price">'+escapeText(item.price)+'</p>':'')+'<p class="product-description">'+escapeText(item.description||'AWE Missions merchandise')+'</p>'+(url!=='#'?'<a class="button gold product-buy" href="'+escapeText(url)+'" target="_blank" rel="noopener" aria-label="Choose options and buy '+escapeText(item.title)+' on Hostinger">Choose options &amp; buy this item ↗</a><p class="checkout-note">Sizes, options, order details, and secure payment are handled by Hostinger.</p>':'<span class="product-coming-soon">Coming soon</span>')+'</div></article>'}
-function renderShop(c){const products=Array.isArray(c.products)?c.products:[];const storeUrl=safeUrl(c.store&&c.store.url);const status=document.getElementById('shopStatus');const shop=document.getElementById('shopProducts');const link=document.getElementById('storefrontLink');if(storeUrl!=='#'){link.href=storeUrl;link.hidden=false;link.textContent='Browse all items on Hostinger ↗'}else{link.hidden=true}status.textContent=products.length?products.length+' '+(products.length===1?'product':'products')+' available from AWE Missions.':(storeUrl!=='#'?'Browse the current AWE Missions collection in the Hostinger shop.':'The merchandise catalog is being updated.');shop.innerHTML=products.length?products.map(productCard).join(''):(storeUrl!=='#'?'<div class="shop-empty"><p>The full collection and checkout are available through the AWE Missions Hostinger shop.</p><a class="button gold" href="'+escapeText(storeUrl)+'" target="_blank" rel="noopener">Open the Hostinger collection ↗</a></div>':'<p class="shop-empty">Merchandise listings are being updated. Please check back soon.</p>')}
+function renderShop(c){
+  const products=Array.isArray(c.products)?c.products:[];
+  const storeUrl=safeUrl(c.store&&c.store.url);
+  const quickStore=c.quickStore||{};
+  const quickUrl=safeUrl(quickStore.url);
+  const quickProducts=Array.isArray(quickStore.products)?quickStore.products:[];
+  const status=document.getElementById('shopStatus');
+  const shop=document.getElementById('shopProducts');
+  const link=document.getElementById('storefrontLink');
+  const primaryUrl=quickUrl!=='#'?quickUrl:storeUrl;
+  if(primaryUrl!=='#'){
+    link.href=primaryUrl;
+    link.hidden=false;
+    link.textContent=quickUrl!=='#'?'Shop all products on Printful ↗':'Browse the AWE Missions shop ↗';
+  }else{
+    link.hidden=true;
+  }
+  status.textContent=quickProducts.length
+    ?quickProducts.length+' '+(quickProducts.length===1?'product':'products')+' live in the free Printful Quick Store. The existing Hostinger collection remains available below.'
+    :(products.length?products.length+' products available from AWE Missions.':'The merchandise catalog is being updated.');
+  const quickCards=quickProducts.map(item=>{
+    const productUrl=safeUrl(item.url);
+    const details=[item.color?'Color: '+item.color:'',Array.isArray(item.sizes)&&item.sizes.length?'Sizes: '+item.sizes.join(', '):'',item.material||''].filter(Boolean).map(escapeText).join(' · ');
+    return '<article class="quick-store-feature"><div><p class="eyebrow">Free Printful Quick Store</p><h2>'+escapeText(item.title)+'</h2><p class="product-price">'+escapeText(item.price||'')+'</p><p>'+details+'</p><p class="quick-store-photo-note">'+escapeText(item.photoNote||'View product photos and available options on the product page.')+'</p></div><div class="quick-store-actions">'+(productUrl!=='#'?'<a class="button gold" href="'+escapeText(productUrl)+'" target="_blank" rel="noopener" aria-label="View front and back photos, choose options, and buy '+escapeText(item.title)+' on Printful">View photos, choose options &amp; buy this item ↗</a>':'')+(quickUrl!=='#'?'<a class="button outline" href="'+escapeText(quickUrl)+'" target="_blank" rel="noopener">Browse the Printful Quick Store ↗</a>':'')+(storeUrl!=='#'?'<a class="legacy-store-link" href="'+escapeText(storeUrl)+'" target="_blank" rel="noopener">Keep shopping the existing Hostinger collection ↗</a>':'')+'</div></article>';
+  }).join('');
+  const legacyProducts=products.length?products.map(productCard).join():(quickProducts.length?'':'<p class="shop-empty">Merchandise listings are being updated. Please check back soon.</p>');
+  shop.innerHTML=quickCards+legacyProducts;
+}
 
 function serviceCard(item){return `<article class="service-card"><strong>${escapeText(item.title)}</strong>${item.category?`<span>${escapeText(item.category)}</span>`:''}<p>${escapeText([item.address,item.description].filter(Boolean).join(' · '))}</p>${item.phone?`<a href="tel:${escapeText(item.phone.replace(/[^+0-9]/g,''))}">${escapeText(item.phone)}</a>`:''}${item.url?`<a href="${safeUrl(item.url)}" target="_blank" rel="noopener">More information</a>`:''}</article>`}
 function escapeText(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
