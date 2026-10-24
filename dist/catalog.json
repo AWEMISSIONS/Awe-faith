@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-24",
   "studies": [
     {
       "id": "one-year-word",
@@ -448,5 +448,29 @@
   "store": {
     "platform": "Hostinger",
     "url": "https://shop.awemissions.org/awe-missions-christian-merchandise"
+  },
+  "quickStore": {
+    "platform": "Printful Quick Store",
+    "url": "https://awemissions.printful.me/",
+    "products": [
+      {
+        "id": "pray-first-mountain-cross-washed-black-cotton-long-sleeve",
+        "title": "Pray First | Mountain Cross | Washed Black Cotton Long Sleeve",
+        "price": "$39.00",
+        "url": "https://awemissions.printful.me/product/pray-first-mountain-cross-washed-black-cotton-long-sleeve",
+        "color": "Washed Black",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "material": "100% ring-spun cotton",
+        "photoNote": "Front and back product photos are shown on the Printful product page."
+      }
+    ]
   }
 }
