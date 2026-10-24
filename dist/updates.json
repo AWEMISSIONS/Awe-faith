@@ -1,7 +1,15 @@
 {
-  "version": "1.2.36",
-  "date": "2026-10-21",
+  "version": "1.2.37",
+  "date": "2026-10-24",
   "items": [
+    {
+      "id": "free-printful-quick-store",
+      "date": "2026-10-24",
+      "category": "Merchandise",
+      "title": "AWE Missions merchandise now opens in the free Printful Quick Store",
+      "description": "AWE Faith links to the new Printful Quick Store and features the Pray First long-sleeve. Its product page shows front and back photos, the Washed Black color, sizes XS–3XL, and the tested checkout path. The existing Hostinger collection remains available.",
+      "url": "#shop"
+    },
     {
       "id": "product-specific-hostinger-buy-buttons",
       "date": "2026-10-21",
