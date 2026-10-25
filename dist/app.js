@@ -30,27 +30,32 @@ function renderShop(c){
     link.hidden=true;
   }
   status.textContent=quickProducts.length
-    ?quickProducts.length+' AWE Missions items in the free Printful Quick Store, grouped below by product type. Choose a product to see its options and checkout.'
+    ?quickProducts.length+' AWE Missions items in the free Printful Quick Store. Choose a product to see its options and checkout.'
     :(products.length?products.length+' products available from AWE Missions.':'The merchandise catalog is being updated.');
+  const renderQuickCard=item=>{
+    const productUrl=safeUrl(item.url);
+    const images=Array.isArray(item.images)?item.images:[];
+    const gallery=images.length?'<div class="quick-product-gallery'+(images.length>1?' quick-product-gallery--sides':'')+'">'+images.map((img,i)=>'<figure class="quick-product-view"><img src="'+escapeText(safeUrl(img.src))+'" alt="'+escapeText(img.alt||item.title)+'" loading="lazy"><figcaption>'+escapeText(img.side||('View '+(i+1)))+'</figcaption></figure>').join('')+'</div>':'';
+    const sizes=Array.isArray(item.sizes)&&item.sizes.length?item.sizes.join(', '):'See product page';
+    const details=['Color: '+(item.color||'See product page'),'Sizes: '+sizes].map(escapeText).join(' · ');
+    return '<article class="quick-product-card">'+gallery+'<div class="quick-product-copy"><p class="quick-product-category">Printful Quick Store</p><h2>'+escapeText(item.title)+'</h2><p class="quick-product-price">'+escapeText(item.price||'')+'</p><p class="quick-product-options">'+details+'</p>'+(productUrl!=='#'?'<a class="button gold quick-product-buy" href="'+escapeText(productUrl)+'" target="_blank" rel="noopener" aria-label="Choose size and buy '+escapeText(item.title)+' on Printful">Choose size &amp; buy this item ↗</a>':'')+'<p class="quick-product-note">Product-specific link opens this item’s photos, options, and checkout.</p></div></article>';
+  };
+  const collectionName='AWE Missions Mountain Collection';
+  const collectionItems=quickProducts.filter(item=>item.collection===collectionName);
+  const collectionSection=collectionItems.length
+    ?'<section class="quick-product-category-section mountain-collection-section" aria-labelledby="mountain-collection-title"><p class="eyebrow">Mountain-lake inspired</p><h2 id="mountain-collection-title">'+escapeText(collectionName)+'</h2><p class="mountain-collection-intro">A coordinated trio featuring the AWE Missions mountain-and-cross mark. Choose an item to see its full mockup gallery, available options, and checkout.</p><div class="quick-product-grid">'+collectionItems.map(renderQuickCard).join('')+'</div></section>'
+    :'';
+  const regularProducts=quickProducts.filter(item=>item.collection!==collectionName);
   const groups=['T-Shirts','Hoodies & Sweatshirts','Long Sleeves','Hats & Caps'];
-  const quickSections=groups.map(category=>{
-    const items=quickProducts.filter(item=>item.category===category);
+  const quickSections=collectionSection+groups.map(category=>{
+    const items=regularProducts.filter(item=>item.category===category);
     if(!items.length)return '';
-    const cards=items.map(item=>{
-      const productUrl=safeUrl(item.url);
-      const images=Array.isArray(item.images)?item.images:[];
-      const gallery=images.length?'<div class="quick-product-gallery'+(images.length>1?' quick-product-gallery--sides':'')+'">'+images.map((img,i)=>'<figure class="quick-product-view"><img src="'+escapeText(safeUrl(img.src))+'" alt="'+escapeText(img.alt||item.title)+'" loading="lazy"><figcaption>'+escapeText(img.side||('View '+(i+1)))+'</figcaption></figure>').join('')+'</div>':'';
-      const sizes=Array.isArray(item.sizes)&&item.sizes.length?item.sizes.join(', '):'See product page';
-      const details=['Color: '+(item.color||'See product page'),'Sizes: '+sizes].map(escapeText).join(' · ');
-      return '<article class="quick-product-card">'+gallery+'<div class="quick-product-copy"><p class="quick-product-category">Printful Quick Store</p><h2>'+escapeText(item.title)+'</h2><p class="quick-product-price">'+escapeText(item.price||'')+'</p><p class="quick-product-options">'+details+'</p>'+(productUrl!=='#'?'<a class="button gold quick-product-buy" href="'+escapeText(productUrl)+'" target="_blank" rel="noopener" aria-label="Choose size and buy '+escapeText(item.title)+' on Printful">Choose size &amp; buy this item ↗</a>':'')+'<p class="quick-product-note">Product-specific link opens this item’s photos, options, and checkout.</p></div></article>';
-    }).join('');
-    return '<section class="quick-product-category-section" aria-labelledby="quick-'+escapeText(category.toLowerCase().replace(/[^a-z0-9]+/g,'-'))+'"><h2 id="quick-'+escapeText(category.toLowerCase().replace(/[^a-z0-9]+/g,'-'))+'">'+escapeText(category)+'</h2><div class="quick-product-grid">'+cards+'</div></section>';
+    return '<section class="quick-product-category-section" aria-labelledby="quick-'+escapeText(category.toLowerCase().replace(/[^a-z0-9]+/g,'-'))+'"><h2 id="quick-'+escapeText(category.toLowerCase().replace(/[^a-z0-9]+/g,'-'))+'">'+escapeText(category)+'</h2><div class="quick-product-grid">'+items.map(renderQuickCard).join('')+'</div></section>';
   }).join('');
   const shopProducts=products.map(productCard).join('');
   const legacyProducts=products.length?'<section class="legacy-store-collection"><h2>Existing Hostinger collection</h2><p>The original collection remains available while the new Printful shop is being tested.</p><div class="shop-products">'+shopProducts+'</div></section>':(quickProducts.length?'':'<p class="shop-empty">Merchandise listings are being updated. Please check back soon.</p>');
   shop.innerHTML=quickSections+legacyProducts;
 }
-
 function serviceCard(item){return `<article class="service-card"><strong>${escapeText(item.title)}</strong>${item.category?`<span>${escapeText(item.category)}</span>`:''}<p>${escapeText([item.address,item.description].filter(Boolean).join(' · '))}</p>${item.phone?`<a href="tel:${escapeText(item.phone.replace(/[^+0-9]/g,''))}">${escapeText(item.phone)}</a>`:''}${item.url?`<a href="${safeUrl(item.url)}" target="_blank" rel="noopener">More information</a>`:''}</article>`}
 function escapeText(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 async function loadCatalog(){const status=document.getElementById('catalogStatus');try{const res=await fetch('./catalog.json?fresh='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('Catalog unavailable');const c=await res.json();renderShop(c);document.getElementById('studyCards').innerHTML=(c.studies||[]).map(card).join('')||'<p>New study resources are being prepared.</p>';document.getElementById('gameCards').innerHTML=(c.games||[]).map(card).join('')||'<p>New Bible games are being prepared.</p>';document.getElementById('gamesJumpCount').textContent=(c.games||[]).length+' '+((c.games||[]).length===1?'game':'games');document.getElementById('updatedDate').textContent=c.updated||'recently';document.getElementById('resourceCards').innerHTML=(c.resources||[]).map(serviceCard).join('');status.textContent='Current resources loaded';}catch(error){console.error('AWE Faith catalog load failed',error);renderShop(fallbackCatalog);document.getElementById('studyCards').innerHTML=fallbackCatalog.studies.map(card).join('');document.getElementById('gameCards').innerHTML=fallbackCatalog.games.map(card).join('');document.getElementById('gamesJumpCount').textContent=fallbackCatalog.games.length+' games';document.getElementById('resourceCards').innerHTML='';status.textContent='Showing saved resource links; live catalog could not refresh';}}
