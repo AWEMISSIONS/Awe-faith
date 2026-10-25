@@ -24,7 +24,7 @@ function renderShop(c){
   const audienceHint=document.getElementById('shopAudienceHint');
   const audienceButtons=[...document.querySelectorAll('[data-shop-audience]')];
   if(!shop)return;
-  const categoryOf=item=>item.collection?'Mountain Collection':(item.category||'Other');
+  const categoryOf=item=>item.category||(item.collection?'Mountain Collection':'Other');
   const categories=[...new Set(quickProducts.map(categoryOf))];
   const colors=[...new Set(quickProducts.map(item=>item.color).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
   if(category&&!category.dataset.ready){
