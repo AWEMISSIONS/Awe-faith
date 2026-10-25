@@ -15,21 +15,11 @@ function renderShop(c){
   const products=[];
   
   const quickStore=c.quickStore||{};
-  const quickUrl=safeUrl(quickStore.url);
   const quickProducts=Array.isArray(quickStore.products)?quickStore.products:[];
   const status=document.getElementById('shopStatus');
   const shop=document.getElementById('shopProducts');
-  const link=document.getElementById('storefrontLink');
-  const primaryUrl=quickUrl;
-  if(primaryUrl!=='#'){
-    link.href=primaryUrl;
-    link.hidden=false;
-    link.textContent=quickUrl!=='#'?'Shop all products on Printful ↗':'Browse the AWE Missions shop ↗';
-  }else{
-    link.hidden=true;
-  }
   status.textContent=quickProducts.length
-    ?quickProducts.length+' AWE Missions items in the free Printful Quick Store. Choose a product to see its options and checkout.'
+    ?quickProducts.length+' AWE Missions items. Choose one to view its options and checkout.'
     :'The merchandise catalog is being updated.';
   const renderQuickCard=item=>{
     const productUrl=safeUrl(item.url);
