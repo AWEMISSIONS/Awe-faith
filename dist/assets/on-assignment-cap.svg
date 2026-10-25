@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc"><title id="title">On Assignment black AWE Missions cap</title><desc id="desc">Front illustration of a black six-panel cotton baseball cap with white AWE Missions mountain-and-cross embroidery.</desc><defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f4f1e8"/><stop offset="1" stop-color="#e6e1d5"/></linearGradient><linearGradient id="cap" x2="0" y2="1"><stop stop-color="#292a28"/><stop offset="1" stop-color="#101110"/></linearGradient></defs><rect width="800" height="620" rx="34" fill="url(#bg)"/><ellipse cx="404" cy="500" rx="235" ry="25" fill="#c6c0b3" opacity=".5"/><path d="M184 390c7-145 77-236 220-244 137 8 205 98 212 244-54 60-116 82-212 82s-166-22-220-82Z" fill="url(#cap)" stroke="#080909" stroke-width="8"/><path d="M184 390c54 58 126 82 220 82 97 0 162-24 212-82 20 31 23 70 8 102-92 38-357 38-448 0-15-32-12-71 8-102Z" fill="#171817" stroke="#080909" stroke-width="8"/><path d="M239 300c40-89 94-128 165-139m-91 11c5 86 3 158 0 217m170-208c-4 76-2 143 1 211" fill="none" stroke="#343634" stroke-width="5" opacity=".75"/><g fill="none" stroke="#f5f3ed" stroke-linecap="round" stroke-linejoin="round"><path d="m339 359 40-42 24 23 44-54 39 73" stroke-width="9"/><path d="M447 289v70m-18-51h36" stroke-width="8"/></g><text x="444" y="396" fill="#f5f3ed" font-family="Arial,sans-serif" font-size="27" font-weight="700" text-anchor="middle" letter-spacing="4">AWE</text><text x="400" y="570" fill="#605d55" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" letter-spacing="4">AWE MISSIONS · ON ASSIGNMENT</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc">
+  <title id="title">On Assignment black AWE Missions baseball cap</title>
+  <desc id="desc">Front view of a black six-panel adjustable baseball cap with a clearly curved visor and white AWE Missions mountain-and-cross embroidery.</desc>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f4f1e8"/><stop offset="1" stop-color="#e6e1d5"/></linearGradient>
+    <linearGradient id="crown" x2="0" y2="1"><stop stop-color="#30312f"/><stop offset="1" stop-color="#151615"/></linearGradient>
+    <linearGradient id="visor" x2="0" y2="1"><stop stop-color="#222321"/><stop offset="1" stop-color="#101110"/></linearGradient>
+  </defs>
+  <rect width="800" height="620" rx="34" fill="url(#bg)"/>
+  <ellipse cx="400" cy="515" rx="250" ry="25" fill="#c6c0b3" opacity=".5"/>
+  <path d="M185 365c10-151 82-237 215-243 133 6 205 92 215 243-57 53-123 79-215 79s-158-26-215-79Z" fill="url(#crown)" stroke="#080909" stroke-width="8"/>
+  <path d="M400 123v320M260 181c-17 67-24 129-23 190m303-190c17 67 24 129 23 190" fill="none" stroke="#414340" stroke-width="5" opacity=".8"/>
+  <circle cx="400" cy="119" r="12" fill="#20211f" stroke="#090a09" stroke-width="5"/>
+  <path d="M185 365c57 54 123 79 215 79s158-25 215-79c21 27 28 56 17 83-48 48-135 76-232 76s-184-28-232-76c-11-27-4-56 17-83Z" fill="url(#visor)" stroke="#080909" stroke-width="8"/>
+  <path d="M190 402c101 74 319 74 420 0M218 438c103 64 261 64 364 0" fill="none" stroke="#353633" stroke-width="5" opacity=".9"/>
+  <g fill="none" stroke="#f5f3ed" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m338 330 40-41 23 22 43-52 38 70" stroke-width="9"/>
+    <path d="M444 274v70m-18-51h36" stroke-width="8"/>
+  </g>
+  <text x="441" y="370" fill="#f5f3ed" font-family="Arial,sans-serif" font-size="27" font-weight="700" text-anchor="middle" letter-spacing="4">AWE</text>
+  <text x="400" y="572" fill="#605d55" font-family="Arial,sans-serif" font-size="18" text-anchor="middle" letter-spacing="4">AWE MISSIONS · ON ASSIGNMENT</text>
+</svg>
