@@ -30,16 +30,25 @@ function renderShop(c){
     link.hidden=true;
   }
   status.textContent=quickProducts.length
-    ?quickProducts.length+' '+(quickProducts.length===1?'product':'products')+' live in the free Printful Quick Store. The existing Hostinger collection remains available below.'
+    ?quickProducts.length+' AWE Missions items in the free Printful Quick Store, grouped below by product type. Choose a product to see its options and checkout.'
     :(products.length?products.length+' products available from AWE Missions.':'The merchandise catalog is being updated.');
-  const quickCards=quickProducts.map(item=>{
-    const productUrl=safeUrl(item.url);
-    const details=[item.color?'Color: '+item.color:'',Array.isArray(item.sizes)&&item.sizes.length?'Sizes: '+item.sizes.join(', '):'',item.material||''].filter(Boolean).map(escapeText).join(' · ');
-    return '<article class="quick-store-feature"><div><p class="eyebrow">Free Printful Quick Store</p><h2>'+escapeText(item.title)+'</h2><p class="product-price">'+escapeText(item.price||'')+'</p><p>'+details+'</p><p class="quick-store-photo-note">'+escapeText(item.photoNote||'View product photos and available options on the product page.')+'</p></div><div class="quick-store-actions">'+(productUrl!=='#'?'<a class="button gold" href="'+escapeText(productUrl)+'" target="_blank" rel="noopener" aria-label="View front and back photos, choose options, and buy '+escapeText(item.title)+' on Printful">View photos, choose options &amp; buy this item ↗</a>':'')+(quickUrl!=='#'?'<a class="button outline" href="'+escapeText(quickUrl)+'" target="_blank" rel="noopener">Browse the Printful Quick Store ↗</a>':'')+(storeUrl!=='#'?'<a class="legacy-store-link" href="'+escapeText(storeUrl)+'" target="_blank" rel="noopener">Keep shopping the existing Hostinger collection ↗</a>':'')+'</div></article>';
+  const groups=['T-Shirts','Hoodies & Sweatshirts','Long Sleeves','Hats & Caps'];
+  const quickSections=groups.map(category=>{
+    const items=quickProducts.filter(item=>item.category===category);
+    if(!items.length)return '';
+    const cards=items.map(item=>{
+      const productUrl=safeUrl(item.url);
+      const images=Array.isArray(item.images)?item.images:[];
+      const gallery=images.length?'<div class="quick-product-gallery'+(images.length>1?' quick-product-gallery--sides':'')+'">'+images.map((img,i)=>'<figure class="quick-product-view"><img src="'+escapeText(safeUrl(img.src))+'" alt="'+escapeText(img.alt||item.title)+'" loading="lazy"><figcaption>'+escapeText(img.side||('View '+(i+1)))+'</figcaption></figure>').join('')+'</div>':'';
+      const sizes=Array.isArray(item.sizes)&&item.sizes.length?item.sizes.join(', '):'See product page';
+      const details=['Color: '+(item.color||'See product page'),'Sizes: '+sizes].map(escapeText).join(' · ');
+      return '<article class="quick-product-card">'+gallery+'<div class="quick-product-copy"><p class="quick-product-category">Printful Quick Store</p><h2>'+escapeText(item.title)+'</h2><p class="quick-product-price">'+escapeText(item.price||'')+'</p><p class="quick-product-options">'+details+'</p>'+(productUrl!=='#'?'<a class="button gold quick-product-buy" href="'+escapeText(productUrl)+'" target="_blank" rel="noopener" aria-label="Choose size and buy '+escapeText(item.title)+' on Printful">Choose size &amp; buy this item ↗</a>':'')+'<p class="quick-product-note">Product-specific link opens this item’s photos, options, and checkout.</p></div></article>';
+    }).join('');
+    return '<section class="quick-product-category-section" aria-labelledby="quick-'+escapeText(category.toLowerCase().replace(/[^a-z0-9]+/g,'-'))+'"><h2 id="quick-'+escapeText(category.toLowerCase().replace(/[^a-z0-9]+/g,'-'))+'">'+escapeText(category)+'</h2><div class="quick-product-grid">'+cards+'</div></section>';
   }).join('');
   const shopProducts=products.map(productCard).join('');
-  const legacyProducts=products.length?shopProducts:(quickProducts.length?'':'<p class="shop-empty">Merchandise listings are being updated. Please check back soon.</p>');
-  shop.innerHTML=quickCards+legacyProducts;
+  const legacyProducts=products.length?'<section class="legacy-store-collection"><h2>Existing Hostinger collection</h2><p>The original collection remains available while the new Printful shop is being tested.</p><div class="shop-products">'+shopProducts+'</div></section>':(quickProducts.length?'':'<p class="shop-empty">Merchandise listings are being updated. Please check back soon.</p>');
+  shop.innerHTML=quickSections+legacyProducts;
 }
 
 function serviceCard(item){return `<article class="service-card"><strong>${escapeText(item.title)}</strong>${item.category?`<span>${escapeText(item.category)}</span>`:''}<p>${escapeText([item.address,item.description].filter(Boolean).join(' · '))}</p>${item.phone?`<a href="tel:${escapeText(item.phone.replace(/[^+0-9]/g,''))}">${escapeText(item.phone)}</a>`:''}${item.url?`<a href="${safeUrl(item.url)}" target="_blank" rel="noopener">More information</a>`:''}</article>`}
