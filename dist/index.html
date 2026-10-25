@@ -55,6 +55,12 @@
             <p class="eyebrow">AWE Missions merchandise</p>
             <h1 id="shopTitle">Shop the collection</h1>
           </header>
+          <div class="shop-audience-toggle" role="group" aria-label="Filter merchandise by audience">
+            <button type="button" class="shop-audience-button" data-shop-audience="male" aria-pressed="false">Male</button>
+            <button type="button" class="shop-audience-button" data-shop-audience="female" aria-pressed="false">Female</button>
+            <button type="button" class="shop-audience-button is-active" data-shop-audience="all" aria-pressed="true">All</button>
+          </div>
+          <p class="shop-audience-hint">General designs appear in both men's and women's selections. Style-specific picks appear first.</p>
           <form class="shop-filters" id="shopFilters" role="search" onsubmit="return false">
             <label class="shop-search-field">Search merchandise
               <input id="shopSearch" type="search" placeholder="Try “Pray First” or “cap”" autocomplete="off">
