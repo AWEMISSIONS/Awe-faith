@@ -58,7 +58,7 @@ function renderShop(c){
       items.sort((a,b)=>(a.title||'').localeCompare(b.title||''));
     }
     if(count)count.textContent=items.length+' of '+quickProducts.length+' items';
-    shop.innerHTML=items.length?items.map(renderQuickCard).join():'<p class="shop-empty">'+(quickProducts.length?'No merchandise matches these filters. Try changing or clearing them.':'Merchandise listings are being updated. Please check back soon.')+'</p>';
+    shop.innerHTML=items.length?items.map(renderQuickCard).join(''):'<p class="shop-empty">'+(quickProducts.length?'No merchandise matches these filters. Try changing or clearing them.':'Merchandise listings are being updated. Please check back soon.')+'</p>';
   };
   if(filters&&!filters.dataset.bound){
     [search,category,color,sort].filter(Boolean).forEach(control=>control.addEventListener(control===search?'input':'change',updateResults));
