@@ -1096,6 +1096,70 @@
           }
         ],
         "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "awe-missions-mountain-collection-embroidered-cap",
+        "title": "AWE Missions Mountain Collection | Embroidered Cap",
+        "price": "$20.00",
+        "url": "https://awemissions.printful.me/product/awe-missions-mountain-collection-embroidered-cap",
+        "category": "Mountain Collection",
+        "collection": "AWE Missions Mountain Collection",
+        "color": "Black",
+        "sizes": [
+          "One size"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://awemissions.github.io/Awe-faith/assets/mountain-collection-cap.svg",
+            "alt": "Front illustration of the black embroidered AWE Missions cap"
+          }
+        ],
+        "optionsNote": "Black, one size; adjustable strap."
+      },
+      {
+        "id": "awe-missions-mountain-collection-cotton-polo",
+        "title": "AWE Missions Mountain Collection | Cotton Polo",
+        "price": "$40.00",
+        "url": "https://awemissions.printful.me/product/awe-missions-mountain-collection-cotton-polo",
+        "category": "Mountain Collection",
+        "collection": "AWE Missions Mountain Collection",
+        "color": "Sand",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://awemissions.github.io/Awe-faith/assets/mountain-collection-polo.svg",
+            "alt": "Front illustration of the sand cotton polo with Old Gold left-chest embroidery"
+          }
+        ],
+        "optionsNote": "Sand, sizes S–2XL; short-sleeve cotton polo alternative."
+      },
+      {
+        "id": "awe-missions-mountain-collection-insulated-tumbler",
+        "title": "AWE Missions Mountain Collection | Insulated Tumbler",
+        "price": "$32.00",
+        "url": "https://awemissions.printful.me/product/awe-missions-mountain-collection-insulated-tumbler",
+        "category": "Mountain Collection",
+        "collection": "AWE Missions Mountain Collection",
+        "color": "Black",
+        "sizes": [
+          "20 oz"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://awemissions.github.io/Awe-faith/assets/mountain-collection-tumbler.svg",
+            "alt": "Front illustration of the black insulated tumbler with white AWE Missions branding"
+          }
+        ],
+        "optionsNote": "Black, 20 oz; lid and stainless-steel straw."
       }
     ]
   }
