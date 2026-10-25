@@ -1,7 +1,7 @@
 {
-  "name": "AWE Faith — A ministry of AWE Missions",
-  "short_name": "AWE Faith",
-  "description": "Explore Christianity, grow in Scripture, play Bible games, and find ways to serve.",
+  "name": "AWE Missions — Action, Worship, Encourage",
+  "short_name": "AWE Missions",
+  "description": "Explore Christianity, grow in Scripture, pray, play Bible games, and find ways to serve with AWE Missions.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
