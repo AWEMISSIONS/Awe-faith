@@ -348,3 +348,5 @@ html{scroll-padding-top:132px}
 .legacy-store-collection>p{margin:-6px 0 18px;color:var(--muted)}
 @media(max-width:900px){.quick-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.quick-product-grid{grid-template-columns:1fr;gap:13px}.quick-product-card{display:grid;grid-template-columns:40% 1fr;align-items:stretch}.quick-product-gallery--sides{grid-template-columns:1fr}.quick-product-view{padding:4px}.quick-product-view figcaption{font-size:9px}.quick-product-copy{padding:13px}.quick-product-copy h2{font-size:16px}.quick-product-price{font-size:15px}.quick-product-options{font-size:12px}.quick-product-note{display:none}.quick-product-buy{font-size:12px;padding:9px 10px;min-height:38px}}
+
+.quick-product-category-section,.legacy-store-collection{grid-column:1/-1}
