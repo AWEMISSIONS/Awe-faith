@@ -1,7 +1,15 @@
 {
-  "version": "1.2.38",
+  "version": "1.2.39",
   "date": "2026-10-25",
   "items": [
+    {
+      "id": "awe-missions-mountain-collection",
+      "date": "2026-10-25",
+      "category": "Merchandise",
+      "title": "The AWE Missions Mountain Collection is live",
+      "description": "Explore a black embroidered cap, sand cotton polo, and black insulated tumbler in the Printful Quick Store. AWE Faith groups the collection with vector product illustrations and direct product links to available options and checkout. The polo is the approved alternative to the olive long-sleeve Henley, so its color and sleeve length differ from the inspiration outfit.",
+      "url": "#shop"
+    },
     {
       "id": "free-printful-quick-store",
       "date": "2026-10-24",
