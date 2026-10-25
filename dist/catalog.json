@@ -454,6 +454,71 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "on-assignment-awe-missions-embroidered-cap",
+        "title": "On Assignment | AWE Missions Embroidered Cap",
+        "price": "$24.00",
+        "url": "https://awemissions.printful.me/product/on-assignment-awe-missions-embroidered-cap",
+        "category": "Hats & Caps",
+        "collection": "AWE Missions Mountain Collection",
+        "color": "Black",
+        "sizes": [
+          "One size"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://awemissions.github.io/Awe-faith/assets/on-assignment-cap.svg",
+            "alt": "Black AWE Missions cap with white mountain-and-cross embroidery"
+          }
+        ],
+        "optionsNote": "Black, one size; adjustable cotton twill cap."
+      },
+      {
+        "id": "not-lost-led-awe-missions-hoodie",
+        "title": "Not Lost. Led. | AWE Missions Hoodie",
+        "price": "$59.00",
+        "url": "https://awemissions.printful.me/product/not-lost-led-awe-missions-hoodie",
+        "category": "Hoodies & Sweatshirts",
+        "collection": "AWE Missions Mountain Collection",
+        "color": "Military Green",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://awemissions.github.io/Awe-faith/assets/not-lost-led-hoodie.svg",
+            "alt": "Military green AWE Missions hoodie with white mountain-and-cross chest logo"
+          }
+        ],
+        "optionsNote": "Military Green, sizes S–3XL; consider ordering one size up."
+      },
+      {
+        "id": "grace-for-the-miles-awe-missions-tumbler",
+        "title": "Grace for the Miles | AWE Missions Tumbler",
+        "price": "$34.00",
+        "url": "https://awemissions.printful.me/product/grace-for-the-miles-awe-missions-tumbler",
+        "category": "Home & living",
+        "collection": "AWE Missions Mountain Collection",
+        "color": "Black",
+        "sizes": [
+          "20 oz"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://awemissions.github.io/Awe-faith/assets/grace-for-the-miles-tumbler.svg",
+            "alt": "Black stainless-steel tumbler with white AWE Missions mountain-and-cross branding"
+          }
+        ],
+        "optionsNote": "Black, 20 oz; lid and stainless-steel straw."
+      },
+      {
         "id": "mens-box-hoodie",
         "title": "Men’s box hoodie",
         "price": "$40.30",
