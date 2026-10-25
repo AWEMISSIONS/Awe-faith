@@ -19,7 +19,7 @@ function renderShop(c){
   const status=document.getElementById('shopStatus');
   const shop=document.getElementById('shopProducts');
   status.textContent=quickProducts.length
-    ?quickProducts.length+' AWE Missions items. Choose one to view its options and checkout.'
+    ?quickProducts.length+' designs available. Choose one to view options and checkout.'
     :'The merchandise catalog is being updated.';
   const renderQuickCard=item=>{
     const productUrl=safeUrl(item.url);
@@ -45,17 +45,17 @@ function renderShop(c){
 }
 function serviceCard(item){return `<article class="service-card"><strong>${escapeText(item.title)}</strong>${item.category?`<span>${escapeText(item.category)}</span>`:''}<p>${escapeText([item.address,item.description].filter(Boolean).join(' · '))}</p>${item.phone?`<a href="tel:${escapeText(item.phone.replace(/[^+0-9]/g,''))}">${escapeText(item.phone)}</a>`:''}${item.url?`<a href="${safeUrl(item.url)}" target="_blank" rel="noopener">More information</a>`:''}</article>`}
 function escapeText(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-async function loadCatalog(){const status=document.getElementById('catalogStatus');try{const res=await fetch('./catalog.json?fresh='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('Catalog unavailable');const c=await res.json();renderShop(c);document.getElementById('studyCards').innerHTML=(c.studies||[]).map(card).join('')||'<p>New study resources are being prepared.</p>';document.getElementById('gameCards').innerHTML=(c.games||[]).map(card).join('')||'<p>New Bible games are being prepared.</p>';document.getElementById('gamesJumpCount').textContent=(c.games||[]).length+' '+((c.games||[]).length===1?'game':'games');document.getElementById('updatedDate').textContent=c.updated||'recently';document.getElementById('resourceCards').innerHTML=(c.resources||[]).map(serviceCard).join('');status.textContent='Current resources loaded';}catch(error){console.error('AWE Faith catalog load failed',error);renderShop(fallbackCatalog);document.getElementById('studyCards').innerHTML=fallbackCatalog.studies.map(card).join('');document.getElementById('gameCards').innerHTML=fallbackCatalog.games.map(card).join('');document.getElementById('gamesJumpCount').textContent=fallbackCatalog.games.length+' games';document.getElementById('resourceCards').innerHTML='';status.textContent='Showing saved resource links; live catalog could not refresh';}}
+async function loadCatalog(){const status=document.getElementById('catalogStatus');try{const res=await fetch('./catalog.json?fresh='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('Catalog unavailable');const c=await res.json();renderShop(c);document.getElementById('studyCards').innerHTML=(c.studies||[]).map(card).join('')||'<p>New study resources are being prepared.</p>';document.getElementById('gameCards').innerHTML=(c.games||[]).map(card).join('')||'<p>New Bible games are being prepared.</p>';document.getElementById('gamesJumpCount').textContent=(c.games||[]).length+' '+((c.games||[]).length===1?'game':'games');document.getElementById('updatedDate').textContent=c.updated||'recently';document.getElementById('resourceCards').innerHTML=(c.resources||[]).map(serviceCard).join('');status.textContent='Current resources loaded';}catch(error){console.error('AWE Missions catalog load failed',error);renderShop(fallbackCatalog);document.getElementById('studyCards').innerHTML=fallbackCatalog.studies.map(card).join('');document.getElementById('gameCards').innerHTML=fallbackCatalog.games.map(card).join('');document.getElementById('gamesJumpCount').textContent=fallbackCatalog.games.length+' games';document.getElementById('resourceCards').innerHTML='';status.textContent='Showing saved resource links; live catalog could not refresh';}}
 const APP_SHARE_URL='https://awemissions.github.io/Awe-faith/';
-const shareMessage='Explore AWE Faith & Service for Bible study, games, and ways to serve: '+APP_SHARE_URL;
+const shareMessage='Explore AWE Missions & Service for Bible study, games, and ways to serve: '+APP_SHARE_URL;
 const sharePanel=document.getElementById('sharePanel');
 function openSharePanel(){sharePanel.hidden=false;document.getElementById('closeShare').focus();const qr=document.getElementById('shareQrCode');if(!qr.src){const endpoint='https://api.qrserver.com/v1/create-qr-code/?size=224x224&margin=8&data=';qr.src=endpoint+encodeURIComponent(APP_SHARE_URL);qr.addEventListener('error',()=>{document.getElementById('qrStatus').textContent='The QR code could not load. You can still copy or text the app link below.'},{once:true})}}
 function shareApp(){openSharePanel()}
 document.querySelectorAll('[data-share-app]').forEach(button=>button.addEventListener('click',shareApp));
 document.getElementById('closeShare').addEventListener('click',()=>{sharePanel.hidden=true});
-document.getElementById('nativeShareLink').addEventListener('click',async()=>{const status=document.getElementById('shareStatus');if(!navigator.share){status.textContent='This browser does not have a device share sheet. Use Copy app link, Text, or Email.';return}try{await navigator.share({title:'AWE Faith | A ministry of AWE Missions',text:'Explore Bible study, games, and ways to serve with AWE Missions.',url:APP_SHARE_URL})}catch(error){if(error&&error.name!=='AbortError')status.textContent='Could not open the device share sheet. Use one of the options below.'}});
+document.getElementById('nativeShareLink').addEventListener('click',async()=>{const status=document.getElementById('shareStatus');if(!navigator.share){status.textContent='This browser does not have a device share sheet. Use Copy app link, Text, or Email.';return}try{await navigator.share({title:'AWE Missions | A ministry of AWE Missions',text:'Explore Bible study, games, and ways to serve with AWE Missions.',url:APP_SHARE_URL})}catch(error){if(error&&error.name!=='AbortError')status.textContent='Could not open the device share sheet. Use one of the options below.'}});
 document.getElementById('textShareLink').href='sms:?body='+encodeURIComponent(shareMessage);
-document.getElementById('emailShareLink').href='mailto:?subject='+encodeURIComponent('AWE Faith & Service app')+'&body='+encodeURIComponent(shareMessage);
+document.getElementById('emailShareLink').href='mailto:?subject='+encodeURIComponent('AWE Missions & Service app')+'&body='+encodeURIComponent(shareMessage);
 document.getElementById('copyShareLink').addEventListener('click',async()=>{const input=document.getElementById('shareUrl');const status=document.getElementById('shareStatus');try{await navigator.clipboard.writeText(APP_SHARE_URL);status.textContent='App link copied. Paste it into a text or email.'}catch{input.focus();input.select();const copied=document.execCommand('copy');status.textContent=copied?'App link copied. Paste it into a text or email.':'Select and copy the app link above.'}});
 const place=document.getElementById('place');let query='food banks food pantry food drive near';function updateSearch(){const where=place.value.trim()||'me';const q=encodeURIComponent(`${query} ${where}`);document.getElementById('mapSearch').href=`https://www.google.com/maps/search/${q}`;document.getElementById('211Search').href=`https://www.211.org/search?search=${encodeURIComponent(`${query.replace(' near','')} ${where}`)}`;document.getElementById('findHelp').href=`https://www.findhelp.org/search_results/${encodeURIComponent(where)}?postal=${encodeURIComponent(where)}&term=${encodeURIComponent(query.replace(' near',''))}`}
 place.addEventListener('input',updateSearch);document.querySelectorAll('#serviceChips button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('#serviceChips button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');query=btn.dataset.query;updateSearch()}));document.getElementById('locationBtn').addEventListener('click',()=>{const hint=document.getElementById('placeHint');if(!navigator.geolocation){hint.textContent='Location is not available in this browser. Enter a city or ZIP instead.';return}hint.textContent='Finding your location…';navigator.geolocation.getCurrentPosition(pos=>{place.value=`${pos.coords.latitude.toFixed(4)},${pos.coords.longitude.toFixed(4)}`;hint.textContent='Your location is used only to build the search you choose. Nothing is saved.';updateSearch()},()=>{hint.textContent='Location permission was unavailable. Enter a city or ZIP instead.'},{timeout:9000,maximumAge:300000})});
@@ -77,7 +77,7 @@ function refreshInstallButton(){
   if(isInstalled()){installButton.hidden=true;return}
   installButton.hidden=false;
   installButton.textContent=installPrompt?'Install app':'How to install';
-  installButton.setAttribute('aria-label',installPrompt?'Install AWE Faith':'How to install AWE Faith');
+  installButton.setAttribute('aria-label',installPrompt?'Install AWE Missions':'How to install AWE Missions');
 }
 window.addEventListener('beforeinstallprompt',event=>{
   event.preventDefault();
@@ -207,7 +207,7 @@ requestAnimationFrame(updateTabsScrollCue);
 
 
 
-/* AWE Faith discovery, return visits, and release history. No accounts or background notifications. */
+/* AWE Missions discovery, return visits, and release history. No accounts or background notifications. */
 (function(){
   const read=(key,fallback='')=>{try{return localStorage.getItem(key)??fallback}catch{return fallback}};
   const write=(key,value)=>{try{localStorage.setItem(key,value)}catch{}};
