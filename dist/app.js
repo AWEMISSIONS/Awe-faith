@@ -12,36 +12,60 @@ const safeUrl=(value)=>{if(!String(value||'').trim())return '#';try{const u=new 
 function card(item,index){const isGame=item.kind==='game';return `<article class="resource-card"><div class="resource-icon" aria-hidden="true">${isGame?'✦':'▤'}</div><div><h3>${escapeText(item.title)}</h3><div class="resource-meta">${escapeText(item.tag||'Bible resource')} · ${escapeText(item.audience||'All ages')}</div><p>${escapeText(item.description||'Open this resource to explore.')}</p><a class="button gold resource-action" data-analytics-resource="${escapeText(item.id)}" target="_blank" rel="noopener" href="${safeUrl(item.url)}">${escapeText(item.action|| (isGame?'Play now':'Open study'))}</a></div></article>`}
 function productImages(item){const images=Array.isArray(item.images)?item.images.map((image,index)=>typeof image==='string'?{url:image,alt:(item.title||'Product')+' image '+(index+1)}:{url:image.url,alt:image.alt||((item.title||'Product')+' image '+(index+1)),side:image.side}).filter(image=>safeUrl(image.url)!=='#'):[];if(item.image&&safeUrl(item.image)!=='#'&&!images.some(image=>safeUrl(image.url)===safeUrl(item.image)))images.unshift({url:item.image,alt:item.imageAlt||item.title||'AWE Missions merchandise'});return images}
 function renderShop(c){
-  const products=[];
-  
   const quickStore=c.quickStore||{};
   const quickProducts=Array.isArray(quickStore.products)?quickStore.products:[];
-  const status=document.getElementById('shopStatus');
   const shop=document.getElementById('shopProducts');
-  status.textContent=quickProducts.length
-    ?quickProducts.length+' designs available. Choose one to view options and checkout.'
-    :'The merchandise catalog is being updated.';
+  const count=document.getElementById('shopResultCount');
+  const search=document.getElementById('shopSearch');
+  const category=document.getElementById('shopCategory');
+  const color=document.getElementById('shopColor');
+  const sort=document.getElementById('shopSort');
+  const filters=document.getElementById('shopFilters');
+  if(!shop)return;
+  const categoryOf=item=>item.collection?'Mountain Collection':(item.category||'Other');
+  const categories=[...new Set(quickProducts.map(categoryOf))];
+  const colors=[...new Set(quickProducts.map(item=>item.color).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
+  if(category&&!category.dataset.ready){
+    category.innerHTML='<option value="">All types</option>'+categories.map(value=>'<option value="'+escapeText(value)+'">'+escapeText(value)+'</option>').join('');
+    category.dataset.ready='true';
+  }
+  if(color&&!color.dataset.ready){
+    color.innerHTML='<option value="">All colors</option>'+colors.map(value=>'<option value="'+escapeText(value)+'">'+escapeText(value)+'</option>').join('');
+    color.dataset.ready='true';
+  }
   const renderQuickCard=item=>{
     const productUrl=safeUrl(item.url);
     const images=Array.isArray(item.images)?item.images:[];
     const gallery=images.length?'<div class="quick-product-gallery'+(images.length>1?' quick-product-gallery--sides':'')+'">'+images.map((img,i)=>'<figure class="quick-product-view"><img src="'+escapeText(safeUrl(img.src))+'" alt="'+escapeText(img.alt||item.title)+'" loading="lazy"><figcaption>'+escapeText(img.side||('View '+(i+1)))+'</figcaption></figure>').join('')+'</div>':'';
     const sizes=Array.isArray(item.sizes)&&item.sizes.length?item.sizes.join(', '):'See product page';
     const details=['Color: '+(item.color||'See product page'),'Sizes: '+sizes].map(escapeText).join(' · ');
-    return '<article class="quick-product-card">'+gallery+'<div class="quick-product-copy"><p class="quick-product-category">Printful Quick Store</p><h2>'+escapeText(item.title)+'</h2><p class="quick-product-price">'+escapeText(item.price||'')+'</p><p class="quick-product-options">'+details+'</p>'+(productUrl!=='#'?'<a class="button gold quick-product-buy" href="'+escapeText(productUrl)+'" target="_blank" rel="noopener" aria-label="Choose size and buy '+escapeText(item.title)+' on Printful">Choose size &amp; buy this item ↗</a>':'')+'<p class="quick-product-note">Product-specific link opens this item’s photos, options, and checkout.</p></div></article>';
+    return '<article class="quick-product-card">'+gallery+'<div class="quick-product-copy"><p class="quick-product-category">'+escapeText(categoryOf(item))+'</p><h2>'+escapeText(item.title)+'</h2><p class="quick-product-price">'+escapeText(item.price||'')+'</p><p class="quick-product-options">'+details+'</p>'+(productUrl!=='#'?'<a class="button gold quick-product-buy" href="'+escapeText(productUrl)+'" target="_blank" rel="noopener" aria-label="Choose size and buy '+escapeText(item.title)+' on Printful">Choose size &amp; buy this item ↗</a>':'')+'<p class="quick-product-note">Product-specific link opens this item’s photos, options, and checkout.</p></div></article>';
   };
-  const collectionName='AWE Missions Mountain Collection';
-  const collectionItems=quickProducts.filter(item=>item.collection===collectionName);
-  const collectionSection=collectionItems.length
-    ?'<section class="quick-product-category-section mountain-collection-section" aria-labelledby="mountain-collection-title"><p class="eyebrow">Mountain-lake inspired</p><h2 id="mountain-collection-title">'+escapeText(collectionName)+'</h2><p class="mountain-collection-intro">A coordinated collection featuring the AWE Missions mountain-and-cross mark. Choose an item to see its full mockup gallery, available options, and checkout.</p><div class="quick-product-grid">'+collectionItems.map(renderQuickCard).join('')+'</div></section>'
-    :'';
-  const regularProducts=quickProducts.filter(item=>item.collection!==collectionName);
-  const groups=['T-Shirts','Hoodies & Sweatshirts','Long Sleeves','Hats & Caps'];
-  const quickSections=collectionSection+groups.map(category=>{
-    const items=regularProducts.filter(item=>item.category===category);
-    if(!items.length)return '';
-    return '<section class="quick-product-category-section" aria-labelledby="quick-'+escapeText(category.toLowerCase().replace(/[^a-z0-9]+/g,'-'))+'"><h2 id="quick-'+escapeText(category.toLowerCase().replace(/[^a-z0-9]+/g,'-'))+'">'+escapeText(category)+'</h2><div class="quick-product-grid">'+items.map(renderQuickCard).join('')+'</div></section>';
-  }).join('');
-  shop.innerHTML=quickSections||(quickProducts.length?'':'<p class="shop-empty">Merchandise listings are being updated. Please check back soon.</p>');
+  const updateResults=()=>{
+    const query=(search?.value||'').trim().toLocaleLowerCase();
+    const chosenCategory=category?.value||'';
+    const chosenColor=color?.value||'';
+    let items=quickProducts.filter(item=>{
+      const searchable=[item.title,item.category,item.collection,item.color].filter(Boolean).join(' ').toLocaleLowerCase();
+      return (!query||searchable.includes(query))&&(!chosenCategory||categoryOf(item)===chosenCategory)&&(!chosenColor||item.color===chosenColor);
+    });
+    if(sort?.value==='price-low'||sort?.value==='price-high'){
+      items.sort((a,b)=>{
+        const price=item=>Number.parseFloat(String(item.price||'').replace(/[^0-9.]/g,''))||0;
+        return sort.value==='price-low'?price(a)-price(b):price(b)-price(a);
+      });
+    }else if(sort?.value==='name'){
+      items.sort((a,b)=>(a.title||'').localeCompare(b.title||''));
+    }
+    if(count)count.textContent=items.length+' of '+quickProducts.length+' items';
+    shop.innerHTML=items.length?items.map(renderQuickCard).join():'<p class="shop-empty">'+(quickProducts.length?'No merchandise matches these filters. Try changing or clearing them.':'Merchandise listings are being updated. Please check back soon.')+'</p>';
+  };
+  if(filters&&!filters.dataset.bound){
+    [search,category,color,sort].filter(Boolean).forEach(control=>control.addEventListener(control===search?'input':'change',updateResults));
+    filters.addEventListener('reset',()=>setTimeout(updateResults,0));
+    filters.dataset.bound='true';
+  }
+  updateResults();
 }
 function serviceCard(item){return `<article class="service-card"><strong>${escapeText(item.title)}</strong>${item.category?`<span>${escapeText(item.category)}</span>`:''}<p>${escapeText([item.address,item.description].filter(Boolean).join(' · '))}</p>${item.phone?`<a href="tel:${escapeText(item.phone.replace(/[^+0-9]/g,''))}">${escapeText(item.phone)}</a>`:''}${item.url?`<a href="${safeUrl(item.url)}" target="_blank" rel="noopener">More information</a>`:''}</article>`}
 function escapeText(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
