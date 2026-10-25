@@ -43,7 +43,7 @@ function renderShop(c){
   const collectionName='AWE Missions Mountain Collection';
   const collectionItems=quickProducts.filter(item=>item.collection===collectionName);
   const collectionSection=collectionItems.length
-    ?'<section class="quick-product-category-section mountain-collection-section" aria-labelledby="mountain-collection-title"><p class="eyebrow">Mountain-lake inspired</p><h2 id="mountain-collection-title">'+escapeText(collectionName)+'</h2><p class="mountain-collection-intro">A coordinated trio featuring the AWE Missions mountain-and-cross mark. Choose an item to see its full mockup gallery, available options, and checkout.</p><div class="quick-product-grid">'+collectionItems.map(renderQuickCard).join('')+'</div></section>'
+    ?'<section class="quick-product-category-section mountain-collection-section" aria-labelledby="mountain-collection-title"><p class="eyebrow">Mountain-lake inspired</p><h2 id="mountain-collection-title">'+escapeText(collectionName)+'</h2><p class="mountain-collection-intro">A coordinated collection featuring the AWE Missions mountain-and-cross mark. Choose an item to see its full mockup gallery, available options, and checkout.</p><div class="quick-product-grid">'+collectionItems.map(renderQuickCard).join('')+'</div></section>'
     :'';
   const regularProducts=quickProducts.filter(item=>item.collection!==collectionName);
   const groups=['T-Shirts','Hoodies & Sweatshirts','Long Sleeves','Hats & Caps'];
