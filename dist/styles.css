@@ -267,7 +267,7 @@ html{scroll-padding-top:132px}
 
 /* v1.2.32: give the AWE Missions shop a stronger, responsive brand presence. */
 .shop-page{padding:0 20px 72px;background:linear-gradient(180deg,#f5f7f8 0,#fff 380px)}
-.shop-hero{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(230px,.65fr);align-items:center;gap:28px;max-width:1180px;margin:0 auto;padding:clamp(34px,6vw,70px);min-height:350px;border:1px solid #ffffff18;border-radius:0 0 24px 24px;background:radial-gradient(ellipse at 78% 28%,#285b72 0,#15435f 28%,#071b2d 75%);box-shadow:0 24px 55px #071b2d20;overflow:hidden}
+.shop-hero{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr);align-items:center;gap:28px;max-width:1180px;margin:0 auto;padding:clamp(34px,6vw,70px);min-height:350px;border:1px solid #ffffff18;border-radius:0 0 24px 24px;background:radial-gradient(ellipse at 78% 28%,#285b72 0,#15435f 28%,#071b2d 75%);box-shadow:0 24px 55px #071b2d20;overflow:hidden}
 .shop-hero:before{content:"";position:absolute;z-index:-1;width:450px;height:450px;right:-150px;top:-245px;border:1px solid #ffffff18;border-radius:50%;box-shadow:0 0 0 36px #ffffff08,0 0 0 72px #ffffff05}
 .shop-hero-copy{position:relative;z-index:1;max-width:690px}
 .shop-hero .eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid #f4cf7945;border-radius:999px;background:#ffffff0b;color:var(--gold2);font-size:11px;letter-spacing:.13em}
