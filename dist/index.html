@@ -50,18 +50,32 @@
 </div>
     <div class="page-view page-shop" data-page="shop" hidden>
       <section id="shop" class="shop-page" aria-labelledby="shopTitle">
-        <div class="shop-hero">
-          <div class="shop-hero-copy">
-            
-            <h1 id="shopTitle">Wear the message. Share the hope.</h1>
-            <p>Faith-inspired apparel made to carry encouragement into everyday life. Every purchase supports AWE Missions and the people we serve.</p>
-          </div>
-        </div>
         <div class="shop-content-wrap">
-          <div class="shop-status-card">
-            <span class="shop-status-icon" aria-hidden="true">✦</span>
-            <div><p class="eyebrow">Browse the collection</p><p id="shopStatus" class="shop-status" role="status" aria-live="polite">New designs are being prepared.</p></div>
-          </div>
+          <header class="shop-heading">
+            <p class="eyebrow">AWE Missions merchandise</p>
+            <h1 id="shopTitle">Shop the collection</h1>
+          </header>
+          <form class="shop-filters" id="shopFilters" role="search" onsubmit="return false">
+            <label class="shop-search-field">Search merchandise
+              <input id="shopSearch" type="search" placeholder="Try “Pray First” or “cap”" autocomplete="off">
+            </label>
+            <label>Type
+              <select id="shopCategory"><option value="">All types</option></select>
+            </label>
+            <label>Color
+              <select id="shopColor"><option value="">All colors</option></select>
+            </label>
+            <label>Sort
+              <select id="shopSort">
+                <option value="featured">Featured</option>
+                <option value="price-low">Price: low to high</option>
+                <option value="price-high">Price: high to low</option>
+                <option value="name">Name: A to Z</option>
+              </select>
+            </label>
+            <button class="shop-filter-reset" id="shopReset" type="reset">Clear filters</button>
+          </form>
+          <p id="shopResultCount" class="shop-result-count" role="status" aria-live="polite"></p>
           <div id="shopProducts" class="shop-products" aria-live="polite"></div>
           <div class="shop-note"><strong>Designed with purpose</strong><p>Thanks for supporting AWE Missions and helping us share encouragement through faith-inspired merchandise.</p></div>
         </div>
