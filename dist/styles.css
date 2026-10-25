@@ -325,3 +325,26 @@ html{scroll-padding-top:132px}
 
 /* Printful Quick Store feature card in the AWE Faith shop. */
 .quick-store-feature{grid-column:1/-1;display:grid;gap:14px;margin-bottom:8px;padding:22px 24px;border:1px solid #d9e3e8;border-left:4px solid var(--gold);border-radius:16px;background:linear-gradient(115deg,#fff,#f6f8f8);box-shadow:0 8px 24px #0c2a4010}.quick-store-feature .eyebrow{margin:0 0 6px;color:#8f6722;font-size:11px;letter-spacing:.12em;text-transform:uppercase}.quick-store-feature h2{margin:0;color:var(--navy);font:700 clamp(20px,3vw,26px)/1.25 var(--display)}.quick-store-feature p{margin:8px 0;color:var(--muted);font-size:14px}.quick-store-feature .product-price{color:var(--navy);font-weight:800}.quick-store-photo-note{font-size:13px!important}.quick-store-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.quick-store-actions .button{min-height:42px}.legacy-store-link{font-size:13px;font-weight:700;color:#145573;text-decoration:underline;text-underline-offset:3px}@media(max-width:760px){.quick-store-feature{padding:18px}.quick-store-actions{align-items:stretch;flex-direction:column}.quick-store-actions .button{width:100%;text-align:center}.legacy-store-link{padding:7px 0}}
+
+
+/* AWE Missions Quick Store: grouped merchandise and product-specific checkout cards. */
+.quick-product-category-section{margin:30px 0 40px}
+.quick-product-category-section>h2,.legacy-store-collection>h2{margin:0 0 16px;color:var(--navy);font:750 clamp(23px,3vw,30px)/1.2 var(--display)}
+.quick-product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.quick-product-card{display:flex;min-width:0;flex-direction:column;overflow:hidden;border:1px solid #dfe6e9;border-radius:16px;background:#fff;box-shadow:0 9px 26px #071b2d10}
+.quick-product-gallery{display:grid;grid-template-columns:1fr;gap:8px;padding:10px;background:#f2f5f6}
+.quick-product-gallery--sides{grid-template-columns:repeat(2,minmax(0,1fr))}
+.quick-product-view{min-width:0;margin:0;padding:7px;border:1px solid #e2e8eb;border-radius:10px;background:#fff}
+.quick-product-view img{display:block;width:100%;aspect-ratio:1/1;object-fit:contain;background:#f7f8f8}
+.quick-product-view figcaption{padding-top:6px;text-align:center;color:#5f6c73;font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.quick-product-copy{display:flex;flex:1;flex-direction:column;align-items:flex-start;padding:16px}
+.quick-product-category{margin:0 0 6px;color:#8f6722;font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.quick-product-copy h2{margin:0;color:var(--navy);font:750 18px/1.3 var(--display)}
+.quick-product-price{margin:8px 0 0;color:#8f6722;font-size:17px;font-weight:800}
+.quick-product-options{margin:9px 0 15px;color:#55646c;font-size:13px;line-height:1.5}
+.quick-product-buy{width:100%;justify-content:center;margin-top:auto;text-align:center}
+.quick-product-note{margin:8px 0 0;color:#68757c;font-size:11px;line-height:1.4;text-align:center}
+.legacy-store-collection{margin:50px 0 0;padding-top:30px;border-top:1px solid #dfe6e9}
+.legacy-store-collection>p{margin:-6px 0 18px;color:var(--muted)}
+@media(max-width:900px){.quick-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.quick-product-grid{grid-template-columns:1fr;gap:13px}.quick-product-card{display:grid;grid-template-columns:40% 1fr;align-items:stretch}.quick-product-gallery--sides{grid-template-columns:1fr}.quick-product-view{padding:4px}.quick-product-view figcaption{font-size:9px}.quick-product-copy{padding:13px}.quick-product-copy h2{font-size:16px}.quick-product-price{font-size:15px}.quick-product-options{font-size:12px}.quick-product-note{display:none}.quick-product-buy{font-size:12px;padding:9px 10px;min-height:38px}}
