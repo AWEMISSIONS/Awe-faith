@@ -743,12 +743,12 @@
         "optionsNote": "Select size and review color availability on the Printful product page."
       },
       {
-        "id": "distressed-dad-hat",
-        "title": "Distressed Dad Hat",
-        "price": "$19.47",
-        "url": "https://awemissions.printful.me/product/distressed-dad-hat",
+        "id": "pray-first-mountain-cross-charcoal-dad-hat",
+        "title": "Pray First | Mountain Cross | Charcoal Dad Hat",
+        "price": "From $19.50",
+        "url": "https://awemissions.printful.me/product/pray-first-mountain-cross-charcoal-dad-hat",
         "category": "Hats & Caps",
-        "color": "As pictured",
+        "color": "Charcoal Grey",
         "sizes": [
           "One size"
         ],
@@ -756,10 +756,10 @@
           {
             "side": "Front",
             "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-396-6add4bdec1712__360",
-            "alt": "Distressed Dad Hat front"
+            "alt": "Pray First | Mountain Cross | Charcoal Dad Hat front"
           }
         ],
-        "optionsNote": "Select size and review color availability on the Printful product page."
+        "optionsNote": "Charcoal Grey, one size; adjustable cotton twill cap."
       },
       {
         "id": "pray-first-mountain-cross-washed-black-cotton-long-sleeve",
