@@ -24,9 +24,11 @@ assert.match(missionSection,/href="#shop">Shop merchandise/,'Open the in-app mer
 assert.match(page,/data-page="shop"/,'Add a dedicated merchandise page');
 assert.match(page,/id="shopProducts"/,'Render the merchandise product grid');
 assert.match(page,/href="#shop" aria-label="Shop AWE Missions merchandise"/,'Add Shop to the main navigation');
-assert.match(app,/shopProducts.*map\(productCard\)/,'Render products from the live catalog');
-assert.match(app,/storefrontLink/,'Link the in-app shop to the Hostinger storefront');
-assert.equal(catalog.store.platform,'Hostinger');
+assert.match(app,/quickProducts=Array\.isArray\(quickStore\.products\)\?quickStore\.products:\[\]/,'Render products from the live Printful catalog');
+assert.match(app,/storefrontLink/,'Link the in-app shop to Printful');
+assert.equal(catalog.quickStore.platform,'Printful Quick Store');
+assert.equal(catalog.store,undefined,'Do not expose the Hostinger storefront in AWE Faith');
+assert.equal(catalog.products.length,0,'Do not render Hostinger listings in AWE Faith');
 
 assert.doesNotMatch(page,/id="everythingTitle"|What would you like to do today\?/);
 assert.doesNotMatch(page,/<section class="welcome">/,'Duplicate hero should be removed');
