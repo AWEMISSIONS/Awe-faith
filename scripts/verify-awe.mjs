@@ -22,18 +22,21 @@ assert.ok(missionSection.includes('href="#whoBehindAwe">Who Is Behind A.W.E.?'),
 assert.match(missionSection,/href="#whatAweMeans">What A\.W\.E\. Means to Us/,'Link to the page explaining what A.W.E. means');
 assert.match(missionSection,/href="#shop">Shop merchandise/,'Open the in-app merchandise shop from the navy mission section');
 assert.match(page,/data-page="shop"/,'Add a dedicated merchandise page');
+const shopHero=page.slice(page.indexOf('<div class="shop-hero">'),page.indexOf('<div class="shop-content-wrap">'));
+assert.doesNotMatch(shopHero,/AWE Missions merchandise|shop-hero-brand/,'Avoid repeated shop branding');
+assert.ok(page.includes('<strong>AWE MISSIONS</strong><small>ACTION · WORSHIP · ENCOURAGE</small>'),'Use AWE Missions as the site identity');
 assert.match(page,/id="shopProducts"/,'Render the merchandise product grid');
-assert.match(page,/href="#shop" aria-label="Shop AWE Missions merchandise"/,'Add Shop to the main navigation');
+assert.match(page,/href="#shop" aria-label="Shop"/,'Add Shop to the main navigation');
 assert.match(app,/quickProducts=Array\.isArray\(quickStore\.products\)\?quickStore\.products:\[\]/,'Render products from the live Printful catalog');
 assert.doesNotMatch(page+app,/storefrontLink|Shop all products on Printful/,'Remove the all-products Printful hero button');
 assert.match(app,/quick-product-buy/,'Keep purchase links with individual product cards');
 assert.equal(catalog.quickStore.platform,'Printful Quick Store');
-assert.equal(catalog.store,undefined,'Do not expose the Hostinger storefront in AWE Faith');
-assert.equal(catalog.products.length,0,'Do not render Hostinger listings in AWE Faith');
+assert.equal(catalog.store,undefined,'Do not expose the Hostinger storefront in AWE Missions');
+assert.equal(catalog.products.length,0,'Do not render Hostinger listings in AWE Missions');
 
 assert.doesNotMatch(page,/id="everythingTitle"|What would you like to do today\?/);
 assert.doesNotMatch(page,/<section class="welcome">/,'Duplicate hero should be removed');
-assert.match(page,/Welcome! Here's how AWE Faith works/);
+assert.match(page,/Welcome! Here's how AWE Missions works/);
 assert.match(read('dist/styles.css'),/rgba\(3,17,30,0\) 51%/,'Keep upper logo and dove uncovered');
 assert.match(page,/data-page="explore"/);
 assert.match(page,/<meta property="og:image" content="https:\/\/awemissions\.github\.io\/Awe-faith\/icon-512\.png">/,'Use the AWE app icon for social link previews');
@@ -70,7 +73,7 @@ assert.match(page,/id="prayerIntake"/);
 assert.match(page,/id="updateDot"/);
 assert.match(read('dist/styles.css'),/\.newcomer,\.growing,\.seasoned\{border-top:4px solid #dba944\}/,'Use a consistent gold border across Explore path cards');
 assert.match(read('dist/styles.css'),/\.gospel-card\{padding:18px;gap:12px;border-left:1px solid #ead9b7;border-top:4px solid var\(--gold\)\}/,'Align the good-news card border across the top on mobile');
-assert.match(page,/id="whatsNewBell" class="whats-new-link" aria-label="See what's new in AWE Faith"/,"Place the update bell beside What's New in the navigation");
+assert.match(page,/id="whatsNewBell" class="whats-new-link" aria-label="See what's new in AWE Missions"/,"Place the update bell beside What's New in the navigation");
 assert.match(page,/What's New<\/span><span class="whats-new-bell"/,"Keep the What's New label next to its bell");
 assert.doesNotMatch(page,/class="notice-bell"/,"Remove the update bell from the crowded top header");
 assert.match(read('dist/styles.css'),/\.whats-new-link\{display:inline-flex;align-items:center;gap:7px\}/,"Align the update bell with the What's New navigation label");
@@ -114,7 +117,7 @@ for(const match of page.matchAll(/\bid="([^"]+)"/g)){allIds.set(match[1],(allIds
 for(const [id,count] of allIds)assert.equal(count,1,'Duplicate HTML id '+id);
 for(const match of page.matchAll(/href="#([^"]+)"/g)){const id=match[1];if(id)assert.ok(allIds.has(id),'Broken anchor #'+id)}
 for(const item of release.items)assert.ok(item.url && item.title && item.description,'Incomplete release entry');
-console.log('AWE Faith QA passed: scripts, links, features, catalog and release feed.');
+console.log('AWE Missions QA passed: scripts, links, features, catalog and release feed.');
 
 assert.match(read('dist/styles.css'),/\.mission\{margin-top:24px\}/,'Separate the homepage welcome banner from the mission panel with light page space');
 assert.match(read('dist/styles.css'),/@media\(max-width:760px\)\{\.mission\{padding:28px 18px 32px\}\}/,'Trim blank navy padding around the mission section on phones');
@@ -129,10 +132,10 @@ assert.match(read('dist/styles.css'),/\#study\.library\{padding-top:30px;padding
 const whoStart=page.indexOf('<section id="whoBehindAwe"'),whoEnd=page.indexOf('</section>',whoStart),who=page.slice(whoStart,whoEnd);
 assert.match(who,/Heath, Sommer, Bryce, and Alexandria Tolley/,'Include the family calling details on the local A.W.E. page');
 for(const name of ['Heath Tolley','Sommer Tolley','Bryce Tolley','Alexandria Tolley'])assert.match(who,new RegExp('alt="'+name+'"'),'Include a portrait for '+name);
-assert.doesNotMatch(who,/href="https:\/\/awemissions\.org/,'Keep the family introduction on AWE Faith');
+assert.doesNotMatch(who,/href="https:\/\/awemissions\.org/,'Keep the family introduction on AWE Missions');
 assert.match(who,/href="#home">Home<\/a>/,'Use a short Home return link');
 assert.match(read('dist/styles.css'),/\.family-grid\{display:grid;grid-template-columns:repeat\(4,minmax\(0,1fr\)\)/,'Lay out family portraits responsively');
 
 assert.match(read('dist/styles.css'),/\.button,button:not\(\.tabs-scroll-cue\)\{background:var\(--gold2\)!important;color:#17232d!important;border-color:var\(--gold2\)!important\}/,'Keep action buttons consistently gold across the site');
 assert.match(read('dist/styles.css'),/\.topbar-actions \.share-app\{display:inline-flex\}/,'Keep the app sharing control visible on mobile');
-assert.match(read('dist/index.html'),/aria-label="Share AWE Faith">Share<\/button>/,'Show a compact, clearly labeled share action in the header');
+assert.match(read('dist/index.html'),/aria-label="Share AWE Missions">Share<\/button>/,'Show a compact, clearly labeled share action in the header');
