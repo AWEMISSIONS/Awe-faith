@@ -1,7 +1,15 @@
 {
-  "version": "1.2.39",
+  "version": "1.2.40",
   "date": "2026-10-25",
   "items": [
+    {
+      "id": "awe-missions-site-branding",
+      "date": "2026-10-25",
+      "category": "AWE Missions",
+      "title": "The AWE Missions site has a unified identity",
+      "description": "The site now uses AWE Missions as its primary brand. The shop keeps its polished hero while removing the repeated logo lockup and merchandise label.",
+      "url": "#home"
+    },
     {
       "id": "awe-missions-mountain-collection",
       "date": "2026-10-25",
