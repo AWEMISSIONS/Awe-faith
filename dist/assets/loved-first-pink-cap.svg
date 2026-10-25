@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="520" viewBox="0 0 600 520" role="img" aria-labelledby="title desc">
+<title id="title">Loved First — pink vintage cap</title><desc id="desc">Front view of a washed pink cap with burgundy Loved First lettering and 1 John 4:19.</desc>
+<defs><linearGradient id="pink" x2="0" y2="1"><stop stop-color="#f38bbb"/><stop offset="1" stop-color="#d96291"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#3b1730" flood-opacity=".16"/></filter></defs>
+<rect width="600" height="520" rx="28" fill="#f6f7f7"/>
+<g filter="url(#shadow)">
+<path d="M135 344c2-139 51-239 165-252 115 13 164 113 165 252-25 34-73 56-165 56s-140-22-165-56z" fill="url(#pink)" stroke="#bc4d7c" stroke-width="4"/>
+<path d="M135 344c69 30 261 30 330 0 21 23 50 53 62 83-69 65-385 65-454 0 12-30 41-60 62-83z" fill="#dd6e9b" stroke="#b94f7d" stroke-width="4"/>
+<path d="M300 96v291" fill="none" stroke="#f7b4cf" stroke-width="3" opacity=".7"/>
+<path d="M216 122c-42 50-59 128-62 218M384 122c42 50 59 128 62 218" fill="none" stroke="#f7b4cf" stroke-width="3" opacity=".6"/>
+<ellipse cx="300" cy="94" rx="13" ry="8" fill="#d85d8c"/>
+<text x="300" y="245" text-anchor="middle" font-family="Georgia,serif" font-size="39" font-weight="900" letter-spacing=".5" fill="#67253f">LOVED FIRST</text>
+<text x="300" y="295" text-anchor="middle" font-family="Georgia,serif" font-size="25" font-weight="700" fill="#67253f">1 JOHN 4:19</text>
+<path d="M105 429c89 43 301 43 390 0" fill="none" stroke="#8e4263" stroke-width="3" opacity=".55"/>
+</g></svg>
