@@ -1,6 +1,6 @@
 {
-  "version": "1.2.37",
-  "date": "2026-10-24",
+  "version": "1.2.38",
+  "date": "2026-10-25",
   "items": [
     {
       "id": "free-printful-quick-store",
@@ -337,6 +337,13 @@
       "title": "REVEALED is in the games library",
       "description": "Explore Bible and history challenges along with the other available Scripture-centered games.",
       "url": "#games"
+    },
+    {
+      "id": "quick-store-full-catalog",
+      "date": "2026-10-25",
+      "category": "Merchandise",
+      "title": "Browse all 24 AWE Missions items by category",
+      "description": "The free Printful Quick Store catalog is now grouped into T-Shirts, Hoodies & Sweatshirts, Long Sleeves, and Hats & Caps. Each item shows its price, color, size range, product photos where available, and a product-specific link to choose options and check out. The existing Hostinger collection remains available during testing."
     }
   ]
 }
