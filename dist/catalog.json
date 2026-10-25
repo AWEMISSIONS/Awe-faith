@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "studies": [
     {
       "id": "one-year-word",
@@ -454,10 +454,625 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "mens-box-hoodie",
+        "title": "Men’s box hoodie",
+        "price": "$40.30",
+        "url": "https://awemissions.printful.me/product/mens-box-hoodie",
+        "category": "Hoodies & Sweatshirts",
+        "color": "Carbon Grey",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/c61e4112-84ce-402b-a092-050895129f56.jpg",
+            "alt": "Men’s box hoodie front"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/6fa8f3e6-757c-4382-be23-88ffdbdd7e2e.jpg",
+            "alt": "Men’s box hoodie back"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "vibe-shift-hoodie-100cotton",
+        "title": "Vibe Shift hoodie 100%cotton",
+        "price": "$40.30",
+        "url": "https://awemissions.printful.me/product/vibe-shift-hoodie-100cotton",
+        "category": "Hoodies & Sweatshirts",
+        "color": "Carbon Grey",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/348a5b2e-82dc-44d9-947b-42a4b8618a6d.jpg",
+            "alt": "Vibe Shift hoodie 100%cotton front"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/542c226c-98bc-4a3a-a4c7-6c6da98266f2.jpg",
+            "alt": "Vibe Shift hoodie 100%cotton back"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "unisex-oversized-hoodie-awemissions",
+        "title": "Unisex oversized hoodie - awemissions",
+        "price": "$50.66",
+        "url": "https://awemissions.printful.me/product/unisex-oversized-hoodie-awemissions",
+        "category": "Hoodies & Sweatshirts",
+        "color": "See product listing",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-734-6add4ccc99f0b__360",
+            "alt": "Unisex oversized hoodie - awemissions front"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "not-today-satan-james-47-black-tee",
+        "title": "Not Today Satan | James 4:7 | Black Tee",
+        "price": "$15.50",
+        "url": "https://awemissions.printful.me/product/not-today-satan-james-47-black-tee",
+        "category": "T-Shirts",
+        "color": "Black",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/6aa04019-b747-4a2b-ab67-da0449fdbdee.jpg",
+            "alt": "Not Today Satan | James 4:7 | Black Tee front"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/7837f150-36d0-437c-bed5-2212e48580af.jpg",
+            "alt": "Not Today Satan | James 4:7 | Black Tee back"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "powered-by-prayer-coffee-matthew-633-black-tee",
+        "title": "Powered by Prayer & Coffee | Matthew 6:33 | Black Tee",
+        "price": "$15.50",
+        "url": "https://awemissions.printful.me/product/powered-by-prayer-coffee-matthew-633-black-tee",
+        "category": "T-Shirts",
+        "color": "Black",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/d4639291-540a-442d-b0b8-5c2ccd142e1d.jpg",
+            "alt": "Powered by Prayer & Coffee | Matthew 6:33 | Black Tee front"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/46169754-2dba-4f44-b0b6-f2c72b9fb2ae.jpg",
+            "alt": "Powered by Prayer & Coffee | Matthew 6:33 | Black Tee back"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "awe-missions-found-luke-15-black-vintage-cap",
+        "title": "AWE Missions — FOUND — Luke 15 Black Vintage Cap",
+        "price": "$22.27",
+        "url": "https://awemissions.printful.me/product/awe-missions-found-luke-15-black-vintage-cap",
+        "category": "Hats & Caps",
+        "color": "Black",
+        "sizes": [
+          "One size"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-327-6add4ca08d3ae__360",
+            "alt": "AWE Missions — FOUND — Luke 15 Black Vintage Cap front"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "awe-missions-here-to-serve-navy-snapback-draft",
+        "title": "AWE Missions — Here to Serve — Navy Snapback",
+        "price": "$22.40",
+        "url": "https://awemissions.printful.me/product/awe-missions-here-to-serve-navy-snapback-draft",
+        "category": "Hats & Caps",
+        "color": "Navy",
+        "sizes": [
+          "One size"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-99-6add4c9c91b35__360",
+            "alt": "AWE Missions — Here to Serve — Navy Snapback front"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "awe-missions-death-lost-jesus-lives-natural-black-cap-draft",
+        "title": "AWE Missions — Death Lost, Jesus Lives — Natural Black Cap",
+        "price": "$16.33",
+        "url": "https://awemissions.printful.me/product/awe-missions-death-lost-jesus-lives-natural-black-cap-draft",
+        "category": "Hats & Caps",
+        "color": "Natural Black",
+        "sizes": [
+          "One size"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-952-6add4c95b4100__360",
+            "alt": "AWE Missions — Death Lost, Jesus Lives — Natural Black Cap front"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "awe-faith-forgiven-charcoal-oversized-hoodie",
+        "title": "AWE Faith — FORGIVEN — Charcoal Oversized Hoodie",
+        "price": "$72.93",
+        "url": "https://awemissions.printful.me/product/awe-faith-forgiven-charcoal-oversized-hoodie",
+        "category": "Hoodies & Sweatshirts",
+        "color": "Charcoal",
+        "sizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL",
+          "6XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/4f0aba07-5465-4db9-99c4-2cb76dd6143a.jpg",
+            "alt": "AWE Faith — FORGIVEN — Charcoal Oversized Hoodie front"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/3767c3ef-417f-4fe1-8e4c-073bb71ba8da.jpg",
+            "alt": "AWE Faith — FORGIVEN — Charcoal Oversized Hoodie back"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "awe-missions-follow-jesus-spruce-dad-hat-draft",
+        "title": "AWE Missions — Follow Jesus | John 8:12 — Spruce Dad Hat",
+        "price": "$19.42",
+        "url": "https://awemissions.printful.me/product/awe-missions-follow-jesus-spruce-dad-hat-draft",
+        "category": "Hats & Caps",
+        "color": "Spruce",
+        "sizes": [
+          "One size"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-206-6add4c77704d7__360",
+            "alt": "AWE Missions — Follow Jesus | John 8:12 — Spruce Dad Hat front"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "awe-missions-loved-first-pink-vintage-cap-draft",
+        "title": "AWE Missions — Loved First — Pink Vintage Cap",
+        "price": "$22.27",
+        "url": "https://awemissions.printful.me/product/awe-missions-loved-first-pink-vintage-cap-draft",
+        "category": "Hats & Caps",
+        "color": "Pink",
+        "sizes": [
+          "One size"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-327-6add4c70a578b__360",
+            "alt": "AWE Missions — Loved First — Pink Vintage Cap front"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "its-hard-to-stumble-cap-white-inside-tag-unavailable",
+        "title": "It's Hard to Stumble — Cap — White — inside tag unavailable",
+        "price": "$18.23",
+        "url": "https://awemissions.printful.me/product/its-hard-to-stumble-cap-white-inside-tag-unavailable",
+        "category": "Hats & Caps",
+        "color": "White",
+        "sizes": [
+          "One size"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-206-6add4c69614a9__360",
+            "alt": "It's Hard to Stumble — Cap — White — inside tag unavailable front"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "pray-first-black-hoodie-philippians-46",
+        "title": "Pray First | Black Hoodie | Philippians 4:6",
+        "price": "$29.42",
+        "url": "https://awemissions.printful.me/product/pray-first-black-hoodie-philippians-46",
+        "category": "Hoodies & Sweatshirts",
+        "color": "Black",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-146-6add4c605691e__360",
+            "alt": "Pray First | Black Hoodie | Philippians 4:6 front"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "garment-dyed-heavyweight-long-sleeve-shirt",
+        "title": "Garment-dyed heavyweight long-sleeve shirt",
+        "price": "$26.01",
+        "url": "https://awemissions.printful.me/product/garment-dyed-heavyweight-long-sleeve-shirt",
+        "category": "Long Sleeves",
+        "color": "See product listing",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-753-6add4c55c2e21__360",
+            "alt": "Garment-dyed heavyweight long-sleeve shirt front"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "the-storm-has-a-boss-mark-439-black-tee",
+        "title": "The Storm Has a Boss | Mark 4:39 | Black Tee",
+        "price": "$15.50",
+        "url": "https://awemissions.printful.me/product/the-storm-has-a-boss-mark-439-black-tee",
+        "category": "T-Shirts",
+        "color": "Black",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/13c00354-93a2-4a1d-a333-092ad167c809.jpg",
+            "alt": "The Storm Has a Boss | Mark 4:39 | Black Tee front"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/cb487f8f-19a5-4905-ab5e-91bb301c0995.jpg",
+            "alt": "The Storm Has a Boss | Mark 4:39 | Black Tee back"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "different-on-purpose-romans-122-black-tee",
+        "title": "Different on Purpose | Romans 12:2 | Black Tee",
+        "price": "$15.50",
+        "url": "https://awemissions.printful.me/product/different-on-purpose-romans-122-black-tee",
+        "category": "T-Shirts",
+        "color": "Black",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/155529fb-a409-4d4a-b48d-81706768464f.jpg",
+            "alt": "Different on Purpose | Romans 12:2 | Black Tee front"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/8685ef57-9a03-4c11-9194-3312f1c78b85.jpg",
+            "alt": "Different on Purpose | Romans 12:2 | Black Tee back"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "still-here-still-his-psalm-461-black-tee",
+        "title": "Still Here. Still His. | Psalm 46:1 | Black Tee",
+        "price": "$15.50",
+        "url": "https://awemissions.printful.me/product/still-here-still-his-psalm-461-black-tee",
+        "category": "T-Shirts",
+        "color": "Black",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/50e612eb-bb2a-48a1-af8a-cd6e69e05a2a.jpg",
+            "alt": "Still Here. Still His. | Psalm 46:1 | Black Tee front"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/cc58609c-555e-407d-a9a1-832792c841b0.jpg",
+            "alt": "Still Here. Still His. | Psalm 46:1 | Black Tee back"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "noah-built-it-before-it-rained-hebrews-117-black-tee",
+        "title": "Noah Built It Before It Rained | Hebrews 11:7 | Black Tee",
+        "price": "$15.50",
+        "url": "https://awemissions.printful.me/product/noah-built-it-before-it-rained-hebrews-117-black-tee",
+        "category": "T-Shirts",
+        "color": "Black",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/b4a99e8c-91eb-41c7-9705-b4a333917f04.jpg",
+            "alt": "Noah Built It Before It Rained | Hebrews 11:7 | Black Tee front"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/f88ad0ff-75d7-4b2e-9fd9-a8113f964b6a.jpg",
+            "alt": "Noah Built It Before It Rained | Hebrews 11:7 | Black Tee back"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "empty-tomb-full-hope-matthew-285-6-black-tee",
+        "title": "Empty Tomb. Full Hope. | Matthew 28:5–6 | Black Tee",
+        "price": "$15.50",
+        "url": "https://awemissions.printful.me/product/empty-tomb-full-hope-matthew-285-6-black-tee",
+        "category": "T-Shirts",
+        "color": "Black",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-71-6add4c15d4f2c__360",
+            "alt": "Empty Tomb. Full Hope. | Matthew 28:5–6 | Black Tee front"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "fishers-of-men-no-license-required-matthew-419-black-tee",
+        "title": "Fishers of Men — No License Required | Matthew 4:19 | Black Tee",
+        "price": "$15.50",
+        "url": "https://awemissions.printful.me/product/fishers-of-men-no-license-required-matthew-419-black-tee",
+        "category": "T-Shirts",
+        "color": "Black",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/15e1dc0d-7d28-4de3-bfea-8c97a675df20.jpg",
+            "alt": "Fishers of Men — No License Required | Matthew 4:19 | Black Tee front"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/6d420241-ebf4-4cf1-a41b-02222dfc398a.jpg",
+            "alt": "Fishers of Men — No License Required | Matthew 4:19 | Black Tee back"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "fear-left-the-chat-2-timothy-17-black-tee",
+        "title": "Fear Left the Chat | 2 Timothy 1:7 | Black Tee",
+        "price": "$15.50",
+        "url": "https://awemissions.printful.me/product/fear-left-the-chat-2-timothy-17-black-tee",
+        "category": "T-Shirts",
+        "color": "Black",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/37d84093-2c14-4187-9917-34aadd335714.jpg",
+            "alt": "Fear Left the Chat | 2 Timothy 1:7 | Black Tee front"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/fec4e863-b92d-4af6-92fc-c72f22f70832.jpg",
+            "alt": "Fear Left the Chat | 2 Timothy 1:7 | Black Tee back"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "prayer-is-my-pre-workout-ephesians-610-18-black-tee",
+        "title": "Prayer Is My Pre-Workout | Ephesians 6:10–18 | Black Tee",
+        "price": "$15.50",
+        "url": "https://awemissions.printful.me/product/prayer-is-my-pre-workout-ephesians-610-18-black-tee",
+        "category": "T-Shirts",
+        "color": "Black",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/b2cf8e84-1aef-4c69-aeca-6b63b2e1fb2c.jpg",
+            "alt": "Prayer Is My Pre-Workout | Ephesians 6:10–18 | Black Tee front"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/656ab7a4-f639-4d0d-8408-a2ae03ee24b3.jpg",
+            "alt": "Prayer Is My Pre-Workout | Ephesians 6:10–18 | Black Tee back"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
+        "id": "distressed-dad-hat",
+        "title": "Distressed Dad Hat",
+        "price": "$19.47",
+        "url": "https://awemissions.printful.me/product/distressed-dad-hat",
+        "category": "Hats & Caps",
+        "color": "See product listing",
+        "sizes": [
+          "One size"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-396-6add4bdec1712__360",
+            "alt": "Distressed Dad Hat front"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
+      },
+      {
         "id": "pray-first-mountain-cross-washed-black-cotton-long-sleeve",
         "title": "Pray First | Mountain Cross | Washed Black Cotton Long Sleeve",
         "price": "From $39.00",
         "url": "https://awemissions.printful.me/product/pray-first-mountain-cross-washed-black-cotton-long-sleeve",
+        "category": "Long Sleeves",
         "color": "Washed Black",
         "sizes": [
           "XS",
@@ -468,8 +1083,19 @@
           "2XL",
           "3XL"
         ],
-        "material": "100% ring-spun cotton",
-        "photoNote": "Front and back photos and size choices appear on the product page. Shipping and tax are calculated at checkout."
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191659076add238294726__825",
+            "alt": "Pray First | Mountain Cross | Washed Black Cotton Long Sleeve front"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191659076add2382b7b22__825",
+            "alt": "Pray First | Mountain Cross | Washed Black Cotton Long Sleeve back"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page."
       }
     ]
   }
