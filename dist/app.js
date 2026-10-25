@@ -53,7 +53,7 @@ function renderShop(c){
     return '<section class="quick-product-category-section" aria-labelledby="quick-'+escapeText(category.toLowerCase().replace(/[^a-z0-9]+/g,'-'))+'"><h2 id="quick-'+escapeText(category.toLowerCase().replace(/[^a-z0-9]+/g,'-'))+'">'+escapeText(category)+'</h2><div class="quick-product-grid">'+items.map(renderQuickCard).join('')+'</div></section>';
   }).join('');
   const shopProducts=products.map(productCard).join('');
-  const legacyProducts=products.length?'<section class="legacy-store-collection"><h2>Existing Hostinger collection</h2><p>The original collection remains available while the new Printful shop is being tested.</p><div class="shop-products">'+shopProducts+'</div></section>':(quickProducts.length?'':'<p class="shop-empty">Merchandise listings are being updated. Please check back soon.</p>');
+  const legacyProducts=products.length?'<section class="legacy-store-collection"><h2>Existing Hostinger collection</h2><p>The original Hostinger merchandise remains available alongside the new Printful collection.</p><div class="shop-products">'+shopProducts+'</div></section>':(quickProducts.length?'':'<p class="shop-empty">Merchandise listings are being updated. Please check back soon.</p>');
   shop.innerHTML=quickSections+legacyProducts;
 }
 function serviceCard(item){return `<article class="service-card"><strong>${escapeText(item.title)}</strong>${item.category?`<span>${escapeText(item.category)}</span>`:''}<p>${escapeText([item.address,item.description].filter(Boolean).join(' · '))}</p>${item.phone?`<a href="tel:${escapeText(item.phone.replace(/[^+0-9]/g,''))}">${escapeText(item.phone)}</a>`:''}${item.url?`<a href="${safeUrl(item.url)}" target="_blank" rel="noopener">More information</a>`:''}</article>`}
