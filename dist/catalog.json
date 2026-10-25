@@ -83,6 +83,57 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "pray-first-mountain-cross-charcoal-dad-hat",
+        "title": "Pray First | Mountain Cross | Charcoal Dad Hat",
+        "price": "From $19.50",
+        "url": "https://awemissions.printful.me/product/pray-first-mountain-cross-charcoal-dad-hat",
+        "category": "Hats & Caps",
+        "color": "Charcoal Grey",
+        "sizes": [
+          "One size"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-396-6add4bdec1712__360",
+            "alt": "Pray First | Mountain Cross | Charcoal Dad Hat front"
+          }
+        ],
+        "optionsNote": "Charcoal Grey, one size; adjustable cotton twill cap.",
+        "collection": "AWE Missions Mountain Collection"
+      },
+      {
+        "id": "pray-first-mountain-cross-washed-black-cotton-long-sleeve",
+        "title": "Pray First | Mountain Cross | Washed Black Cotton Long Sleeve",
+        "price": "From $39.00",
+        "url": "https://awemissions.printful.me/product/pray-first-mountain-cross-washed-black-cotton-long-sleeve",
+        "category": "Long Sleeves",
+        "color": "Washed Black",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191659076add238294726__825",
+            "alt": "Pray First | Mountain Cross | Washed Black Cotton Long Sleeve front"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191659076add2382b7b22__825",
+            "alt": "Pray First | Mountain Cross | Washed Black Cotton Long Sleeve back"
+          }
+        ],
+        "optionsNote": "Select size and review color availability on the Printful product page.",
+        "collection": "AWE Missions Mountain Collection"
+      },
+      {
         "id": "on-assignment-awe-missions-embroidered-cap",
         "title": "On Assignment | AWE Missions Embroidered Cap",
         "price": "$24.00",
@@ -738,55 +789,6 @@
             "side": "Back",
             "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/656ab7a4-f639-4d0d-8408-a2ae03ee24b3.jpg",
             "alt": "Prayer Is My Pre-Workout | Ephesians 6:10–18 | Black Tee back"
-          }
-        ],
-        "optionsNote": "Select size and review color availability on the Printful product page."
-      },
-      {
-        "id": "pray-first-mountain-cross-charcoal-dad-hat",
-        "title": "Pray First | Mountain Cross | Charcoal Dad Hat",
-        "price": "From $19.50",
-        "url": "https://awemissions.printful.me/product/pray-first-mountain-cross-charcoal-dad-hat",
-        "category": "Hats & Caps",
-        "color": "Charcoal Grey",
-        "sizes": [
-          "One size"
-        ],
-        "images": [
-          {
-            "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-396-6add4bdec1712__360",
-            "alt": "Pray First | Mountain Cross | Charcoal Dad Hat front"
-          }
-        ],
-        "optionsNote": "Charcoal Grey, one size; adjustable cotton twill cap."
-      },
-      {
-        "id": "pray-first-mountain-cross-washed-black-cotton-long-sleeve",
-        "title": "Pray First | Mountain Cross | Washed Black Cotton Long Sleeve",
-        "price": "From $39.00",
-        "url": "https://awemissions.printful.me/product/pray-first-mountain-cross-washed-black-cotton-long-sleeve",
-        "category": "Long Sleeves",
-        "color": "Washed Black",
-        "sizes": [
-          "XS",
-          "S",
-          "M",
-          "L",
-          "XL",
-          "2XL",
-          "3XL"
-        ],
-        "images": [
-          {
-            "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191659076add238294726__825",
-            "alt": "Pray First | Mountain Cross | Washed Black Cotton Long Sleeve front"
-          },
-          {
-            "side": "Back",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191659076add2382b7b22__825",
-            "alt": "Pray First | Mountain Cross | Washed Black Cotton Long Sleeve back"
           }
         ],
         "optionsNote": "Select size and review color availability on the Printful product page."
