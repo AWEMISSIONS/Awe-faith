@@ -1,18 +1,12 @@
 // AWE Faith public prayer intake. Only reviewed, explicitly consented material is returned.
-const allowedOrigin = "https://awemissions.github.io";
+const allowedOrigins = new Set([
+  "https://awemissions.github.io",
+  "https://awemissions.org",
+  "https://www.awemissions.org",
+]);
 const apiUrl = Deno.env.get("SUPABASE_URL") || "";
 const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
 const table = apiUrl + "/rest/v1/awe_prayer_submissions";
-const cors = {
-  "Access-Control-Allow-Origin": allowedOrigin,
-  "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-  "Access-Control-Allow-Headers": "content-type, apikey, authorization",
-  "Vary": "Origin",
-};
-const response = (status: number, obj: unknown) => new Response(JSON.stringify(obj), {
-  status,
-  headers: { ...cors, "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" }
-});
 const dbHeaders = () => ({
   "apikey": serviceKey,
   "Authorization": "Bearer " + serviceKey,
@@ -30,6 +24,23 @@ async function hashIp(ip: string) {
 }
 const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 Deno.serve(async (req: Request) => {
+  const origin = req.headers.get("origin");
+  if (origin && !allowedOrigins.has(origin)) {
+    return new Response(JSON.stringify({error:"Origin not allowed"}), {
+      status:403,
+      headers:{"Content-Type":"application/json; charset=utf-8","Vary":"Origin"}
+    });
+  }
+  const cors = {
+    "Access-Control-Allow-Origin": origin || "https://awemissions.github.io",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "content-type, apikey, authorization",
+    "Vary": "Origin",
+  };
+  const response = (status: number, obj: unknown) => new Response(JSON.stringify(obj), {
+    status,
+    headers: { ...cors, "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" }
+  });
   if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
   if (!apiUrl || !serviceKey) return response(503, {error:"Prayer service is not configured"});
   // Browser-origin restriction limits unintended embeds. Server-side abuse is handled by throttling below.
