@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "studies": [
     {
       "id": "one-year-word",
@@ -229,7 +229,7 @@
       },
       {
         "id": "vibe-shift-hoodie-100cotton",
-        "title": "Vibe Shift hoodie 100%cotton",
+        "title": "Vibe Shift Hoodie",
         "price": "$40.30",
         "url": "https://awemissions.printful.me/product/vibe-shift-hoodie-100cotton",
         "category": "Hoodies & Sweatshirts",
@@ -246,12 +246,12 @@
           {
             "side": "Front",
             "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/348a5b2e-82dc-44d9-947b-42a4b8618a6d.jpg",
-            "alt": "Vibe Shift hoodie 100%cotton front"
+            "alt": "Vibe Shift Hoodie front"
           },
           {
             "side": "Back",
             "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/542c226c-98bc-4a3a-a4c7-6c6da98266f2.jpg",
-            "alt": "Vibe Shift hoodie 100%cotton back"
+            "alt": "Vibe Shift Hoodie back"
           }
         ],
         "optionsNote": "Select size and review color availability on the Printful product page."
@@ -301,12 +301,12 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/6aa04019-b747-4a2b-ab67-da0449fdbdee.jpg",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/7837f150-36d0-437c-bed5-2212e48580af.jpg",
             "alt": "Not Today Satan | James 4:7 | Black Tee front"
           },
           {
             "side": "Back",
-            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/7837f150-36d0-437c-bed5-2212e48580af.jpg",
+            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/6aa04019-b747-4a2b-ab67-da0449fdbdee.jpg",
             "alt": "Not Today Satan | James 4:7 | Black Tee back"
           }
         ],
