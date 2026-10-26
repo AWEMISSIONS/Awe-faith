@@ -1,7 +1,15 @@
 {
-  "version": "1.2.40",
-  "date": "2026-10-25",
+  "version": "1.2.41",
+  "date": "2026-10-26",
   "items": [
+    {
+      "id": "prayer-wall-home-install-qa",
+      "date": "2026-10-26",
+      "category": "App improvements",
+      "title": "Prayer Wall and install help are ready on awemissions.org",
+      "description": "The Prayer Wall now works from the custom domain. The home page includes activity shortcuts, and installation help gives browser-specific steps. Shop categories and product options reflect the current collection.",
+      "url": "#prayer-wall"
+    },
     {
       "id": "awe-missions-site-branding",
       "date": "2026-10-25",
@@ -19,43 +27,11 @@
       "url": "#shop"
     },
     {
-      "id": "free-printful-quick-store",
-      "date": "2026-10-24",
-      "category": "Merchandise",
-      "title": "AWE Missions merchandise now opens in the free Printful Quick Store",
-      "description": "AWE Faith links to the new Printful Quick Store and features the Pray First long-sleeve. Its product page shows front and back photos, the Washed Black color, sizes XS–3XL, and the tested checkout path. The existing Hostinger collection remains available.",
-      "url": "#shop"
-    },
-    {
-      "id": "product-specific-hostinger-buy-buttons",
-      "date": "2026-10-21",
-      "category": "Merchandise",
-      "title": "Every buy button names its product",
-      "description": "The purchase button now sits inside its product card and includes that product’s name, so it is clear which Hostinger listing will open.",
-      "url": "#shop"
-    },
-    {
       "id": "show-front-and-back-merchandise",
       "date": "2026-10-21",
       "category": "Merchandise",
       "title": "See both sides before buying",
       "description": "Product cards now show front and back merchandise images together when both views are available.",
-      "url": "#shop"
-    },
-    {
-      "id": "hostinger-shop-full-catalog",
-      "date": "2026-10-21",
-      "category": "Merchandise",
-      "title": "Browse the full AWE Missions collection",
-      "description": "All 39 products currently listed in the Hostinger shop are shown in AWE Faith. Product cards include selectable photos when multiple images are available, and each Buy button opens the Hostinger product page for options and checkout.",
-      "url": "#shop"
-    },
-    {
-      "id": "hostinger-shop-image-gallery",
-      "date": "2026-10-21",
-      "category": "Merchandise",
-      "title": "A smoother AWE Missions shop",
-      "description": "The in-app Shop keeps its Hostinger storefront link available and supports selectable galleries when a product has multiple images.",
       "url": "#shop"
     },
     {
@@ -353,14 +329,6 @@
       "title": "REVEALED is in the games library",
       "description": "Explore Bible and history challenges along with the other available Scripture-centered games.",
       "url": "#games"
-    },
-    {
-      "id": "quick-store-full-catalog",
-      "date": "2026-10-25",
-      "category": "Merchandise",
-      "title": "Browse all 24 AWE Missions items by category",
-      "description": "The free Printful Quick Store catalog is now grouped into T-Shirts, Hoodies & Sweatshirts, Long Sleeves, and Hats & Caps. Each item shows its price, color, size range, product photos where available, and a product-specific link to choose options and check out. The existing Hostinger collection remains available during testing.",
-      "url": "https://awemissions.github.io/Awe-faith/#shop"
     }
   ]
 }
