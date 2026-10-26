@@ -43,9 +43,6 @@ Deno.serve(async (req: Request) => {
   });
   if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: cors });
   if (!apiUrl || !serviceKey) return response(503, {error:"Prayer service is not configured"});
-  // Browser-origin restriction limits unintended embeds. Server-side abuse is handled by throttling below.
-  const origin = req.headers.get("origin");
-  if (origin && origin !== allowedOrigin) return response(403,{error:"Origin not allowed"});
   try {
     if (req.method === "GET") {
       const prayers = await selectRows("select=id,name,title,body,created_at&kind=eq.prayer&status=eq.approved&public_consent=eq.true&order=created_at.desc&limit=40");
