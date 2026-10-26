@@ -122,6 +122,22 @@ function installHelp(){
   if(/iPad|iPhone|iPod/i.test(ua))return 'In Safari, tap Share and choose Add to Home Screen.';
   return 'Use your browser menu to install this app or add it to your home screen.';
 }
+function showInstallHelp(){
+  const panel=document.getElementById("installHelpPanel");
+  const text=document.getElementById("installHelpText");
+  if(!panel||!text)return;
+  text.textContent=installHelp();
+  panel.hidden=false;
+  document.getElementById("closeInstallHelp")?.focus();
+}
+function closeInstallHelp(){
+  const panel=document.getElementById("installHelpPanel");
+  if(!panel||panel.hidden)return;
+  panel.hidden=true;
+  installButton?.focus();
+}
+document.getElementById("closeInstallHelp")?.addEventListener("click",closeInstallHelp);
+document.addEventListener("keydown",event=>{if(event.key==="Escape")closeInstallHelp()});
 function refreshInstallButton(){
   if(!installButton)return;
   if(isInstalled()){installButton.hidden=true;return}
@@ -137,14 +153,14 @@ window.addEventListener('beforeinstallprompt',event=>{
 window.addEventListener('appinstalled',()=>{installPrompt=null;refreshInstallButton()});
 installButton?.addEventListener('click',async()=>{
   if(isInstalled()){refreshInstallButton();return}
-  if(!installPrompt){alert(installHelp());return}
+  if(!installPrompt){showInstallHelp();return}
   const promptEvent=installPrompt;
   installPrompt=null;
   try{
     await promptEvent.prompt();
     const choice=await promptEvent.userChoice;
     if(choice?.outcome!=='accepted')refreshInstallButton();
-  }catch{alert(installHelp())}
+  }catch{showInstallHelp()}
   refreshInstallButton();
 });
 refreshInstallButton();
