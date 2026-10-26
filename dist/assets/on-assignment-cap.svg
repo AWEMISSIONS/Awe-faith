@@ -1,22 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc">
   <title id="title">On Assignment black AWE Missions baseball cap</title>
-  <desc id="desc">Front view of a black six-panel adjustable baseball cap with a broad curved visor and white AWE Missions mountain-and-cross embroidery.</desc>
+  <desc id="desc">Front view of a structured black six-panel baseball cap. A distinct curved visor projects below the crown, with white AWE Missions mountain-and-cross embroidery on the front.</desc>
   <defs>
     <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f4f1e8"/><stop offset="1" stop-color="#e6e1d5"/></linearGradient>
-    <linearGradient id="crown" x2="0" y2="1"><stop stop-color="#30312f"/><stop offset="1" stop-color="#151615"/></linearGradient>
-    <linearGradient id="visor" x2="0" y2="1"><stop stop-color="#252624"/><stop offset="1" stop-color="#101110"/></linearGradient>
+    <linearGradient id="crown" x2="0" y2="1"><stop stop-color="#343633"/><stop offset="1" stop-color="#171816"/></linearGradient>
+    <linearGradient id="visor" x2="0" y2="1"><stop stop-color="#41433f"/><stop offset="1" stop-color="#20221f"/></linearGradient>
   </defs>
   <rect width="800" height="620" rx="34" fill="url(#bg)"/>
   <ellipse cx="400" cy="550" rx="250" ry="24" fill="#c6c0b3" opacity=".5"/>
-  <path d="M205 392c8-151 78-229 195-239 117 10 187 88 195 239-49 39-112 57-195 57s-146-18-195-57Z" fill="url(#crown)" stroke="#080909" stroke-width="8"/>
-  <path d="M400 157v290m-127-248c-16 59-22 121-21 184m275-184c16 59 22 121 21 184" fill="none" stroke="#414340" stroke-width="5" opacity=".8"/>
-  <circle cx="400" cy="153" r="12" fill="#20211f" stroke="#090a09" stroke-width="5"/>
-  <path d="M205 392c49 39 112 57 195 57s146-18 195-57c25 26 28 57 5 86-46 42-124 65-200 65s-154-23-200-65c-23-29-20-60 5-86Z" fill="url(#visor)" stroke="#080909" stroke-width="8"/>
-  <path d="M199 466c99 61 303 61 402 0M236 500c89 43 239 43 328 0" fill="none" stroke="#3b3c39" stroke-width="5" opacity=".9"/>
+  <path d="M205 382c8-146 78-220 195-230 117 10 187 84 195 230-49 34-112 51-195 51s-146-17-195-51Z" fill="url(#crown)" stroke="#080909" stroke-width="8"/>
+  <path d="M400 155v278m-127-240c-16 56-22 115-21 174m275-174c16 56 22 115 21 174" fill="none" stroke="#555751" stroke-width="5" opacity=".85"/>
+  <circle cx="400" cy="151" r="12" fill="#242522" stroke="#090a09" stroke-width="5"/>
+  <path d="M205 382c49 34 112 51 195 51s146-17 195-51c34 22 54 54 47 82-43 54-135 79-242 79s-199-25-242-79c-7-28 13-60 47-82Z" fill="url(#visor)" stroke="#090a09" stroke-width="8"/>
+  <path d="M172 461c69 42 151 62 228 62s159-20 228-62" fill="none" stroke="#666861" stroke-width="5" opacity=".95"/>
+  <path d="M215 427c70 36 124 49 185 49s115-13 185-49M224 445c65 33 119 45 176 45s111-12 176-45" fill="none" stroke="#565852" stroke-width="3" opacity=".8"/>
   <g fill="none" stroke="#f5f3ed" stroke-linecap="round" stroke-linejoin="round">
-    <path d="m365 324 17-17 11 10 19-23 18 33" stroke-width="5"/>
-    <path d="M410 296v33m-8-24h17" stroke-width="4"/>
+    <path d="m365 317 17-17 11 10 19-23 18 33" stroke-width="5"/>
+    <path d="M410 289v33m-8-24h17" stroke-width="4"/>
   </g>
-  <text x="411" y="342" fill="#f5f3ed" font-family="Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="2">AWE</text>
+  <text x="411" y="335" fill="#f5f3ed" font-family="Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="2">AWE</text>
   <text x="400" y="590" fill="#605d55" font-family="Arial,sans-serif" font-size="16" text-anchor="middle" letter-spacing="3">AWE MISSIONS · ON ASSIGNMENT</text>
 </svg>
