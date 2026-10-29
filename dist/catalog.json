@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "studies": [
     {
       "id": "one-year-word",
@@ -82,6 +82,30 @@
     "platform": "Printful Quick Store",
     "url": "https://awemissions.printful.me/",
     "products": [
+      {
+        "id": "on-your-knees-long-sleeve-tee",
+        "title": "On Your Knees Long Sleeve Tee",
+        "price": "From $24.50",
+        "url": "https://awemissions.printful.me/product/on-your-knees-long-sleeve-tee",
+        "category": "Long Sleeves",
+        "color": "Black and Military Green",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/products/18956063-356-6ae3dbee926cd",
+            "alt": "On Your Knees Long Sleeve Tee front — Printful mockup"
+          }
+        ],
+        "optionsNote": "Black and Military Green, sizes XS–2XL. Front artwork only; no back print."
+      },
       {
         "id": "on-your-knees-tee",
         "title": "On Your Knees Tee",
