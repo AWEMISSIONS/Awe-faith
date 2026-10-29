@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-28",
   "studies": [
     {
       "id": "one-year-word",
@@ -842,6 +842,26 @@
           }
         ],
         "optionsNote": "Available in 3″×3″, 4″×4″, and 5.5″×5.5″; adhesive vinyl sticker."
+      },
+      {
+        "id": "pray-first-mountain-cross-distressed-dad-hat",
+        "title": "Pray First | Mountain Cross | Distressed Dad Hat",
+        "price": "$19.47",
+        "url": "https://awemissions.printful.me/product/distressed-dad-hat",
+        "category": "Hats & Caps",
+        "color": "Black",
+        "sizes": [
+          "One size"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191680516add4bdf8c2f8__825",
+            "alt": "Pray First | Mountain Cross | Distressed Dad Hat front"
+          }
+        ],
+        "optionsNote": "One size; distressed cotton twill with an adjustable hook-and-loop closure.",
+        "collection": "AWE Missions Mountain Collection"
       }
     ]
   }
