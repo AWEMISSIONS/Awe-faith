@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-29",
   "studies": [
     {
       "id": "one-year-word",
@@ -816,6 +816,27 @@
           }
         ],
         "optionsNote": "Sand, sizes S–2XL; short-sleeve cotton polo alternative."
+      },
+      {
+        "id": "awe-missions-go-make-disciples",
+        "title": "AWE Missions | Go. Make Disciples.",
+        "price": "$3.50",
+        "url": "https://awemissions.printful.me/product/awe-missions-go-make-disciples",
+        "category": "Stickers",
+        "color": "As pictured",
+        "sizes": [
+          "3″×3″",
+          "4″×4″",
+          "5.5″×5.5″"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/192833256ae1e319a388e__825",
+            "alt": "AWE Missions | Go. Make Disciples. sticker"
+          }
+        ],
+        "optionsNote": "Available in 3″×3″, 4″×4″, and 5.5″×5.5″; adhesive vinyl sticker."
       }
     ]
   }
