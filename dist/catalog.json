@@ -83,6 +83,30 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-be-still-and-know-journal-teen-girls",
+        "title": "AWE Missions | Be Still and Know Journal (Teen Girls)",
+        "price": "$17.99",
+        "url": "https://awemissions.printful.me/product/awe-missions-be-still-and-know-journal-teen-girls",
+        "category": "Books & Journals",
+        "color": "Full color matte cover",
+        "sizes": [
+          "8″×5.75″"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193524506ae49cc8c33a9__825",
+            "alt": "AWE Missions Be Still and Know journal front cover with Psalm 46:10"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193524506ae49cc8d6f7e__825",
+            "alt": "AWE Missions Be Still and Know journal plain back cover"
+          }
+        ],
+        "optionsNote": "Teen girls Scripture journal. Front cover features Be Still and Know with Psalm 46:10; back cover is plain. One size, 5.75″×8″."
+      },
+      {
         "id": "awe-missions-my-grace-is-sufficient-journal-teen-girls",
         "title": "AWE Missions | My Grace Is Sufficient Journal (Teen Girls)",
         "price": "$17.99",
