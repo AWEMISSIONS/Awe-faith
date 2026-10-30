@@ -83,6 +83,19 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-jesus-cap",
+        "title": "AWE Missions JESUS Cap",
+        "price": "From $21.00",
+        "url": "https://awemissions.printful.me/product/awe-missions-jesus-cap",
+        "category": "Hats & Caps",
+        "color": "Black",
+        "sizes": [
+          "One size"
+        ],
+        "images": [],
+        "optionsNote": "Black, one size; white JESUS embroidery on front only. The concept sheet’s red underline and AWE bill logo are not included in this simplified production version."
+      },
+      {
         "id": "faith-makes-waves-beach-towel",
         "title": "Faith Makes Waves Beach Towel",
         "price": "From $38.50",
