@@ -83,6 +83,30 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-be-strong-and-courageous-journal-teen-boys",
+        "title": "AWE Missions | Be Strong and Courageous Journal (Teen Boys)",
+        "price": "$17.99",
+        "url": "https://awemissions.printful.me/product/awe-missions-be-strong-and-courageous-journal-teen-boys",
+        "category": "Books & Journals",
+        "color": "Full color matte cover",
+        "sizes": [
+          "8″×5.75″"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193518456ae48fef96adf__825",
+            "alt": "AWE Missions Be Strong and Courageous Scripture journal front cover with Joshua 1:9"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193518456ae48fefb08f1__825",
+            "alt": "AWE Missions Be Strong and Courageous journal plain back cover"
+          }
+        ],
+        "optionsNote": "Teen boys Scripture journal. The front features Be Strong and Courageous with Joshua 1:9; the back cover is plain. One size, 5.75″×8″."
+      },
+      {
         "id": "awe-missions-jesus-distressed-dad-hat",
         "title": "AWE Missions JESUS Distressed Dad Hat",
         "price": "$25.00",
