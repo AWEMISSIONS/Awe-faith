@@ -83,6 +83,30 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-created-for-good-works-journal-teen-boys",
+        "title": "AWE Missions | Created for Good Works Journal (Teen Boys)",
+        "price": "$17.99",
+        "url": "https://awemissions.printful.me/product/awe-missions-created-for-good-works-journal-teen-boys",
+        "category": "Books & Journals",
+        "color": "Full color matte cover",
+        "sizes": [
+          "8″×5.75″"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193519346ae493843810c__825",
+            "alt": "AWE Missions Created for Good Works Scripture journal front cover with Ephesians 2:10"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193519346ae4938459178__825",
+            "alt": "AWE Missions Created for Good Works journal plain back cover"
+          }
+        ],
+        "optionsNote": "Teen boys Scripture journal. Front cover features Created for Good Works with Ephesians 2:10; back cover is plain. One size, 5.75″×8″."
+      },
+      {
         "id": "awe-missions-stand-firm-in-the-faith-journal-teen-boys",
         "title": "AWE Missions | Stand Firm in the Faith Journal (Teen Boys)",
         "price": "$17.99",
