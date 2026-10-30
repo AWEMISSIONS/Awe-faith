@@ -83,6 +83,30 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-those-who-hope-in-the-lord-journal-teen-girls",
+        "title": "AWE Missions | Those Who Hope in the Lord Journal (Teen Girls)",
+        "price": "$17.99",
+        "url": "https://awemissions.printful.me/product/awe-missions-those-who-hope-in-the-lord-journal-teen-girls",
+        "category": "Books & Journals",
+        "color": "Full color matte cover",
+        "sizes": [
+          "8″×5.75″"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193524216ae4995684e94__825",
+            "alt": "AWE Missions Those Who Hope in the Lord journal front cover with Isaiah 40:31"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193524216ae49956a44b1__825",
+            "alt": "AWE Missions Those Who Hope in the Lord journal plain back cover"
+          }
+        ],
+        "optionsNote": "Teen girls Scripture journal. Front cover features Those Who Hope in the Lord with Isaiah 40:31; back cover is plain. One size, 5.75″×8″."
+      },
+      {
         "id": "awe-missions-i-have-called-you-by-name-journal-teen-girls",
         "title": "AWE Missions | I Have Called You by Name Journal (Teen Girls)",
         "price": "$17.99",
