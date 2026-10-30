@@ -83,6 +83,26 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "insulated-tumbler-with-a-straw",
+        "title": "Insulated tumbler with a straw",
+        "price": "$27.00",
+        "url": "https://awemissions.printful.me/product/insulated-tumbler-with-a-straw",
+        "category": "Home & living",
+        "collection": "AWE Missions Mountain Collection",
+        "color": "Black",
+        "sizes": [
+          "20 oz"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193513906ae48827c373e__825",
+            "alt": "AWE Missions Mountain Collection insulated tumbler front mockup"
+          }
+        ],
+        "optionsNote": "Black, 20 oz; AWE mountain mark with lid and straw. Hand-wash only; not dishwasher or microwave safe."
+      },
+      {
         "id": "awe-missions-light-of-the-world-beach-towel",
         "title": "AWE Missions – Light of the World Beach Towel",
         "price": "From $38.50",
