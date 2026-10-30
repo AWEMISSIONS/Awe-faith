@@ -956,7 +956,7 @@
       {
         "id": "empty-tomb-full-hope-matthew-285-6-black-tee",
         "title": "Empty Tomb. Full Hope. | Matthew 28:5–6 | Black Tee",
-        "price": "$15.50",
+        "price": "$23.99",
         "url": "https://awemissions.printful.me/product/empty-tomb-full-hope-matthew-285-6-black-tee",
         "category": "T-Shirts",
         "color": "Black",
@@ -974,8 +974,13 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191680796add4c17bd5c2__825",
-            "alt": "Empty Tomb. Full Hope. | Matthew 28:5–6 | Black Tee — actual Printful front mockup"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191680796ae1ff1b9dd9c__825",
+            "alt": "Empty Tomb. Full Hope. | Matthew 28:5–6 | Black Tee front mockup"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191680796ae1ff1bc51fd__825",
+            "alt": "Empty Tomb. Full Hope. | Matthew 28:5–6 | Black Tee back mockup"
           }
         ],
         "optionsNote": "Select size and review color availability on the Printful product page."
