@@ -83,6 +83,30 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-i-have-called-you-by-name-journal-teen-girls",
+        "title": "AWE Missions | I Have Called You by Name Journal (Teen Girls)",
+        "price": "$17.99",
+        "url": "https://awemissions.printful.me/product/awe-missions-i-have-called-you-by-name-journal-teen-girls",
+        "category": "Books & Journals",
+        "color": "Full color matte cover",
+        "sizes": [
+          "8″×5.75″"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193523316ae4985467c6d__825",
+            "alt": "AWE Missions I Have Called You by Name journal front cover with Isaiah 43:1"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193523316ae4985489440__825",
+            "alt": "AWE Missions I Have Called You by Name journal plain back cover"
+          }
+        ],
+        "optionsNote": "Teen girls Scripture journal. Front cover features I Have Called You by Name with Isaiah 43:1; back cover is plain. One size, 5.75″×8″."
+      },
+      {
         "id": "awe-missions-rooted-and-grounded-in-love-journal-teen-girls",
         "title": "AWE Missions | Rooted and Grounded in Love Journal (Teen Girls)",
         "price": "$17.99",
