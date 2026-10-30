@@ -83,6 +83,20 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-lion-of-judah-beach-towel",
+        "title": "AWE Missions – Lion of Judah Beach Towel",
+        "price": "From $38.50",
+        "url": "https://awemissions.printful.me/product/awe-missions-lion-of-judah-beach-towel",
+        "category": "Home & living",
+        "color": "White",
+        "sizes": [
+          "30″×60″",
+          "36″×72″"
+        ],
+        "images": [],
+        "optionsNote": "White, 30″×60″ or 36″×72″. Lion of Judah and ocean artwork is printed on one side; the reverse is absorbent terry fabric. Printful’s product page currently shows no rendered mockup image."
+      },
+      {
         "id": "awe-missions-the-son-has-risen-beach-towel",
         "title": "AWE Missions – The Son Has Risen Beach Towel",
         "price": "From $38.50",
