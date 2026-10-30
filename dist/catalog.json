@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "studies": [
     {
       "id": "one-year-word",
@@ -82,6 +82,20 @@
     "platform": "Printful Quick Store",
     "url": "https://awemissions.printful.me/",
     "products": [
+      {
+        "id": "faith-makes-waves-beach-towel",
+        "title": "Faith Makes Waves Beach Towel",
+        "price": "From $38.50",
+        "url": "https://awemissions.printful.me/product/faith-makes-waves-beach-towel",
+        "category": "Home & living",
+        "color": "White",
+        "sizes": [
+          "30″×60″",
+          "36″×72″"
+        ],
+        "images": [],
+        "optionsNote": "White, 30″×60″ or 36″×72″. Printed on one side only; the reverse terry side is unprinted."
+      },
       {
         "id": "on-your-knees-sweatshirt",
         "title": "On Your Knees Sweatshirt",
