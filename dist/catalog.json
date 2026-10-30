@@ -83,6 +83,30 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "premium-pique-polo",
+        "title": "AWE Missions Mountain Collection | Premium Pique Polo",
+        "price": "From $25.50",
+        "url": "https://awemissions.printful.me/product/premium-pique-polo-shirt",
+        "category": "Men's clothing",
+        "collection": "AWE Missions Mountain Collection",
+        "color": "Sand",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193513916ae488d77bdea__825",
+            "alt": "Sand premium pique polo with AWE Missions mountain mark embroidered on left chest"
+          }
+        ],
+        "optionsNote": "Sand; embroidered AWE mountain mark on left chest. Sizes S–2XL. Front embroidery only; no back design."
+      },
+      {
         "id": "insulated-tumbler-with-a-straw",
         "title": "Insulated tumbler with a straw",
         "price": "$27.00",
