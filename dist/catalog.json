@@ -83,6 +83,30 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-jesus-distressed-dad-hat",
+        "title": "AWE Missions JESUS Distressed Dad Hat",
+        "price": "$25.00",
+        "url": "https://awemissions.printful.me/product/distressed-dad-hat-6ae48a060cc55",
+        "category": "Hats & Caps",
+        "color": "Black",
+        "sizes": [
+          "One size"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193514696ae48a07b73cc__825",
+            "alt": "Black distressed dad hat with JESUS embroidery on the front"
+          },
+          {
+            "side": "Right side",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193514696ae48a07e1963__825",
+            "alt": "Black distressed dad hat showing the right-side JESUS embroidery"
+          }
+        ],
+        "optionsNote": "Black, one size. JESUS embroidery on front and right side; distressed finish."
+      },
+      {
         "id": "awe-missions-mountain-embroidered-cap",
         "title": "AWE Missions Mountain Collection | Embroidered Cap",
         "price": "$10.50",
