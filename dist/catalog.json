@@ -83,6 +83,20 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-anchored-in-christ-beach-towel",
+        "title": "AWE Missions – Anchored in Christ Beach Towel",
+        "price": "From $38.50",
+        "url": "https://awemissions.printful.me/product/awe-missions-anchored-in-christ-beach-towel",
+        "category": "Home & living",
+        "color": "White",
+        "sizes": [
+          "30″×60″",
+          "36″×72″"
+        ],
+        "images": [],
+        "optionsNote": "White, 30″×60″ or 36″×72″. One-sided anchor-and-rope design; the concept sheet’s weathered blue stripe background and AWE Missions logo are not included. Printful’s product page currently has no rendered mockup image."
+      },
+      {
         "id": "awe-missions-jesus-cap",
         "title": "AWE Missions JESUS Cap",
         "price": "From $21.00",
