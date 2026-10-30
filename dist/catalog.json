@@ -683,8 +683,23 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-99-6add4c9c91b35__360",
-            "alt": "AWE Missions — Here to Serve — Navy Snapback front"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682466ae2428b6e54c__825",
+            "alt": "Navy Here to Serve snapback front view"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682466ae2428b95d9b__825",
+            "alt": "Navy Here to Serve snapback rear view"
+          },
+          {
+            "side": "Left side",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682466ae2428bbc5bd__825",
+            "alt": "Navy Here to Serve snapback left side view"
+          },
+          {
+            "side": "Right side",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682466ae2428bdc654__825",
+            "alt": "Navy Here to Serve snapback right side view"
           }
         ],
         "optionsNote": "Select size and review color availability on the Printful product page."
