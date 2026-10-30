@@ -83,6 +83,24 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "on-your-knees-sweatshirt",
+        "title": "On Your Knees Sweatshirt",
+        "price": "From $25.00",
+        "url": "https://awemissions.printful.me/product/on-your-knees-sweatshirt",
+        "category": "Hoodies & Sweatshirts",
+        "color": "Black and Military Green",
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "images": [],
+        "optionsNote": "Black and Military Green, sizes S–3XL. Front artwork only; no back print. Printful has not generated a product mockup image for this listing."
+      },
+      {
         "id": "on-your-knees-long-sleeve-tee",
         "title": "On Your Knees Long Sleeve Tee",
         "price": "From $24.50",
