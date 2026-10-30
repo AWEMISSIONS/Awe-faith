@@ -83,6 +83,30 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-stand-firm-in-the-faith-journal-teen-boys",
+        "title": "AWE Missions | Stand Firm in the Faith Journal (Teen Boys)",
+        "price": "$17.99",
+        "url": "https://awemissions.printful.me/product/awe-missions-stand-firm-in-the-faith-journal-teen-boys",
+        "category": "Books & Journals",
+        "color": "Full color matte cover",
+        "sizes": [
+          "8″×5.75″"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193518716ae4917b6f33e__825",
+            "alt": "AWE Missions Stand Firm in the Faith Scripture journal front cover with 1 Corinthians 16:13"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193518716ae4917ba1193__825",
+            "alt": "AWE Missions Stand Firm in the Faith journal plain back cover"
+          }
+        ],
+        "optionsNote": "Teen boys Scripture journal. Front cover features Stand Firm in the Faith with 1 Corinthians 16:13; back cover is plain. One size, 5.75″×8″."
+      },
+      {
         "id": "awe-missions-be-strong-and-courageous-journal-teen-boys",
         "title": "AWE Missions | Be Strong and Courageous Journal (Teen Boys)",
         "price": "$17.99",
