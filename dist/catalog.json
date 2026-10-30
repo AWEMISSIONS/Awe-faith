@@ -83,6 +83,26 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-mountain-embroidered-cap",
+        "title": "AWE Missions Mountain Collection | Embroidered Cap",
+        "price": "$10.50",
+        "url": "https://awemissions.printful.me/product/awe-missions-mountain-collection-embroidered-cap-6ae48971d3b18",
+        "category": "Hats & Caps",
+        "collection": "AWE Missions Mountain Collection",
+        "color": "Black",
+        "sizes": [
+          "One size"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193514236ae4897385e57__825",
+            "alt": "Black AWE Missions Mountain Collection embroidered cap front mockup"
+          }
+        ],
+        "optionsNote": "Black, one size. AWE mountain mark embroidered on front; no back design."
+      },
+      {
         "id": "premium-pique-polo",
         "title": "AWE Missions Mountain Collection | Premium Pique Polo",
         "price": "From $25.50",
