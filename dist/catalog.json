@@ -83,6 +83,30 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-my-grace-is-sufficient-journal-teen-girls",
+        "title": "AWE Missions | My Grace Is Sufficient Journal (Teen Girls)",
+        "price": "$17.99",
+        "url": "https://awemissions.printful.me/product/awe-missions-my-grace-is-sufficient-journal-teen-girls",
+        "category": "Books & Journals",
+        "color": "Full color matte cover",
+        "sizes": [
+          "8″×5.75″"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193524386ae49a1432633__825",
+            "alt": "AWE Missions My Grace Is Sufficient journal front cover with 2 Corinthians 12:9"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193524386ae49a144fb20__825",
+            "alt": "AWE Missions My Grace Is Sufficient journal plain back cover"
+          }
+        ],
+        "optionsNote": "Teen girls Scripture journal. Front cover features My Grace Is Sufficient with 2 Corinthians 12:9; back cover is plain. One size, 5.75″×8″."
+      },
+      {
         "id": "awe-missions-those-who-hope-in-the-lord-journal-teen-girls",
         "title": "AWE Missions | Those Who Hope in the Lord Journal (Teen Girls)",
         "price": "$17.99",
