@@ -83,6 +83,20 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-light-of-the-world-beach-towel",
+        "title": "AWE Missions – Light of the World Beach Towel",
+        "price": "From $38.50",
+        "url": "https://awemissions.printful.me/product/awe-missions-light-of-the-world-beach-towel",
+        "category": "Home & living",
+        "color": "White",
+        "sizes": [
+          "30″×60″",
+          "36″×72″"
+        ],
+        "images": [],
+        "optionsNote": "White, 30″×60″ or 36″×72″. Single-sided bold “LIGHT OF THE WORLD” lettering inspired by Matthew 5:14; reverse is absorbent terry fabric. No separate back print."
+      },
+      {
         "id": "awe-missions-lion-of-judah-beach-towel",
         "title": "AWE Missions – Lion of Judah Beach Towel",
         "price": "From $38.50",
