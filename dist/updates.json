@@ -1,7 +1,15 @@
 {
-  "version": "1.2.41",
-  "date": "2026-10-26",
+  "version": "1.2.42",
+  "date": "2026-10-29",
   "items": [
+    {
+      "id": "homepage-navigation-refresh",
+      "date": "2026-10-29",
+      "category": "App improvements",
+      "title": "A clearer welcome and next-step guide",
+      "description": "The four AWE Missions links now sit in the welcome banner. The home page links to the app’s main pages with short explanations, and the contact card has its own blue panel.",
+      "url": "#home"
+    },
     {
       "id": "prayer-wall-home-install-qa",
       "date": "2026-10-26",
