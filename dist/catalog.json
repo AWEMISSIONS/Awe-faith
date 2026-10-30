@@ -83,6 +83,20 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-the-son-has-risen-beach-towel",
+        "title": "AWE Missions – The Son Has Risen Beach Towel",
+        "price": "From $38.50",
+        "url": "https://awemissions.printful.me/product/awe-missions-the-son-has-risen-beach-towel",
+        "category": "Home & living",
+        "color": "White",
+        "sizes": [
+          "30″×60″",
+          "36″×72″"
+        ],
+        "images": [],
+        "optionsNote": "White, 30″×60″ or 36″×72″; one-sided script-lettering design reading “THE SON HAS RISEN.” The sunrise-and-ocean artwork from the concept was not added; the Printful product page currently shows no rendered mockup image."
+      },
+      {
         "id": "awe-missions-anchored-in-christ-beach-towel",
         "title": "AWE Missions – Anchored in Christ Beach Towel",
         "price": "From $38.50",
