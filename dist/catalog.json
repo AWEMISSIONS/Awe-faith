@@ -83,6 +83,30 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-rooted-and-grounded-in-love-journal-teen-girls",
+        "title": "AWE Missions | Rooted and Grounded in Love Journal (Teen Girls)",
+        "price": "$17.99",
+        "url": "https://awemissions.printful.me/product/awe-missions-rooted-and-grounded-in-love-journal-teen-girls",
+        "category": "Books & Journals",
+        "color": "Full color matte cover",
+        "sizes": [
+          "8″×5.75″"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193522546ae4955fbc7d8__825",
+            "alt": "AWE Missions Rooted and Grounded in Love journal front cover with Ephesians 3:17"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193522546ae4955fd3e21__825",
+            "alt": "AWE Missions Rooted and Grounded in Love journal plain back cover"
+          }
+        ],
+        "optionsNote": "Teen girls Scripture journal. Front cover features Rooted and Grounded in Love with Ephesians 3:17; back cover is plain. One size, 5.75″×8″."
+      },
+      {
         "id": "awe-missions-created-for-good-works-journal-teen-boys",
         "title": "AWE Missions | Created for Good Works Journal (Teen Boys)",
         "price": "$17.99",
