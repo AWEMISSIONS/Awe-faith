@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "studies": [
     {
       "id": "one-year-word",
@@ -82,6 +82,70 @@
     "platform": "Printful Quick Store",
     "url": "https://awemissions.printful.me/",
     "products": [
+      {
+        "id": "awe-missions-oceans-of-grace-beach-towel",
+        "title": "AWE Missions | Oceans of Grace Beach Towel",
+        "price": "From $38.50",
+        "url": "https://awemissions.printful.me/product/awe-missions-oceans-of-grace-beach-towel",
+        "category": "Home & living",
+        "color": "White",
+        "sizes": [
+          "30″×60″",
+          "36″×72″"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://awemissions.org/assets/oceans-of-grace-beach-towel.svg",
+            "alt": "Oceans of Grace Beach Towel front artwork"
+          }
+        ],
+        "optionsNote": "Printed on one side only; reverse is absorbent terry fabric."
+      },
+      {
+        "id": "awe-missions-fishers-of-men-beach-towel",
+        "title": "AWE Missions | Fishers of Men Beach Towel",
+        "price": "From $38.50",
+        "url": "https://awemissions.printful.me/product/awe-missions-fishers-of-men-beach-towel",
+        "category": "Home & living",
+        "color": "White",
+        "sizes": [
+          "30″×60″",
+          "36″×72″"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://awemissions.org/assets/fishers-of-men-beach-towel.svg",
+            "alt": "Fishers of Men Beach Towel front artwork"
+          }
+        ],
+        "optionsNote": "Printed on one side only; reverse is absorbent terry fabric."
+      },
+      {
+        "id": "awe-missions-be-strong-in-the-lord-journal-teen-boys-6ae564e10f3bd",
+        "title": "AWE Missions | Be Strong in the Lord Journal (Teen Boys)",
+        "price": "$13.00",
+        "url": "https://awemissions.printful.me/product/awe-missions-be-strong-in-the-lord-journal-teen-boys-6ae564e10f3bd",
+        "category": "Books & Journals",
+        "color": "Full color matte cover",
+        "sizes": [
+          "8″×5.75″"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193569116ae4d44add7d0__825",
+            "alt": "AWE Missions | Be Strong in the Lord Journal (Teen Boys) front cover"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193569116ae4d44b08f90__825",
+            "alt": "AWE Missions | Be Strong in the Lord Journal (Teen Boys) back cover"
+          }
+        ],
+        "optionsNote": "150 lined pages, matte laminated hardcover. Cover features Ephesians 6:10."
+      },
       {
         "id": "awe-missions-qr-reversible-bucket-hat",
         "title": "AWE Missions QR Reversible Bucket Hat",

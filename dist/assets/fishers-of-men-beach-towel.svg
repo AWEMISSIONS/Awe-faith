@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4500" height="9000" viewBox="0 0 4500 9000">
+<defs>
+ <linearGradient id="sea" x2="0" y2="1"><stop stop-color="#071E33"/><stop offset=".48" stop-color="#0D5270"/><stop offset="1" stop-color="#062B46"/></linearGradient>
+ <linearGradient id="light" x2="0" y2="1"><stop stop-color="#FFE7B3"/><stop offset="1" stop-color="#E9A959"/></linearGradient>
+ <pattern id="grain" width="190" height="190" patternUnits="userSpaceOnUse"><circle cx="24" cy="38" r="5" fill="#fff" opacity=".13"/><circle cx="115" cy="122" r="4" fill="#fff" opacity=".1"/></pattern>
+</defs>
+<rect width="4500" height="9000" fill="url(#sea)"/><rect width="4500" height="9000" fill="url(#grain)"/>
+<!-- dawn --> <circle cx="2250" cy="3250" r="820" fill="url(#light)" opacity=".95"/>
+<!-- distant horizon --> <path d="M0 3550 Q650 3480 1250 3550 T2500 3550 T3750 3550 T5000 3550 V9000 H0Z" fill="#0A3853"/>
+<!-- rays --> <g stroke="#F4C978" stroke-width="26" opacity=".55"><path d="M2250 2400V1450M1650 2600 1120 2110M2850 2600 3380 2110M1450 3200H620M3050 3200H3880"/></g>
+<!-- title field --> <rect x="390" y="580" width="3720" height="1380" rx="60" fill="#06182B" stroke="#F4C978" stroke-width="18"/>
+<text x="2250" y="1090" text-anchor="middle" fill="#FFF1D2" font-family="DejaVu Serif" font-size="255" font-weight="bold" letter-spacing="24">FISHERS</text>
+<text x="2250" y="1430" text-anchor="middle" fill="#F4C978" font-family="DejaVu Serif" font-size="255" font-weight="bold" letter-spacing="18">OF MEN</text>
+<path d="M1100 1600H3400" stroke="#FFF1D2" stroke-width="14"/>
+<text x="2250" y="1815" text-anchor="middle" fill="#D4E5E8" font-family="DejaVu Sans" font-size="112" letter-spacing="10">MATTHEW 4:19</text>
+<!-- Cross mast and boat --> <g fill="none" stroke="#F3D9A0" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M2250 2580V4880M1850 3080H2650" stroke-width="74"/>
+ <path d="M1640 4760 Q2250 5000 2860 4760 L2640 5100H1870Z" fill="#F3D9A0" stroke-width="28"/>
+ <path d="M2250 4840V2640" stroke="#0A3853" stroke-width="18" opacity=".45"/>
+ </g>
+<!-- net pattern --> <g fill="none" stroke="#B8D8D9" stroke-width="20" opacity=".78">
+ <path d="M500 5400 Q2250 5100 4000 5400M300 6000Q2250 5650 4200 6000M200 6650Q2250 6280 4300 6650M300 7350Q2250 6950 4200 7350M500 8100Q2250 7660 4000 8100"/>
+ <path d="M700 5250Q1200 6400 1500 8500M1300 5200Q1650 6400 1900 8600M1900 5150Q2100 6450 2200 8700M2600 5150Q2450 6450 2350 8700M3200 5200Q2850 6400 2600 8600M3800 5250Q3300 6400 3000 8500"/>
+ </g>
+<!-- fish silhouettes --> <g fill="#F4C978" opacity=".92">
+ <path d="M650 4070 Q950 3820 1260 4070 Q950 4320 650 4070 L430 3900 V4240Z"/>
+ <path d="M3400 4380 Q3700 4130 4010 4380 Q3700 4630 3400 4380 L3180 4210 V4550Z"/>
+ <path d="M900 4900 Q1120 4720 1340 4900 Q1120 5080 900 4900 L750 4770 V5030Z"/>
+ </g>
+<!-- bottom label --> <rect x="580" y="8300" width="3340" height="390" rx="70" fill="#06182B" stroke="#9FD4D5" stroke-width="16"/>
+<text x="2250" y="8555" text-anchor="middle" fill="#FFF1D2" font-family="DejaVu Sans" font-size="125" font-weight="bold" letter-spacing="14">AWE MISSIONS</text>
+</svg>
