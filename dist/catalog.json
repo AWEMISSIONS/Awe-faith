@@ -666,8 +666,13 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191721776ade72f2b84e6__825",
-            "alt": "Not Lost. Led. | AWE Missions Hoodie — actual Printful front mockup"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191721776ae548a3baafe__825",
+            "alt": "Not Lost. Led. | AWE Missions Hoodie — front Printful mockup"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191721776ae548a3e0ecf__825",
+            "alt": "Not Lost. Led. | AWE Missions Hoodie — Psalm 23:1 back Printful mockup"
           }
         ],
         "optionsNote": "Military Green, sizes S–3XL; consider ordering one size up."
