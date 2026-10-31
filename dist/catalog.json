@@ -83,6 +83,33 @@
     "url": "https://awemissions.printful.me/",
     "products": [
       {
+        "id": "awe-missions-qr-reversible-bucket-hat",
+        "title": "AWE Missions QR Reversible Bucket Hat",
+        "price": "$38.50",
+        "url": "https://awemissions.printful.me/product/reversible-bucket-hat",
+        "category": "Hats & Caps",
+        "collection": "AWE Missions Mountain Collection",
+        "color": "White",
+        "sizes": [
+          "XS",
+          "S/M",
+          "L/XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193733726ae54c2c96e80__825",
+            "alt": "AWE Missions QR Reversible Bucket Hat — front Printful mockup"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193733726ae54c2cb422d__825",
+            "alt": "AWE Missions QR Reversible Bucket Hat — back-angle Printful mockup"
+          }
+        ],
+        "optionsNote": "Reversible bucket hat; printed AWE Missions QR panel on one side. Reverse side is plain. Sizes XS, S/M, L/XL."
+      },
+      {
         "id": "awe-missions-be-still-and-know-journal-teen-girls",
         "title": "AWE Missions | Be Still and Know Journal (Teen Girls)",
         "price": "$17.99",
