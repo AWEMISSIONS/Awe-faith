@@ -1126,12 +1126,17 @@
           {
             "side": "Front",
             "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682326addfd47b400a__825",
-            "alt": "AWE Missions — Loved First — Pink Vintage Cap — actual Printful front mockup"
+            "alt": "AWE Missions — Loved First — Pink Vintage Cap — front view from the matching Printful product"
           },
           {
             "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682326addfd47db20b__825",
+            "alt": "AWE Missions — Loved First — Pink Vintage Cap — back view from the matching Printful product"
+          },
+          {
+            "side": "Detail",
             "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682326addfd48281ce__825",
-            "alt": "AWE Missions — Loved First — Pink Vintage Cap — Printful back-view mockup"
+            "alt": "AWE Missions — Loved First — Pink Vintage Cap — detail view from the matching Printful product"
           }
         ],
         "optionsNote": "Select size and review color availability on the Printful product page."
