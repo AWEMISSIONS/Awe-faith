@@ -677,9 +677,19 @@
         ],
         "images": [
           {
-            "side": "Side",
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191809856ae3f37b7d931__825",
+            "alt": "Pray First | Mountain Cross | Charcoal Dad Hat — front view from the matching Printful product"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191809856ae3f37b4ed13__825",
+            "alt": "Pray First | Mountain Cross | Charcoal Dad Hat — back view from the matching Printful product"
+          },
+          {
+            "side": "Detail",
             "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191809856ae3f37bcaf62__825",
-            "alt": "Charcoal Grey Pray First dad hat side-profile mockup"
+            "alt": "Pray First | Mountain Cross | Charcoal Dad Hat — detail view from the matching Printful product"
           }
         ],
         "optionsNote": "Charcoal Grey, one size; adjustable cotton twill cap.",
