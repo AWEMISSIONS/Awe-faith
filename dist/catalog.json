@@ -1219,8 +1219,13 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682066add4c57456a2__825",
-            "alt": "Garment-dyed heavyweight long-sleeve shirt — actual Printful front mockup"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682066ae24330af953__825",
+            "alt": "Garment-dyed heavyweight long-sleeve shirt — front view from the matching Printful product"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682066ae24330e059a__825",
+            "alt": "Garment-dyed heavyweight long-sleeve shirt — back view from the matching Printful product"
           }
         ],
         "optionsNote": "Gray garment shown in the current Printful product mockup. Review the product page for size and garment details."
