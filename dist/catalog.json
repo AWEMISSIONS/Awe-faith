@@ -1190,8 +1190,13 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682126add4c60e4771__825",
-            "alt": "Pray First | Black Hoodie | Philippians 4:6 — actual Printful front mockup"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682126ae242d0495fc__825",
+            "alt": "Pray First | Black Hoodie | Philippians 4:6 — front view from the matching Printful product"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682126ae242d066078__825",
+            "alt": "Pray First | Black Hoodie | Philippians 4:6 — back view from the matching Printful product"
           }
         ],
         "optionsNote": "Select size and review color availability on the Printful product page."
