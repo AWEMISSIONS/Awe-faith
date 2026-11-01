@@ -740,13 +740,18 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191721066add79f892c42__825",
-            "alt": "On Assignment | AWE Missions Embroidered Cap — actual Printful front mockup"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191721066ae1fa3919e09__825",
+            "alt": "On Assignment | AWE Missions Embroidered Cap — front view from the matching Printful product"
           },
           {
             "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191721066ae1fa393ff0f__825",
+            "alt": "On Assignment | AWE Missions Embroidered Cap — back view from the matching Printful product"
+          },
+          {
+            "side": "Detail",
             "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191721066ae1fa3978802__825",
-            "alt": "On Assignment | AWE Missions Embroidered Cap — Printful back-view mockup"
+            "alt": "On Assignment | AWE Missions Embroidered Cap — detail view from the matching Printful product"
           }
         ],
         "optionsNote": "Black, one size; adjustable cotton twill cap."
