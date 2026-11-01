@@ -1096,13 +1096,18 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682336add4c78124a9__825",
-            "alt": "AWE Missions — Follow Jesus | John 8:12 — Spruce Dad Hat — actual Printful front mockup"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682336ae1fb25987c6__825",
+            "alt": "AWE Missions — Follow Jesus | John 8:12 — Spruce Dad Hat — front view from the matching Printful product"
           },
           {
             "side": "Back",
             "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682336ae1fb260a060__825",
-            "alt": "AWE Missions — Follow Jesus | John 8:12 — Spruce Dad Hat — Printful back-view mockup"
+            "alt": "AWE Missions — Follow Jesus | John 8:12 — Spruce Dad Hat — back view from the matching Printful product"
+          },
+          {
+            "side": "Detail",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682336ae1fb25c44c7__825",
+            "alt": "AWE Missions — Follow Jesus | John 8:12 — Spruce Dad Hat — detail view from the matching Printful product"
           }
         ],
         "optionsNote": "Select size and review color availability on the Printful product page."
