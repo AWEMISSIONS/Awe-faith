@@ -970,13 +970,18 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/products/w168/18956063-327-6add4ca08d3ae__360",
-            "alt": "AWE Missions — FOUND — Luke 15 Black Vintage Cap front"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682476ae24255da858__825",
+            "alt": "AWE Missions — FOUND — Luke 15 Black Vintage Cap — front view from the matching Printful product"
           },
           {
             "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682476ae242562893d__825",
+            "alt": "AWE Missions — FOUND — Luke 15 Black Vintage Cap — back view from the matching Printful product"
+          },
+          {
+            "side": "Detail",
             "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682476ae242566cfd4__825",
-            "alt": "AWE Missions — FOUND — Luke 15 Black Vintage Cap — Printful back-view mockup"
+            "alt": "AWE Missions — FOUND — Luke 15 Black Vintage Cap — detail view from the matching Printful product"
           }
         ],
         "optionsNote": "Select size and review color availability on the Printful product page."
