@@ -1034,12 +1034,17 @@
           {
             "side": "Front",
             "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682456addfcef19939__825",
-            "alt": "AWE Missions — Death Lost, Jesus Lives — Natural Black Cap — actual Printful front mockup"
+            "alt": "AWE Missions — Death Lost, Jesus Lives — Natural Black Cap — front view from the matching Printful product"
           },
           {
             "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682456addfcef427d4__825",
+            "alt": "AWE Missions — Death Lost, Jesus Lives — Natural Black Cap — back view from the matching Printful product"
+          },
+          {
+            "side": "Detail",
             "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682456addfcef7e806__825",
-            "alt": "AWE Missions — Death Lost, Jesus Lives — Natural Black Cap — Printful back-view mockup"
+            "alt": "AWE Missions — Death Lost, Jesus Lives — Natural Black Cap — detail view from the matching Printful product"
           }
         ],
         "optionsNote": "Select size and review color availability on the Printful product page."
