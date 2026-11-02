@@ -544,12 +544,17 @@
         ],
         "images": [
           {
-            "side": "Front",
-            "src": "https://awemissions.org/assets/footprints-of-faith-beach-towel.svg?v=d317dda",
-            "alt": "Footprints of Faith Beach Towel artwork: turquoise waves, golden sand, and a trail of footprints leading to the AWE Missions logo"
+            "side": "Front — 30″×60″",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193553946ae8ddc17469c__825",
+            "alt": "AWE Missions – Footprints of Faith Beach Towel — matching full-cover 30″×60″ Printful mockup"
+          },
+          {
+            "side": "Front — 36″×72″",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193553956ae8de6377c6c__825",
+            "alt": "AWE Missions – Footprints of Faith Beach Towel — matching full-cover 36″×72″ Printful mockup"
           }
         ],
-        "optionsNote": "White, 30″×60″ or 36″×72″. This towel is printed on one side; the reverse is unprinted absorbent terry fabric."
+        "optionsNote": "Both 30″×60″ and 36″×72″ sizes use the approved turquoise waves, footprints and large AWE Missions logo. Printed on one side; reverse is absorbent terry fabric."
       },
       {
         "id": "awe-missions-jesus-cap",
@@ -683,18 +688,18 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191809856ae3f37b7d931__825",
-            "alt": "Pray First | Mountain Cross | Charcoal Dad Hat — front view from the matching Printful product"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191809856ae8e4508eb2f__825",
+            "alt": "Pray First | Mountain Cross | Charcoal Dad Hat — front from the matching saved Printful design"
           },
           {
             "side": "Back",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191809856ae3f37b4ed13__825",
-            "alt": "Pray First | Mountain Cross | Charcoal Dad Hat — back view from the matching Printful product"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191809856ae8e45069fa5__825",
+            "alt": "Pray First | Mountain Cross | Charcoal Dad Hat — back from the matching saved Printful design"
           },
           {
-            "side": "Detail",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191809856ae3f37bcaf62__825",
-            "alt": "Pray First | Mountain Cross | Charcoal Dad Hat — detail view from the matching Printful product"
+            "side": "Side detail",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191809856ae8e450aa9d2__825",
+            "alt": "Pray First | Mountain Cross | Charcoal Dad Hat — side detail from the matching saved Printful design"
           }
         ],
         "optionsNote": "Charcoal Grey, one size; adjustable cotton twill cap.",
@@ -814,10 +819,10 @@
       {
         "id": "mens-box-hoodie",
         "title": "Men’s box hoodie",
-        "price": "$40.30",
+        "price": "From $40.30",
         "url": "https://awemissions.printful.me/product/mens-box-hoodie",
         "category": "Hoodies & Sweatshirts",
-        "color": "As pictured",
+        "color": "White",
         "sizes": [
           "S",
           "M",
@@ -829,24 +834,24 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/c61e4112-84ce-402b-a092-050895129f56.jpg",
-            "alt": "Men’s box hoodie front"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682786ae1f7b521648__825",
+            "alt": "Men’s box hoodie — front from the matching saved Printful design"
           },
           {
             "side": "Back",
-            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/6fa8f3e6-757c-4382-be23-88ffdbdd7e2e.jpg",
-            "alt": "Men’s box hoodie back"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682786ae1f7b544b14__825",
+            "alt": "Men’s box hoodie — back from the matching saved Printful design"
           }
         ],
-        "optionsNote": "Select size and review color availability on the Printful product page."
+        "optionsNote": "Cotton Heritage M2635, White. Sizes S–3XL. Front and back photos show the actual saved Printful print size. Retail price varies by size ($40.30–$45.50)."
       },
       {
         "id": "vibe-shift-hoodie-100cotton",
         "title": "Vibe Shift Hoodie",
-        "price": "$40.30",
+        "price": "From $40.30",
         "url": "https://awemissions.printful.me/product/vibe-shift-hoodie-100cotton",
         "category": "Hoodies & Sweatshirts",
-        "color": "As pictured",
+        "color": "Vintage Black",
         "sizes": [
           "S",
           "M",
@@ -858,24 +863,34 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/348a5b2e-82dc-44d9-947b-42a4b8618a6d.jpg",
-            "alt": "Vibe Shift Hoodie front"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682726ae8e3ee5500f__825",
+            "alt": "Vibe Shift Hoodie — front from the matching saved Printful design"
           },
           {
             "side": "Back",
-            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/542c226c-98bc-4a3a-a4c7-6c6da98266f2.jpg",
-            "alt": "Vibe Shift Hoodie back"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682726ae8e3ee7c8d9__825",
+            "alt": "Vibe Shift Hoodie — back from the matching saved Printful design"
+          },
+          {
+            "side": "Left side",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682726ae8e3ee9b460__825",
+            "alt": "Vibe Shift Hoodie — left side from the matching saved Printful design"
+          },
+          {
+            "side": "Right side",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682726ae8e3eeb3634__825",
+            "alt": "Vibe Shift Hoodie — right side from the matching saved Printful design"
           }
         ],
-        "optionsNote": "Select size and review color availability on the Printful product page."
+        "optionsNote": "Cotton Heritage M2635, Vintage Black. Sizes S–3XL ($40.30–$45.50). Matching front and back prints; back QR links to https://awemissions.org/."
       },
       {
         "id": "unisex-oversized-hoodie-awemissions",
         "title": "Unisex oversized hoodie - awemissions",
-        "price": "$50.66",
+        "price": "From $50.66",
         "url": "https://awemissions.printful.me/product/unisex-oversized-hoodie-awemissions",
         "category": "Hoodies & Sweatshirts",
-        "color": "As pictured",
+        "color": "Athletic Heather",
         "sizes": [
           "S",
           "M",
@@ -887,13 +902,18 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682666ae244bf57b4c__825",
-            "alt": "Unisex oversized hoodie - awemissions — front view from the matching Printful product"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682666ae8e4b0e5860__825",
+            "alt": "Unisex oversized hoodie - awemissions — front from the matching saved Printful design"
           },
           {
             "side": "Back",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682666ae244bf3e239__825",
-            "alt": "Unisex oversized hoodie - awemissions — back view from the matching Printful product"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682666ae8e4b0c4128__825",
+            "alt": "Unisex oversized hoodie - awemissions — back from the matching saved Printful design"
+          },
+          {
+            "side": "Side detail",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682666ae8e4b112af0__825",
+            "alt": "Unisex oversized hoodie - awemissions — side detail from the matching saved Printful design"
           }
         ],
         "optionsNote": "Select size and review color availability on the Printful product page."
