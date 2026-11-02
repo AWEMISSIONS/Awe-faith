@@ -1835,6 +1835,41 @@
         ],
         "optionsNote": "White colorway with black FORGIVEN lettering across the sleeves and back, Psalm 32:1, and AWE Missions chest mark. All-over cotton-blend hoodie; sizes 2XS–6XL ($72.93–$85.93). Color is printed on the fabric panels.",
         "collection": "FORGIVEN Collection"
+      },
+      {
+        "id": "forgiven-charcoal-white-lettering-oversized-hoodie",
+        "title": "FORGIVEN | AWE Missions Charcoal Hoodie — White Lettering",
+        "price": "From $72.93",
+        "url": "https://awemissions.printful.me/product/forgiven-awe-missions-charcoal-hoodie-white-lettering",
+        "category": "Hoodies & Sweatshirts",
+        "color": "Charcoal / White lettering",
+        "sizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL",
+          "6XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/194642486ae90c65694a0__825",
+            "alt": "FORGIVEN | AWE Missions Charcoal Hoodie — White Lettering — front with matching white artwork and charcoal panels"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/194642486ae90c65822fd__825",
+            "alt": "FORGIVEN | AWE Missions Charcoal Hoodie — White Lettering — back with matching white artwork and charcoal panels"
+          }
+        ],
+        "optionsNote": "Original charcoal shade with white FORGIVEN lettering across the sleeves and back, Psalm 32:1, and matching white AWE Missions chest mark. All-over cotton-blend hoodie; sizes 2XS–6XL ($72.93–$85.93). Color is printed on the fabric panels.",
+        "collection": "FORGIVEN Collection"
       }
     ]
   }
