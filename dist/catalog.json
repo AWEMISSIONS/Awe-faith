@@ -1594,12 +1594,17 @@
         ],
         "images": [
           {
-            "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193581276ae4d949742cc__825",
-            "alt": "AWE Missions | Rest in His Presence Beach Towel — actual Printful front mockup"
+            "side": "Front — 30″×60″",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193581276ae7e4def141a__825",
+            "alt": "AWE Missions | Rest in His Presence Beach Towel — full-cover 30″×60″ Printful mockup"
+          },
+          {
+            "side": "Front — 36″×72″",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/193581286ae7e5881f068__825",
+            "alt": "AWE Missions | Rest in His Presence Beach Towel — full-cover 36″×72″ Printful mockup"
           }
         ],
-        "optionsNote": "Printed on one side; the reverse is absorbent terry fabric."
+        "optionsNote": "Artwork printed on one side only; reverse is absorbent terry fabric. Both towel sizes use the matching full-cover design."
       },
       {
         "id": "awe-missions-be-strong-in-the-lord-journal-teen-boys",
