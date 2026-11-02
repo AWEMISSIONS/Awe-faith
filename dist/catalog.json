@@ -1765,6 +1765,76 @@
           }
         ],
         "optionsNote": "Bella + Canvas 3501, Dark Grey Heather. Sizes XS–2XL; retail price varies by size ($47.50–$50.50). Large front and back prints, with three floral Faith Over Fear repeats on the left sleeve and three Grace Over Worry repeats on the right sleeve."
+      },
+      {
+        "id": "forgiven-light-grey-oversized-hoodie",
+        "title": "FORGIVEN | AWE Missions Light Grey Oversized Hoodie",
+        "price": "From $72.93",
+        "url": "https://awemissions.printful.me/product/oversized-cotton-hoodie",
+        "category": "Hoodies & Sweatshirts",
+        "color": "Light Grey",
+        "sizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL",
+          "6XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/194583096ae8e819c3e9a__825",
+            "alt": "FORGIVEN | AWE Missions Light Grey Oversized Hoodie — front with black wraparound lettering"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/194583096ae8e819f0cec__825",
+            "alt": "FORGIVEN | AWE Missions Light Grey Oversized Hoodie — back with black wraparound lettering"
+          }
+        ],
+        "optionsNote": "Light Grey colorway with black FORGIVEN lettering across the sleeves and back, Psalm 32:1, and AWE Missions chest mark. All-over cotton-blend hoodie; sizes 2XS–6XL ($72.93–$85.93). Color is printed on the fabric panels.",
+        "collection": "FORGIVEN Collection"
+      },
+      {
+        "id": "forgiven-white-oversized-hoodie",
+        "title": "FORGIVEN | AWE Missions White Oversized Hoodie",
+        "price": "From $72.93",
+        "url": "https://awemissions.printful.me/product/oversized-cotton-hoodie-6ae8e700a34f1",
+        "category": "Hoodies & Sweatshirts",
+        "color": "White",
+        "sizes": [
+          "2XS",
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL",
+          "4XL",
+          "5XL",
+          "6XL"
+        ],
+        "images": [
+          {
+            "side": "Front",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/194585936ae8e70f9068f__825",
+            "alt": "FORGIVEN | AWE Missions White Oversized Hoodie — front with black wraparound lettering"
+          },
+          {
+            "side": "Back",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/194585936ae8e70fac4d8__825",
+            "alt": "FORGIVEN | AWE Missions White Oversized Hoodie — back with black wraparound lettering"
+          }
+        ],
+        "optionsNote": "White colorway with black FORGIVEN lettering across the sleeves and back, Psalm 32:1, and AWE Missions chest mark. All-over cotton-blend hoodie; sizes 2XS–6XL ($72.93–$85.93). Color is printed on the fabric panels.",
+        "collection": "FORGIVEN Collection"
       }
     ]
   }
