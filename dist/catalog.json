@@ -919,13 +919,18 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/7837f150-36d0-437c-bed5-2212e48580af.jpg",
-            "alt": "Not Today Satan | James 4:7 | Black Tee front"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682576ae7e74b6d7ee__825",
+            "alt": "Not Today Satan | James 4:7 | Black Tee — larger RESIST THE DEVIL / JAMES 4:7 text placed lower across the chest"
           },
           {
             "side": "Back",
-            "src": "https://cdn.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=scale-down/cdn-ecommerce/store_01K7YG5W3659NVD3Y6HJ29XT3M/assets/6aa04019-b747-4a2b-ab67-da0449fdbdee.jpg",
-            "alt": "Not Today Satan | James 4:7 | Black Tee back"
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682576ae7e74b8b091__825",
+            "alt": "Not Today Satan | James 4:7 | Black Tee — Not Today Satan boot-and-serpent back graphic"
+          },
+          {
+            "side": "Detail",
+            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682576ae7e74bbbe94__825",
+            "alt": "Not Today Satan | James 4:7 | Black Tee — angled view of the matching enlarged front chest print"
           }
         ],
         "optionsNote": "Select size and review color availability on the Printful product page."
