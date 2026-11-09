@@ -25,12 +25,19 @@ function renderShop(c){
   const audienceButtons=[...document.querySelectorAll('[data-shop-audience]')];
   if(!shop)return;
   const categoryOf=item=>item.category||(item.collection?'Mountain Collection':'Other');
-  const categories=[...new Set(quickProducts.map(categoryOf))];
+  const groups=['Sweatshirts','Long Sleeves','T-Shirts','Hats','Towels','Journals','Other'];
+  const groupOf=item=>{
+    const value=[item.title,item.category].filter(Boolean).join(' ').toLowerCase();
+    if(/hoodie|sweatshirt|sweater|crewneck|pullover/.test(value))return 'Sweatshirts';
+    if(/long[ -]?sleeve|henley/.test(value))return 'Long Sleeves';
+    if(/t[ -]?shirt|\btee\b|oversized shirt/.test(value))return 'T-Shirts';
+    if(/hat|cap|beanie|bucket hat|trucker/.test(value))return 'Hats';
+    if(/towel/.test(value))return 'Towels';
+    if(/journal|notebook/.test(value))return 'Journals';
+    return 'Other';
+  };
+  const groupButtons=[...document.querySelectorAll('[data-shop-group]')];
   const colors=[...new Set(quickProducts.map(item=>item.color).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
-  if(category&&!category.dataset.ready){
-    category.innerHTML='<option value="">All types</option>'+categories.map(value=>'<option value="'+escapeText(value)+'">'+escapeText(value)+'</option>').join('');
-    category.dataset.ready='true';
-  }
   if(color&&!color.dataset.ready){
     color.innerHTML='<option value="">All colors</option>'+colors.map(value=>'<option value="'+escapeText(value)+'">'+escapeText(value)+'</option>').join('');
     color.dataset.ready='true';
@@ -51,15 +58,18 @@ function renderShop(c){
   const updateResults=()=>{
     const query=(search?.value||'').trim().toLocaleLowerCase();
     const activeAudience=shop.dataset.audience||'all';
-    const chosenCategory=category?.value||'';
+    const chosenCategory=shop.dataset.group||'';
     const chosenColor=color?.value||'';
     let items=quickProducts.filter(item=>{
       const searchable=[item.title,item.category,item.collection,item.color].filter(Boolean).join(' ').toLocaleLowerCase();
       const mensOnly=item.id==='mens-box-hoodie';
       const audienceMatch=activeAudience==='all'||(activeAudience==='male'?true:!mensOnly);
-      return audienceMatch&&(!query||searchable.includes(query))&&(!chosenCategory||categoryOf(item)===chosenCategory)&&(!chosenColor||item.color===chosenColor);
+      return audienceMatch&&(!query||searchable.includes(query))&&(!chosenCategory||groupOf(item)===chosenCategory)&&(!chosenColor||item.color===chosenColor);
     });
-    if(sort?.value==='featured'&&activeAudience!=='all'){
+    if(sort?.value==='featured'){
+      const preferred=activeAudience==='male'?maleFeatured:activeAudience==='female'?femaleFeatured:new Set();
+      items.sort((a,b)=>groups.indexOf(groupOf(a))-groups.indexOf(groupOf(b)) || Number(preferred.has(b.id))-Number(preferred.has(a.id)) || (a.title||'').localeCompare(b.title||''));
+    }else if(false){
       const preferred=activeAudience==='male'?maleFeatured:femaleFeatured;
       items.sort((a,b)=>Number(preferred.has(b.id))-Number(preferred.has(a.id)));
     }else if(sort?.value==='price-low'||sort?.value==='price-high'){
@@ -87,10 +97,11 @@ function renderShop(c){
     shop.dataset.audienceBound='true';
   }
   if(filters&&!filters.dataset.bound){
-    [search,category,color,sort].filter(Boolean).forEach(control=>control.addEventListener(control===search?'input':'change',updateResults));
-    filters.addEventListener('reset',()=>setTimeout(updateResults,0));
+    [search,color,sort].filter(Boolean).forEach(control=>control.addEventListener(control===search?'input':'change',updateResults));
+    filters.addEventListener('reset',()=>setTimeout(()=>{shop.dataset.group='';groupButtons.forEach(button=>{const active=!button.dataset.shopGroup;button.classList.toggle('is-active',active);button.setAttribute('aria-pressed',String(active));});updateResults();},0));
     filters.dataset.bound='true';
   }
+  groupButtons.forEach(button=>button.addEventListener('click',()=>{shop.dataset.group=button.dataset.shopGroup||'';groupButtons.forEach(option=>{const active=option===button;option.classList.toggle('is-active',active);option.setAttribute('aria-pressed',String(active));});updateResults();}));
   updateResults();
 }
 function serviceCard(item){return `<article class="service-card"><strong>${escapeText(item.title)}</strong>${item.category?`<span>${escapeText(item.category)}</span>`:''}<p>${escapeText([item.address,item.description].filter(Boolean).join(' · '))}</p>${item.phone?`<a href="tel:${escapeText(item.phone.replace(/[^+0-9]/g,''))}">${escapeText(item.phone)}</a>`:''}${item.url?`<a href="${safeUrl(item.url)}" target="_blank" rel="noopener">More information</a>`:''}</article>`}
