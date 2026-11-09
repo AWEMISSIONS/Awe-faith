@@ -81,9 +81,16 @@
             <label class="shop-search-field">Search merchandise
               <input id="shopSearch" type="search" placeholder="Try “Pray First” or “cap”" autocomplete="off">
             </label>
-            <label>Type
-              <select id="shopCategory"><option value="">All types</option></select>
-            </label>
+            <div class="shop-group-buttons" role="group" aria-label="Shop by product type" style="display:flex;flex-wrap:wrap;gap:.5rem;width:100%;grid-column:1/-1">
+              <button type="button" class="shop-audience-button is-active" data-shop-group="" aria-pressed="true">All Items</button>
+              <button type="button" class="shop-audience-button" data-shop-group="Sweatshirts" aria-pressed="false">Sweatshirts</button>
+              <button type="button" class="shop-audience-button" data-shop-group="Long Sleeves" aria-pressed="false">Long Sleeves</button>
+              <button type="button" class="shop-audience-button" data-shop-group="T-Shirts" aria-pressed="false">T-Shirts</button>
+              <button type="button" class="shop-audience-button" data-shop-group="Hats" aria-pressed="false">Hats</button>
+              <button type="button" class="shop-audience-button" data-shop-group="Towels" aria-pressed="false">Towels</button>
+              <button type="button" class="shop-audience-button" data-shop-group="Journals" aria-pressed="false">Journals</button>
+              <button type="button" class="shop-audience-button" data-shop-group="Other" aria-pressed="false">Other</button>
+            </div>
             <label>Color
               <select id="shopColor"><option value="">All colors</option></select>
             </label>
