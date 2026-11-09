@@ -61,9 +61,6 @@ function renderShop(c){
     });
     if(sort?.value==='featured'){
       items.sort((a,b)=>groups.indexOf(groupOf(a))-groups.indexOf(groupOf(b)) || (a.title||'').localeCompare(b.title||''));
-    }else if(false){
-      const preferred=activeAudience==='male'?maleFeatured:femaleFeatured;
-      items.sort((a,b)=>Number(preferred.has(b.id))-Number(preferred.has(a.id)));
     }else if(sort?.value==='price-low'||sort?.value==='price-high'){
       items.sort((a,b)=>{
         const price=item=>Number.parseFloat(String(item.price||'').replace(/[^0-9.]/g,''))||0;
