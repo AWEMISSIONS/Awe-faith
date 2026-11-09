@@ -1132,12 +1132,12 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682346ae2445fa742d__825",
+            "src": "./assets/merchandise/awe-faith-forgiven-charcoal-oversized-hoodie-front-v1.png",
             "alt": "AWE Missions — FORGIVEN — Charcoal Oversized Hoodie — front view from the matching Printful product"
           },
           {
             "side": "Back",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/191682346ae2445fc65d6__825",
+            "src": "./assets/merchandise/awe-faith-forgiven-charcoal-oversized-hoodie-back-v1.png",
             "alt": "AWE Missions — FORGIVEN — Charcoal Oversized Hoodie — back view from the matching Printful product"
           }
         ],
@@ -1811,12 +1811,12 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/194583096ae8e819c3e9a__825",
+            "src": "./assets/merchandise/forgiven-light-grey-oversized-hoodie-front-v1.png",
             "alt": "FORGIVEN | AWE Missions Light Grey Oversized Hoodie — front with black wraparound lettering"
           },
           {
             "side": "Back",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/194583096ae8e819f0cec__825",
+            "src": "./assets/merchandise/forgiven-light-grey-oversized-hoodie-back-v1.png",
             "alt": "FORGIVEN | AWE Missions Light Grey Oversized Hoodie — back with black wraparound lettering"
           }
         ],
@@ -1846,12 +1846,12 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/194585936ae8e70f9068f__825",
+            "src": "./assets/merchandise/forgiven-white-oversized-hoodie-front-v1.png",
             "alt": "FORGIVEN | AWE Missions White Oversized Hoodie — front with black wraparound lettering"
           },
           {
             "side": "Back",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/194585936ae8e70fac4d8__825",
+            "src": "./assets/merchandise/forgiven-white-oversized-hoodie-back-v1.png",
             "alt": "FORGIVEN | AWE Missions White Oversized Hoodie — back with black wraparound lettering"
           }
         ],
@@ -1881,12 +1881,12 @@
         "images": [
           {
             "side": "Front",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/194642486ae90c65694a0__825",
+            "src": "./assets/merchandise/forgiven-charcoal-white-lettering-oversized-hoodie-front-v1.png",
             "alt": "FORGIVEN | AWE Missions Charcoal Hoodie — White Lettering — front with matching white artwork and charcoal panels"
           },
           {
             "side": "Back",
-            "src": "https://cdn.printful.me/t/quick-stores/variants/w339/194642486ae90c65822fd__825",
+            "src": "./assets/merchandise/forgiven-charcoal-white-lettering-oversized-hoodie-back-v1.png",
             "alt": "FORGIVEN | AWE Missions Charcoal Hoodie — White Lettering — back with matching white artwork and charcoal panels"
           }
         ],
