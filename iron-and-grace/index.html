@@ -64,4 +64,55 @@ document.querySelector('#closeInstallHelp').addEventListener('click',closeInstal
 installHelp.addEventListener('click',event=>{if(event.target===installHelp)closeInstallHelp()});
 window.addEventListener('keydown',event=>{if(event.key==='Escape'&&!installHelp.classList.contains('hidden'))closeInstallHelp()});
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(error=>console.warn('Offline install support could not start:',error)))}
+</script><script>
+/* Continuous discipleship: preserves original Week 1 and its full meeting tools. */
+(()=>{
+const plans=[
+['Strength Under Christ','Mark 10:35–45','Strength is expressed through humble service.'],
+['Identity and Grace','Romans 8:1–17','Live as an adopted child of God, not from shame.'],
+['Integrity in Secret','Psalm 15','Practice faithfulness when nobody is watching.'],
+['Serving Your Family','Ephesians 5:21–6:4','Put sacrificial love into practice at home.'],
+['Spiritual Legacy','Deuteronomy 6:4–9','Pass faith on through everyday conversations.'],
+['Work and Witness','Colossians 3:22–24','Work wholeheartedly as service to Christ.'],
+['Contentment and Stewardship','1 Timothy 6:6–19','Hold resources with generosity and wisdom.'],
+['Anger and Self-Control','James 1:19–27','Be quick to listen and slow to anger.'],
+['Temptation and Accountability','1 Corinthians 10:12–13','Seek help before temptation becomes isolation.'],
+['Carrying Burdens','Galatians 6:1–10','Restore gently and carry one another’s burdens.'],
+['Endurance and Hope','Romans 5:1–5','Let suffering deepen hope and perseverance.'],
+['Serving and Sharing','1 Peter 4:7–11','Use your gifts to serve and witness.']
+];
+const steps=[
+['Monday · Receive','Read the central passage in context. What does it reveal about God?'],
+['Tuesday · Understand','Read the passage again. What command, promise, or warning stands out?'],
+['Wednesday · Examine','Where does your current behavior resist the truth of this passage?'],
+['Thursday · Practice','Choose one specific act of obedience you can complete today.'],
+['Friday · Walk Together','Share an honest check-in with a trusted brother and pray for him.'],
+['Saturday · Prepare','Write one victory, one struggle, and one question for the gathering.']
+];
+const original=document.querySelector('#panel-study .card:first-child').innerHTML;
+const originalDays=document.querySelector('#days').innerHTML;
+const card=document.querySelector('#panel-study .card:first-child');
+const hero=document.querySelector('.week-pill');
+const nav=document.createElement('div');nav.className='rowbtn';nav.style.margin='0 0 18px';
+nav.innerHTML='<button class="secondary" id="weekPrev">← Previous week</button><span class="tag" id="weekPosition" style="align-self:center"></span><button class="primary" id="weekNext">Next week →</button>';
+card.parentNode.insertBefore(nav,card);
+let week=Math.max(1,parseInt(localStorage.getItem('ig-current-week')||'1',10)||1);
+function render(){
+ const p=plans[(week-1)%plans.length],cycle=Math.floor((week-1)/plans.length)+1;
+ const title=p[0],ref=p[1],link='https://www.esv.org/'+encodeURIComponent(ref).replace(/%20/g,'%2B')+'/';
+ hero.textContent='WEEK '+String(week).padStart(2,'0')+' · '+title.toUpperCase();
+ document.querySelector('#weekPosition').textContent='Week '+week+' · Cycle '+cycle;
+ if(week===1){card.innerHTML=original;const d=card.querySelector('#days');d.innerHTML=originalDays;d.querySelectorAll('.day').forEach((el,i)=>{const done=localStorage.getItem('ig-week-1-day-'+i)==='1'||localStorage.getItem('ig-day-'+i)==='1';el.classList.toggle('done',done);const b=el.querySelector('button');b.textContent=done?'✓ Done':'Mark done';b.onclick=()=>{const next=!el.classList.contains('done');el.classList.toggle('done',next);localStorage.setItem('ig-week-1-day-'+i,next?'1':'0');b.textContent=next?'✓ Done':'Mark done'}})}
+ else {
+ const dayHtml=steps.map((st,i)=>{const done=localStorage.getItem('ig-week-'+week+'-day-'+i)==='1';return '<article class="day'+(done?' done':'')+'" data-week-day="'+i+'"><span class="day-num">'+String(i+1).padStart(2,'0')+'</span><div><strong>'+st[0]+'</strong><small>'+st[1]+'</small><a href="'+link+'" target="_blank" rel="noopener">Read '+ref+' (ESV) ↗</a></div><button class="complete">'+(done?'✓ Done':'Mark done')+'</button></article>'}).join('');
+ card.innerHTML='<div class="card-head"><div><div class="eyebrow">Week '+week+' · Six-day walk and weekly gathering</div><h2>'+title+'</h2><p class="sub">'+p[2]+'</p></div><span class="tag">ESV</span></div><div class="anchor"><small>Central passage · '+ref+'</small><b>'+title+'</b><p>Read the full passage in context, return to it each day, and bring your observations to the gathering.</p><a class="scripture-link" href="'+link+'" target="_blank" rel="noopener">Read Scripture in ESV ↗</a></div><div class="days" id="days">'+dayHtml+'</div><p class="reading-note">Each day: pray, read, reflect, and take one faithful step. Mark each day as you finish.</p><div class="study-details"><h3>Sunday · Big Picture Gathering</h3><div class="prompt">What did this passage teach us about God and following Jesus?</div><div class="prompt">Where did we obey, struggle, or need help this week?</div><div class="prompt">What will we commit to doing, and how will we hold each other accountable?</div><p class="sub">Use the 60-minute gathering guide below for Scripture discussion, prayer, accountability, and planning.</p></div><div class="rowbtn"><button class="secondary" id="copyStudy">Copy weekly discussion guide</button></div>';
+ card.querySelectorAll('[data-week-day]').forEach(el=>{const i=el.dataset.weekDay;el.querySelector('button').onclick=()=>{const next=!el.classList.contains('done');el.classList.toggle('done',next);localStorage.setItem('ig-week-'+week+'-day-'+i,next?'1':'0');el.querySelector('button').textContent=next?'✓ Done':'Mark done'}});
+ }
+ card.querySelector('#copyStudy').onclick=()=>{const content='Iron & Grace · Week '+week+': '+title+'\nRead: '+ref+'\nBig Picture Gathering: What did we learn about God? Where did we struggle? What is our next faithful step?';navigator.clipboard?.writeText(content).then(()=>alert('Discussion guide copied')).catch(()=>prompt('Copy discussion guide',content))};
+ localStorage.setItem('ig-current-week',String(week));
+}
+document.querySelector('#weekPrev').onclick=()=>{week=Math.max(1,week-1);render()};
+document.querySelector('#weekNext').onclick=()=>{week++;render()};
+render();
+})();
 </script></body></html>
