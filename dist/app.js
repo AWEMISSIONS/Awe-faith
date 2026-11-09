@@ -42,13 +42,9 @@ function renderShop(c){
     color.innerHTML='<option value="">All colors</option>'+colors.map(value=>'<option value="'+escapeText(value)+'">'+escapeText(value)+'</option>').join('');
     color.dataset.ready='true';
   }
-  const maleFeatured=new Set(['mens-box-hoodie','fishers-of-men-no-license-required-matthew-419-black-tee']);
-  const femaleFeatured=new Set(['awe-missions-loved-first-pink-vintage-cap-draft','powered-by-prayer-coffee-matthew-633-black-tee']);
   const renderQuickCard=item=>{
     const productUrl=safeUrl(item.url);
-    const audience=shop.dataset.audience||'all';
-    const isFeatured=(audience==='male'&&maleFeatured.has(item.id))||(audience==='female'&&femaleFeatured.has(item.id));
-    const categoryLabel=(isFeatured?(audience==='male'?'Male pick · ':'Female pick · '):'')+categoryOf(item);
+    const categoryLabel=categoryOf(item);
     const images=Array.isArray(item.images)?item.images:[];
     const gallery=images.length?'<div class="quick-product-gallery'+(images.length>1?' quick-product-gallery--sides':'')+'">'+images.map((img,i)=>'<figure class="quick-product-view"><img src="'+escapeText(safeUrl(img.src))+'" alt="'+escapeText(img.alt||item.title)+'" loading="lazy"><figcaption>'+escapeText(img.side||('View '+(i+1)))+'</figcaption></figure>').join('')+'</div>':'';
     const sizes=Array.isArray(item.sizes)&&item.sizes.length?item.sizes.join(', '):'See product page';
@@ -57,18 +53,14 @@ function renderShop(c){
   };
   const updateResults=()=>{
     const query=(search?.value||'').trim().toLocaleLowerCase();
-    const activeAudience=shop.dataset.audience||'all';
     const chosenCategory=shop.dataset.group||'';
     const chosenColor=color?.value||'';
     let items=quickProducts.filter(item=>{
       const searchable=[item.title,item.category,item.collection,item.color].filter(Boolean).join(' ').toLocaleLowerCase();
-      const mensOnly=item.id==='mens-box-hoodie';
-      const audienceMatch=activeAudience==='all'||(activeAudience==='male'?true:!mensOnly);
-      return audienceMatch&&(!query||searchable.includes(query))&&(!chosenCategory||groupOf(item)===chosenCategory)&&(!chosenColor||item.color===chosenColor);
+      return (!query||searchable.includes(query))&&(!chosenCategory||groupOf(item)===chosenCategory)&&(!chosenColor||item.color===chosenColor);
     });
     if(sort?.value==='featured'){
-      const preferred=activeAudience==='male'?maleFeatured:activeAudience==='female'?femaleFeatured:new Set();
-      items.sort((a,b)=>groups.indexOf(groupOf(a))-groups.indexOf(groupOf(b)) || Number(preferred.has(b.id))-Number(preferred.has(a.id)) || (a.title||'').localeCompare(b.title||''));
+      items.sort((a,b)=>groups.indexOf(groupOf(a))-groups.indexOf(groupOf(b)) || (a.title||'').localeCompare(b.title||''));
     }else if(false){
       const preferred=activeAudience==='male'?maleFeatured:femaleFeatured;
       items.sort((a,b)=>Number(preferred.has(b.id))-Number(preferred.has(a.id)));
@@ -80,22 +72,9 @@ function renderShop(c){
     }else if(sort?.value==='name'){
       items.sort((a,b)=>(a.title||'').localeCompare(b.title||''));
     }
-    if(audienceHint)audienceHint.textContent=activeAudience==='all'?'Shared designs appear once in All. Style-specific picks are marked in each list.':'Shared designs appear here too; style-specific picks are marked and shown first.';
     if(count)count.textContent=items.length+' of '+quickProducts.length+' items';
     shop.innerHTML=items.length?items.map(renderQuickCard).join(''):'<p class="shop-empty">'+(quickProducts.length?'No merchandise matches these filters. Try changing or clearing them.':'Merchandise listings are being updated. Please check back soon.')+'</p>';
   };
-  if(!shop.dataset.audienceBound){
-    audienceButtons.forEach(button=>button.addEventListener('click',()=>{
-      shop.dataset.audience=button.dataset.shopAudience||'all';
-      audienceButtons.forEach(option=>{
-        const active=option===button;
-        option.classList.toggle('is-active',active);
-        option.setAttribute('aria-pressed',String(active));
-      });
-      updateResults();
-    }));
-    shop.dataset.audienceBound='true';
-  }
   if(filters&&!filters.dataset.bound){
     [search,color,sort].filter(Boolean).forEach(control=>control.addEventListener(control===search?'input':'change',updateResults));
     filters.addEventListener('reset',()=>setTimeout(()=>{shop.dataset.group='';groupButtons.forEach(button=>{const active=!button.dataset.shopGroup;button.classList.toggle('is-active',active);button.setAttribute('aria-pressed',String(active));});updateResults();},0));
