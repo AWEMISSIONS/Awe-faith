@@ -380,3 +380,9 @@ html{scroll-padding-top:132px}
 .shop-audience-button:focus-visible{outline:3px solid #e0a63b;outline-offset:2px}
 .shop-audience-hint{margin:2px 0 14px;color:var(--muted);font-size:13px}
 @media(max-width:640px){.shop-audience-toggle{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%}.shop-audience-button{padding:8px 10px}}
+
+/* Printful image failure: keep mobile merchandise cards readable. */
+.quick-product-image-fallback{min-height:170px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;padding:18px;background:#f1f2f2;color:#43515a;text-align:center;font:600 14px/1.4 system-ui,sans-serif;border-radius:10px}
+.quick-product-image-fallback[hidden]{display:none!important}
+.quick-product-image-fallback a{font-weight:700;color:#163d52;text-decoration:underline}
+.quick-product-view img[hidden]{display:none!important}
