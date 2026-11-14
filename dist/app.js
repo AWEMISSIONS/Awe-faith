@@ -60,7 +60,10 @@ function renderShop(c){
       return (!query||searchable.includes(query))&&(!chosenCategory||groupOf(item)===chosenCategory)&&(!chosenColor||item.color===chosenColor);
     });
     if(sort?.value==='featured'){
-      items.sort((a,b)=>groups.indexOf(groupOf(a))-groups.indexOf(groupOf(b)) || (a.title||'').localeCompare(b.title||''));
+      // Promote a small set of campaign-ready products while preserving category order for the rest.
+      const featuredIds=['not-today-satan-james-47-black-tee','on-your-knees-tee','pray-first-black-hoodie-philippians-46'];
+      const featuredRank=item=>{const rank=featuredIds.indexOf(item.id);return rank<0?featuredIds.length:rank};
+      items.sort((a,b)=>featuredRank(a)-featuredRank(b) || groups.indexOf(groupOf(a))-groups.indexOf(groupOf(b)) || (a.title||'').localeCompare(b.title||''));
     }else if(sort?.value==='price-low'||sort?.value==='price-high'){
       items.sort((a,b)=>{
         const price=item=>Number.parseFloat(String(item.price||'').replace(/[^0-9.]/g,''))||0;
